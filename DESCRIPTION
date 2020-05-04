@@ -14,3 +14,17 @@ Language: pt_BR
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+Suggests: 
+    roxygen2
+Imports: 
+    rlang (>= 0.1.2),
+    magrittr,
+    stringr,
+    purrr,
+    dplyr,
+    tidyr,
+    lubridate,
+    xml2,
+    rvest,
+    janitor,
+    purrrogress
