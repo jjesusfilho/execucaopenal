@@ -1,5 +1,5 @@
 Package: execucaopenal
-Title: What the Package Does (One Line, Title Case)
+Title: Provê Funções Para Organizar Dados da Vec RJ
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Jose",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jose@consudata.com.br",
            comment = c(ORCID = "https://orcid.org/0000-0001-7415-7383"))
-Description: What the package does (one paragraph).
+Description: Organiza Dados da Execução Penal do Rio de Janeiro.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: pt_BR
@@ -27,6 +27,6 @@ Imports:
     xml2,
     rvest,
     janitor,
-    purrrogress
-URL: https://github.com/jjesusfilho/execucaopenal
-BugReports: https://github.com/jjesusfilho/execucaopenal/issues
+    purrrogress,
+    tibble,
+    RSelenium
