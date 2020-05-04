@@ -28,3 +28,5 @@ Imports:
     rvest,
     janitor,
     purrrogress
+URL: https://github.com/jjesusfilho/execucaopenal
+BugReports: https://github.com/jjesusfilho/execucaopenal/issues
