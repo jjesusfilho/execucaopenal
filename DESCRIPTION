@@ -29,4 +29,5 @@ Imports:
     janitor,
     purrrogress,
     tibble,
-    RSelenium
+    RSelenium,
+    pdftools

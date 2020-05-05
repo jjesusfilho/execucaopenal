@@ -13,19 +13,25 @@ ler_execucao <- function(arquivos = NULL, diretorio = "."){
     arquivos <- list.files(diretorio,full.names = TRUE,pattern="execucao",recursive = TRUE)
   }
 
-  execucao <- purrr::map_dfr(arquivos,purrr::possibly(purrrogress::with_progress(~{
+  purrr::map_dfr(arquivos,purrr::possibly(purrrogress::with_progress(~{
 
     processo <- stringr::str_extract(.x,"\\d{20}")
 
+
     x <- xml2::read_html(.x)
 
+    id_execucao <- x %>%
+      xml2::xml_find_first("//form[@name='processoForm']")  %>%
+      xml2::xml_attr("action") %>%
+      stringr::str_extract("\\d+$")
+
     variavel <- xml2::xml_find_all(x,"//td[@class='label']/label") %>%
-      xml_text()
+      xml2::xml_text()
 
     valor <- xml2::xml_find_all(x,"//td[@class='label'][label]/following-sibling::td[1]") %>%
       xml2::xml_text()
 
-    tibble::tibble(processo = processo,variavel = variavel, valor = valor) %>%
+    tibble::tibble(processo = processo,id_execucao = id_execucao, variavel = variavel, valor = valor) %>%
       dplyr::mutate(valor = stringr::str_trim(valor) %>%
                       stringr::str_remove("\n\\X+")) %>%
       dplyr::filter(!stringr::str_detect(variavel,"Complemento")) %>%
@@ -52,3 +58,4 @@ ler_execucao <- function(arquivos = NULL, diretorio = "."){
   }),NULL))
 
 }
+
