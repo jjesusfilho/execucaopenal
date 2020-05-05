@@ -30,8 +30,6 @@ remDr$screenshot(display = TRUE)
 
 
 
-login<-"SP215217"
-password<-"hZbZBYFj7dax2c"
 
 webElem<- remDr$findElement("id", "login")
 

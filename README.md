@@ -39,10 +39,10 @@ processos conforme as dadas indicadas. Depois disso, é necessário
 converter os htmls baixados para tabela, como os respectivos números dos
 processos e nomes dos sentenciados.
 
-Somente com os números dos processos é possível passar para a etapa
+Somente com os números dos processos, é possível passar para a etapa
 seguinte que é baixar os dados da execução penal de cada um dos
 sentenciados. Para tanto, há um script chamado baixar\_processos, que
-está na pasta Inst. Assim, como a função baixar\_numeros, ele depende de
+está na pasta Inst. Assim como a função baixar\_numeros, ele depende de
 o conteiner do Selenium estar rodando e do RSelenium carregado.
 
 Este escript cria quatro diretórios para cada processo com nomes
