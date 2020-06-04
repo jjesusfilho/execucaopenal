@@ -30,4 +30,5 @@ Imports:
     purrrogress,
     tibble,
     RSelenium,
-    pdftools
+    pdftools,
+    httr
