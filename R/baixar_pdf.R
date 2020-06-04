@@ -32,21 +32,36 @@ baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, arquivo = N
 
 autentica <- function(usuario = NULL, senha = NULL) {
 
+
+  if(is.null(usuario)){
+
+    usuario <-  Sys.getenv("USER_UFRJ")
+
+  }
+
+  if(is.null(senha)){
+
+    senha <-  Sys.getenv("PASSWORD_UFRJ")
+  }
+
+
+
   agente <-
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
+
   url <-
     "https://www3.tjrj.jus.br/projudi/usuario/logon.do?actionType=inicio&r=0.13796233039447725"
 
   user_agent <- httr::user_agent(agente)
 
   ses <- rvest::html_session(url, user_agent)
+
   form <- ses %>% rvest::html_form()
 
   form <- form[[1]] %>%
     rvest::set_values(login = usuario, senha = senha)
   rvest::submit_form(ses, form, httr::timeout(60))
 }
-
 
 
 extrai_post <- function(ses) {
