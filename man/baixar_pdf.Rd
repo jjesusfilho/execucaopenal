@@ -4,7 +4,7 @@
 \alias{baixar_pdf}
 \title{Baixa pdfs}
 \usage{
-baixar_pdf(usuario, senha, id_proc, arquivo)
+baixar_pdf(usuario = NULL, senha = NULL, id_proc = NULL, arquivo = NULL)
 }
 \arguments{
 \item{usuario}{Usuário}

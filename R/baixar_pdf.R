@@ -8,7 +8,7 @@
 #' @return pdf
 #' @export
 #'
-baixar_pdf <- function(usuario, senha, id_proc, arquivo) {
+baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, arquivo = NULL) {
   ses <- autentica(usuario, senha) %>%
     navegar(id_proc)
 
@@ -30,7 +30,7 @@ baixar_pdf <- function(usuario, senha, id_proc, arquivo) {
 
 
 
-autentica <- function(usuario, senha) {
+autentica <- function(usuario = NULL, senha = NULL) {
 
   agente <-
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
