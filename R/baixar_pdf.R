@@ -2,15 +2,24 @@
 #'
 #' @param usuario Usuário
 #' @param senha  Senha
-#' @param id_proc id_execucao
+#' @param id_proc Id do processo
+#' @param processo Número do processo
 #' @param arquivo arquivo
 #'
 #' @return pdf
 #' @export
 #'
-baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, arquivo = NULL) {
-  ses <- autentica(usuario, senha) %>%
-    navegar(id_proc)
+baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, processo = NULL, arquivo = NULL) {
+
+ses <- autentica(usuario, senha)
+
+if (is.null(id_proc)){
+
+id_proc <- id_processo(ses, processo)
+
+}
+
+ ses <-   navegar(ses, id_proc)
 
   url_post <- ses %>% extrai_post()
 
@@ -158,4 +167,21 @@ request_POST <- function (x, url, ...)
   x$back <- character()
   httr::warn_for_status(x$response)
   x
+}
+
+
+id_processo <- function(ses, processo) {
+  url <-
+    "https://www3.tjrj.jus.br/projudi/processo/buscaProcesso.do?actionType=iniciarSimples&pMRnd=1589225341920"
+  ses <- ses %>% rvest::jump_to(url)
+  form <- ses %>%
+    rvest::html_form() %>%
+    purrr::pluck(1) %>%
+    rvest::set_values(numeroProcesso = processo)
+  ses %>%
+    rvest::submit_form(form, httr::timeout(60)) %>%
+    purrr::pluck("response") %>%
+    httr::content("text") %>%
+    stringr::str_extract("(?<=numeroProcesso = )\\d+")
+
 }

@@ -1,0 +1,6158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="BR">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta http-equiv="Cache-Control" content="no-store,no-cache,must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+
+<link rel="icon" href="favicon.ico"/>
+		
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/projudi/css/layout.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/typo.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/menu.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/ajaxtags.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/assinatura_servidor.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/themes/olive.css?updateIdx=128"/>
+
+
+<link rel="stylesheet" type="text/css" href="/projudi/css/window/default.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/window/tjpr.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" media="print" href="/projudi/css/print.css?updateIdx=128"/>
+
+<link rel="stylesheet" type="text/css" href="/projudi/css/common.css?updateIdx=1591886492876"/>
+
+
+ 
+
+
+		
+
+
+
+
+
+
+<script type="text/javascript" src="/projudi/js/prototype.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/window/window.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/window/effects.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_crossframe.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_iframe.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_hide.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_shadow.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/scriptaculous/scriptaculous.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/scriptaculous/dragdrop.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/ajax/ajaxtags.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/ajax/ajaxtags_controls.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/ajax/ajaxtags_parser.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/calendarpopup/CalendarPopup.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/html-form-input-mask.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/tjpr.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/projudi.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/uploader.js?updateIdx=140"></script>
+
+<script type="text/javascript">
+  diech9ohTie3();
+
+  // Application root path for JavaScript functions
+  var appRootPath = "/projudi/";
+
+  // Multiple onload function created by: Simon Willison
+  // http://simonwillison.net/2004/May/26/addLoadEvent/
+  function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+      window.onload = func;
+    } else {
+      window.onload = function() {
+        if (oldonload) {
+          oldonload();
+        }
+        func();
+      }
+    }
+  }
+  
+  addLoadEvent(function() {
+	// adds fields masks javascript listener
+    Xaprb.InputMask.setupElementMasks();
+
+    // adiciona contador de tempo para expirar a sessão
+    if( typeof(functionDisplaySessionTimeout) != 'undefined' )
+    	functionDisplaySessionTimeout();
+  });
+
+</script>
+		<title>
+			
+				
+					0001892-72.2019.8.19.0001
+				
+				
+				
+					
+		</title>
+	</head>
+	
+	
+	<body onmousemove="onBodyMouseMove()" onkeydown="onBodyKeyDown()">
+		<div id="container">
+			
+			
+								
+				
+				 
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var sessionTimeout = 60;
+	var serverdate = calcServerTime(new Date(1591886492878),3); 
+
+	function calcServerTime(timeServidor, offset) {
+		dataServidor = new Date(timeServidor);
+	    utc = dataServidor.getTime() + (dataServidor.getTimezoneOffset() * 60000);
+	    nd  = new Date(utc - (3600000*offset));
+	    return nd;
+	}
+	
+	function padlength(what){
+		var output=(what.toString().length==1)? "0"+what : what;
+		return output;
+	}
+
+	function displayTime() {
+		var month=serverdate.getMonth()+1;
+		var day=serverdate.getDate();
+		var year=serverdate.getFullYear();
+		var timestring="<strong>&nbsp;Data:</strong>&nbsp;"+padlength(day)+"/"+padlength(month)+"/"+padlength(year)+" "+padlength(serverdate.getHours())+":"+padlength(serverdate.getMinutes());
+		document.getElementById("serverTime").innerHTML = timestring;
+		serverdate.setMinutes(serverdate.getMinutes()+1);
+	}
+
+	function displaySessionTime(sTimeout){
+		document.getElementById('sessionField').innerHTML = '<strong>&nbsp;Expira em:</strong>&nbsp;'+sTimeout+' min';
+	}
+	
+	var functionDisplaySessionTimeout = function() {
+		// se for grupo população, não exibe informação de "tempo de sessão"
+		var isPopulacao = false;
+		if( isPopulacao )
+			return;
+
+		//assigning minutes left to session timeout to Label
+		displaySessionTime(sessionTimeout);
+		sessionTimeout = sessionTimeout - 1;
+	    
+		//if session is not less than 0
+		if (sessionTimeout >= 0) {
+			//call the function again after 1 minute delay
+			window.setTimeout("functionDisplaySessionTimeout()", 60000);
+			displayTime();
+		} else {
+			//show message box
+			document.getElementById('sessionField').innerHTML = '<strong>&nbsp;Expira em:</strong>&nbsp;Sessão expirada';
+		}
+	}
+
+
+	/**
+	 * Abre o manual
+	 */
+	function abreManual(url) {
+		window.open(url,'janela','width=750,height=450,left=10,top=30,' +
+					'screenX=10,screenY=30,toolbar=yes,location=no,' + 
+					'directories=no,status=no,menubar=yes,scrollbars=yes,' +
+					'copyhistory=no,resizable=yes');
+	}
+	
+	/**
+	 * Abre a popup com o histórico dos processos/recursos recentemente visualizados
+	 */
+	function openDialogHistoricoProcessosRecursos(titulo) {
+		// abre a popup (sem encriptar a url)
+		var url = '/projudi/historicoProcessosRecursos.do?actionType=listar';
+		openDialog(url, titulo, 0, 0);
+	}
+
+</script>
+
+
+
+<table id="userinfo" class="naoImprimir" cellpadding="0" cellspacing="0">
+	<tr>
+		
+		<td>
+			
+			<strong>::</strong>
+			
+				<strong>Usuário:</strong>&nbsp;SP215217 (Consulta ao 1º Grau)
+				
+			
+			
+			
+			
+			
+
+ 			
+			
+			<span id="serverTime"></span>
+			
+			
+			<span id="sessionField"></span>
+			
+			
+			
+			
+			
+			
+		</td>
+		
+		
+		<td width="1%" nowrap="nowrap" style="text-align: right; vertical-align: top;">
+			
+						
+					&nbsp;
+					<a id="processoBusca" href="/projudi/processo/buscaProcesso.do?actionType=iniciar" class="shortcuts">
+			    		RG
+			    	</a>
+			    	&nbsp;
+								
+				
+
+					<a id="processoBusca" href="/projudi/processo/buscaProcesso.do?actionType=iniciarSimples" class="shortcuts">
+			    		Processo
+			    	</a>
+			    	&nbsp;
+		    	
+				<a id="history" href="javascript: openDialogHistoricoProcessosRecursos('');" title="" class="shortcuts">
+		    		Histórico
+		    	</a>
+		    	
+		    	&nbsp;
+	    	
+			<a id="close" href="/projudi/usuario/logon.do?actionType=logout&forcarLogout=true" class="shortcuts" target="mainFrame">
+	    		Sair
+			</a>		
+		</td>
+	</tr>
+
+	
+		
+
+	
+	
+
+	
+</table>
+			
+			<hr/>
+			
+			<div id="content">
+				<div id="idCalPadrao" style="position:absolute;z-index:1000;float:right;visibility:hidden;background-color:white;layer-background-color:white;">
+				</div>
+				
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	/**
+	 * Função para limpar o conteúdo das mensagens
+	 */
+	function clearMessages(){
+		var successMsgs = document.getElementById('successMessages');
+		if(successMsgs != null && "" + successMsgs != "undefined"){
+			successMsgs.style.display="none";
+		}
+	}
+	// chama a função após 4 segundos
+	var flagfixedSuccessMessage = "";
+	if( (flagfixedSuccessMessage == "") || !flagfixedSuccessMessage )
+		window.setTimeout("clearMessages()", 4000);
+//-->
+</script>
+						
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 8px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.progress-bar-success {
+  background-color: #5cb85c;
+}
+
+.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+</style>
+
+<script type="text/javascript">
+	/**
+	 * Abre a popup com lista de processos dependentes
+	 */
+	function openDialogProcessosDependentes(url) {
+		openDialog(url, 'Processos Dependentes', 0, 0);
+	}
+	
+</script>
+
+<form name="processoForm" id="processoForm" method="post" action="/projudi/processo.do?actionType=visualizar&id=217943" onsubmit="disableScreen();">
+	
+	
+	
+	<h3>
+		
+		
+			
+				Execução 0001892-72.2019.8.19.0001
+
+			
+			
+		
+		
+			
+		
+		
+		
+		&nbsp; - &nbsp;
+		
+			
+				
+				(525 dia(s) em tramitação)
+			
+			
+		
+		
+				
+				
+	</h3>
+
+	
+	<fieldset>
+    	<table class="form">
+    	    
+			
+			
+			
+			
+			
+			<tr>
+				<td class="label"><label>Sentenciado:</label></td>
+				<td colspan="4">
+					 
+					 	
+							<a href="/projudi/processo/parteProcesso.do?actionType=visualizar&id=435884" class="link" title='Clique para exibir mais informações'>
+								Ozeas da Cunha Ferreira (RG: 0311993687 DIC/IFP/RJ e CPF/CNPJ: Não Cadastrado)
+							</a>					 		
+					 			 	
+					 			 	
+					
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td class="label"><label>Classe Processual:</label></td>
+				<td colspan="4">		 
+					 
+					 					 	
+						 	<a href="#" class="definitionClasseProcessual" title='Clique para exibir mais informações'>
+								386 - Execução da Pena
+							</a>
+							
+							     				
+							<script type="text/javascript">
+new AjaxJspTag.Callout(
+"/projudi/processo/classeProcessual.do?_tj=40618dd3e508f88b614661685446491a402d984ee5ec05c2", {
+overlib: "STICKY,CLOSECLICK,DELAY,0,VAUTO,HAUTO,CLOSETEXT,'X',CLOSETITLE,'Clique para fechar',BGCLASS,'ajaxCalloutLayout',FGCLASS,'ajaxCalloutTextLayout',TEXTFONTCLASS,'ajaxCalloutTextFont',CGCLASS,'ajaxCalloutCaptionLayout',CAPTIONFONTCLASS,'ajaxCalloutCaptionFont',CLOSEFONTCLASS,'ajaxCalloutCloseFont'",
+sourceClass: "definitionClasseProcessual",
+title: "Execução da Pena",
+openEvent: "click",
+parameters: "idClasseProcessual=386",
+doPost: false
+});
+</script>
+
+
+	
+						
+						
+					 
+					 
+						
+				</td>					
+			</tr>
+
+			
+			<tr>
+				<td class="label"><label>Assunto Principal:</label></td>
+				<td colspan="4">
+				
+					
+					 		
+					 		<a href="#" class="definitionAssuntoPrincipal" title='Clique para exibir mais informações'>
+							7791 - Pena Privativa de Liberdade
+							</a>
+							
+							     				
+							<script type="text/javascript">
+new AjaxJspTag.Callout(
+"/projudi/processo/assunto.do?_tj=40618dd3e508f88b614661685446491a402d984ee5ec05c2", {
+overlib: "STICKY,CLOSECLICK,DELAY,0,VAUTO,HAUTO,CLOSETEXT,'X',CLOSETITLE,'Clique para fechar',BGCLASS,'ajaxCalloutLayout',FGCLASS,'ajaxCalloutTextLayout',TEXTFONTCLASS,'ajaxCalloutTextFont',CGCLASS,'ajaxCalloutCaptionLayout',CAPTIONFONTCLASS,'ajaxCalloutCaptionFont',CLOSEFONTCLASS,'ajaxCalloutCloseFont'",
+sourceClass: "definitionAssuntoPrincipal",
+title: "Pena Privativa de Liberdade",
+openEvent: "click",
+parameters: "idAssunto=7791",
+doPost: false
+});
+</script>
+
+
+
+					 	
+					 	
+					 						
+				</td>					
+			</tr>
+
+			
+			
+
+			
+			<tr>
+				<td class="label"><label>Nível de Sigilo:</label></td>
+				<td colspan="4">
+					
+					
+						
+						
+						
+						
+							Público
+						
+					
+					
+					
+					
+					&nbsp;
+					<a id="ajaxCalloutNivelSigiloHelp217943" class="ajaxCalloutNivelSigiloHelp" title='Clique para exibir mais informações'></a>
+					
+					     				
+					     				
+					<script type="text/javascript">
+new AjaxJspTag.Callout(
+"/projudi/processo/nivelSigilo.do?_tj=40618dd3e508f88b1c6560612c8983b8daf092ab8f15af6d0cf644b3773b5f3d", {
+overlib: "STICKY,CLOSECLICK,DELAY,0,VAUTO,HAUTO,CLOSETEXT,'X',CLOSETITLE,'Clique para fechar',BGCLASS,'ajaxCalloutLayout',FGCLASS,'ajaxCalloutTextLayout',TEXTFONTCLASS,'ajaxCalloutTextFont',CGCLASS,'ajaxCalloutCaptionLayout',CAPTIONFONTCLASS,'ajaxCalloutCaptionFont',CLOSEFONTCLASS,'ajaxCalloutCloseFont'",
+sourceClass: "ajaxCalloutNivelSigiloHelp",
+title: "Níveis de Sigilo",
+openEvent: "click",
+parameters: "tipoSigilo=processo,idObjSigilo=217943",
+doPost: false
+});
+</script>
+
+
+
+					
+				</td>
+			</tr>
+
+			
+			
+
+			
+			
+
+			
+			
+
+			
+			
+
+			
+			
+			
+			
+			
+
+			
+				
+			
+				
+			
+			
+				
+			
+			
+			
+			
+
+			
+			
+
+
+
+
+
+
+
+	
+	
+			
+			
+			
+				
+			
+			
+					
+			
+					
+	   		
+	   		
+				
+				<tr>
+					
+				</tr>	   		
+	   			
+			
+			<tr>
+				
+			</tr>
+			
+			
+				
+			
+				
+						<tr>
+							<td class="labelRadio">
+								<label>Situação:</label>
+							</td>
+								
+									<td colspan="4">
+									<img src="/projudi/img/semaforo/livre.png">
+									</td>
+									
+						</tr>			
+				
+				
+			
+				
+		</table>
+		<br>
+		
+		
+				
+				
+				
+					
+							
+				
+		    	
+		    	<TABLE class="buttonBar" cellpadding="0" cellspacing="0">
+	<TR>
+		<TD>&nbsp;</TD>
+		<TD class="buttons" width="1%" nowrap="nowrap">
+<input type="button" class="button"  id="navegarProcessoButton" name="navegarProcessoButton"  value = "Navegar"   style="width:140px;"  onclick="disableScreen(); document.location.href='/projudi/processo/navegarProcesso.do?actionType=carregar&numeroProcesso=217943&flagReiniciar=true'" />
+<input type="button" class="button"  id="backButton" name="backButton"  value = "Voltar"  style="width:140px;"  onclick="disableScreen(); history.back()">
+		</TD>
+	</TR>
+</TABLE>
+
+		    	
+				
+				<input type="hidden" name="selectedIcon" value="">
+		
+					
+				
+					  
+					 
+					
+					
+				 	 
+					
+			    		
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+  
+  
+
+
+
+
+  
+  
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" >
+  <tr valign="top">
+    <td width="1%" valign="top" nowrap="nowrap" >
+      <div id="tabHorz" >
+        <ul>
+          
+          
+            
+              
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+                    
+          
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabDadosProcesso?false -->
+		            <li style="display:" id="tabItemprefix0" class="currentTab" onclick="setTab('/projudi#', 'tabDadosProcesso', 'prefix', 0, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Dados da Execução</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabPartes?false -->
+		            <li style="display:" id="tabItemprefix1" class=" " onclick="setTab('/projudi#', 'tabPartes', 'prefix', 1, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Partes</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabMovimentacoesProcesso?false -->
+		            <li style="display:" id="tabItemprefix2" class=" " onclick="setTab('/projudi#', 'tabMovimentacoesProcesso', 'prefix', 2, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Movimentações</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabAcoesVinculadas?false -->
+		            <li style="display:" id="tabItemprefix3" class=" " onclick="setTab('/projudi#', 'tabAcoesVinculadas', 'prefix', 3, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Processos Criminais&nbsp;(0)</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabEventos?false -->
+		            <li style="display:" id="tabItemprefix4" class=" " onclick="setTab('/projudi#', 'tabEventos', 'prefix', 4, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Eventos&nbsp;(0)</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabIncidentesConcedidos?false -->
+		            <li style="display:" id="tabItemprefix5" class=" " onclick="setTab('/projudi#', 'tabIncidentesConcedidos', 'prefix', 5, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Incidentes Concedidos&nbsp;(0)</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabIncidentesNaoConcedidos?false -->
+		            <li style="display:" id="tabItemprefix6" class=" " onclick="setTab('/projudi#', 'tabIncidentesNaoConcedidos', 'prefix', 6, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Incidentes Não-Concedidos&nbsp;(0)</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+          	
+	          	
+	          	
+	          		
+	          		
+		              <!-- tabIncidentesPendentes?false -->
+		            <li style="display:" id="tabItemprefix7" class=" " onclick="setTab('/projudi#', 'tabIncidentesPendentes', 'prefix', 7, false)">
+		              <div class="tabLeft"></div>
+		              <div class="tabCenter">
+		              	<a>Incidentes Pendentes&nbsp;(0)</a>
+		              </div>
+		              <div class="tabRight"></div>
+		            </li>
+	                
+	            
+	            
+          
+        </ul>
+      </div>
+    </td>
+    
+    
+      
+  </tr>
+  
+  
+    <tr><td width="auto" valign="top" class="masterBlockSubInfoHorz">
+      
+
+
+
+
+
+
+
+	
+	  
+	    
+	    
+	      <div id="tabprefix0" style="display:block;">
+	        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="BR">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta http-equiv="Cache-Control" content="no-store,no-cache,must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+
+<link rel="icon" href="favicon.ico"/>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		<title>Projudi - Processo Eletrônico do Judiciário do Rio de Janeiro</title>
+	</head>
+	
+	<body onmousemove="onBodyMouseMove()" onkeydown="onBodyKeyDown()">
+		<div id="container">
+			
+			
+			
+				
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+			
+			<hr/>
+
+			<div id="includeContent">
+				<div id="idCalPadrao" style="position:absolute;z-index:1000;float:right;visibility:hidden;background-color:white;layer-background-color:white;">
+				</div>
+
+				
+					
+						
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+						
+
+
+
+
+
+
+
+
+
+
+<fieldset>
+   	<table class="form">
+		
+		<tr>
+			<td colspan="5">
+				<h4>Informações Gerais</h4>
+			</td>									
+		</tr>
+
+		
+		<tr>
+			<td class="labelRadio"><label>Comarca:</label></td>
+			<td width="1%" nowrap="nowrap" style="vertical-align:top;">Comarca da capital </td>
+			<td width="20px">&nbsp;</td>
+			<td class="labelRadio"><label>Competência:</label></td>
+			<td>Execução Penal (Réu Preso e LC)</td>			
+		</tr>
+		
+		
+		<tr>
+			<td class="labelRadio"><label>Autuação:</label></td>
+			<td width="1%" nowrap="nowrap" style="vertical-align:top;">
+				
+					2019-01-02 14:57:05.679
+					às		
+					2019-01-02 14:57:05.679
+					
+			</td>	
+			<td width="20px">&nbsp;</td>
+			<td class="labelRadio"><label>Juízo:</label></td>
+			
+				
+						<td>Vara de Execuções Penais - Cartório de Réu Preso e Cartório de Livramento Condicional</td>
+				
+										
+			
+					
+		</tr>
+
+		
+		<tr>
+			<td class="labelRadio"><label>Distribuição:</label></td>
+			<td width="1%" nowrap="nowrap" style="vertical-align:top;">
+				
+					2019-01-02 14:57:06.331
+					às		
+					2019-01-02 14:57:06.331
+				
+			</td>
+			<td width="20px">&nbsp;</td>
+			<td class="labelRadio"><label>Juiz:</label></td>
+			<td>Rafael Estrela Nóbrega</td>	
+		</tr>
+		
+		
+		<tr>
+			<td class="label"><label>Data de Arquivamento:</label></td>
+			<td width="1%" nowrap="nowrap">
+					
+			</td>	
+			<td width="20px">&nbsp;</td>
+			<td class="label">
+				
+				
+					
+					<label>Extinto:</label>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+					 
+					
+						Não
+					
+				
+				
+			</td>		
+		</tr>		
+
+		
+		
+
+		
+		
+		
+		
+		<tr>
+			<td class="label"><label>Situação:</label></td>
+			<td width="1%" nowrap="nowrap">PROCESSO DISTRIBUÍDO</td>	
+			<td width="20px">&nbsp;</td>
+			
+				
+				
+					<td class="label"><label>&nbsp;</label></td>
+					<td>&nbsp;</td>
+				
+			
+		</tr>
+		
+		
+		<tr>
+			<td class="label"><label>Sequencial:</label></td>
+			<td width="1%" nowrap="nowrap">39565</td>	
+			<td width="20px">&nbsp;</td>
+			<td class="label"><label></label></td>
+			<td></td>
+		</tr>			
+
+		
+		
+					
+
+		
+		
+
+		
+		
+		
+		
+		<tr>
+			<td class="label"><label>Intervenção do MP:</label></td>
+			<td colspan="4" nowrap="nowrap">
+				
+					Indefinido
+					
+									
+				
+			</td>
+		</tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		<tr><td colspan="5">&nbsp;</td></tr>
+		
+		
+		
+    	
+    		
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+function atualizaCalculoProgReg(info){
+	
+	document.getElementById('trFormulaFracaoPr').style.display = "none";
+	document.getElementById('trFormulaFracaoPr').className = "";
+	document.getElementById('trPenaImposta16Pr').style.display = "none";
+	document.getElementById('trPenaImposta16Pr').className = "";
+	document.getElementById('trPenaImposta25Pr').style.display = "none";
+	document.getElementById('trPenaImposta25Pr').className = "";
+	document.getElementById('trPenaImposta35Pr').style.display = "none";
+	document.getElementById('trPenaImposta35Pr').className = "";
+	document.getElementById('trObservacaoPr').style.display = "none";
+	document.getElementById('trObservacaoPr').className = "";
+	
+	var displayReq = "";
+	if (document.getElementById('requisitoTemporal').className == 'closedAdvancedSearch' )
+		displayReq = "none";
+
+	if(info.progressaoNaoConcedida=='true'){
+		document.getElementById('tdDataBaseProgressaoRegime').innerHTML = info.dataBase + info.descricaoNaoConcedido; 
+		document.getElementById('tdDataProgressaoRegime').innerHTML = '<span style=\'text-decoration: line-through;\'>'+ info.data + '</span>'+info.novaDataProgressao; 
+	}else{
+	document.getElementById('tdDataBaseProgressaoRegime').innerHTML = info.dataBase ;
+	document.getElementById('tdDataProgressaoRegime').innerHTML = info.data 
+	}
+	document.getElementById('tdObservacaoDataProgressaoRegime').innerHTML = info.observacao.replace(/(\r\n|\n|\r)/gm,"<br/>");
+	
+	
+	if (info.manual == 'true'){
+		document.getElementById('trObservacaoPr').style.display = displayReq;
+		document.getElementById('trObservacaoPr').className = "temporalRequirement";
+		// Mostra os labels de "Manual"
+		document.getElementById('lbDataBaseProgRegManual').style.display = "";
+		document.getElementById('lbDataProgRegManual').style.display = "";
+	} else {
+		
+		document.getElementById('trFormulaFracaoPr').style.display = displayReq;
+		document.getElementById('trFormulaFracaoPr').className = "temporalRequirement";
+		if (info.penaImposta16PrDias){
+			document.getElementById('trPenaImposta16Pr').style.display = displayReq;
+			document.getElementById('trPenaImposta16Pr').className = "temporalRequirement";
+			document.getElementById('tdPenaImposta16PrDias').innerHTML = info.penaImposta16PrDias;
+		}
+		if (info.penaImposta25PrDias){
+			document.getElementById('trPenaImposta25Pr').style.display = displayReq;
+			document.getElementById('trPenaImposta25Pr').className = "temporalRequirement";
+			document.getElementById('tdPenaImposta25PrDias').innerHTML = info.penaImposta25PrDias;
+		}
+		if (info.penaImposta35PrDias){
+			document.getElementById('trPenaImposta35Pr').style.display = displayReq;
+			document.getElementById('trPenaImposta35Pr').className = "temporalRequirement";
+			document.getElementById('tdPenaImposta35PrDias').innerHTML = info.penaImposta35PrDias;
+		}
+		// Esconde os labels de "Manual"
+		document.getElementById('lbDataBaseProgRegManual').style.display = "none";
+		document.getElementById('lbDataProgRegManual').style.display = "none";
+	}
+	
+}
+
+function atualizaCalculoLivCond(info){
+	document.getElementById('trFormulaFracaoLc').style.display = "none";
+	document.getElementById('trFormulaFracaoLc').className = "";
+	document.getElementById('trLivramentoFracao').style.display = "none";
+	document.getElementById('trLivramentoFracao').className = "";
+	document.getElementById('trObservacaoLc').style.display = "none";
+	document.getElementById('trObservacaoLc').className = "";
+	
+	var displayReq = "";
+	if (document.getElementById('requisitoTemporal').className == 'closedAdvancedSearch' )
+		displayReq = "none";
+
+	
+	if(info.LCNaoConcedida=='true'){
+		document.getElementById('tdDataBaseLivramentoCondicional').innerHTML = info.dataBase+info.descricaoNaoConcedido;
+		
+		if(info.dtRequisitoLivramento != ""){
+			document.getElementById('tdDataLivramentoCondicional').innerHTML = '<span style=\'text-decoration: line-through;\'>'+ info.dtRequisitoLivramento + '</span>'+info.novaDataLC;
+		}else{
+			document.getElementById('tdDataLivramentoCondicional').innerHTML = '<span style=\'text-decoration: line-through;\'>'+ info.data + '</span>'+info.novaDataLC;		
+		}
+	}
+	else{
+		document.getElementById('tdDataBaseLivramentoCondicional').innerHTML = info.dataBase;
+		document.getElementById('tdDataLivramentoCondicional').innerHTML = info.data;
+		//
+	}
+	
+	document.getElementById('tdLivramentoFracao').innerHTML = info.livramentoFracao;
+	
+	document.getElementById('tdObservacaoDataLivramentoCondicional').innerHTML = info.observacao.replace(/(\r\n|\n|\r)/gm,"<br/>");
+	
+	
+	if (info.manual == 'true'){
+		document.getElementById('trObservacaoLc').style.display = displayReq;
+		document.getElementById('trObservacaoLc').className = "temporalRequirement";
+		// Mostra os labels de "Manual"
+		document.getElementById('lbDataBaseLivCondManual').style.display = "";
+		document.getElementById('lbDataLivCondManual').style.display = "";
+	} else {
+		
+		if (info.livramentoFracao){
+			document.getElementById('trLivramentoFracao').style.display = displayReq;
+			document.getElementById('trLivramentoFracao').className = "temporalRequirement";
+			document.getElementById('tdLivramentoFracao').innerHTML = info.livramentoFracao;
+		}
+		// Esconde os labels de "Manual"
+		document.getElementById('lbDataBaseLivCondManual').style.display = "none";
+		document.getElementById('lbDataLivCondManual').style.display = "none";
+	}
+	
+}
+function atualizaCalculoMedidaSeguranca(info){
+	
+	document.getElementById('tdDataBaseMedidaSeguranca').innerHTML = info.dataBase;
+	document.getElementById('tdPeriodoMedida').innerHTML = info.periodo;
+
+}
+function atualizaCalculoTermPena(info){
+	document.getElementById('trTotalInterrupcaoTp').style.display = "none";
+	document.getElementById('trTotalInterrupcaoTp').className = "";
+	document.getElementById('trTotalRemicaoTp').style.display = "none";
+	document.getElementById('trTotalRemicaoTp').className = "";
+	document.getElementById('trObservacaoTp').style.display = "none";
+	document.getElementById('trObservacaoTp').className = "";
+	
+	var displayReq = "";
+	if (document.getElementById('requisitoTemporal').className == 'closedAdvancedSearch' )
+		displayReq = "none";
+
+	document.getElementById('tdDataTerminoPena').innerHTML = info.data;
+	document.getElementById('tdDataTerminoPenaUnificado').innerHTML = info.dataUnif;
+	document.getElementById('tdObservacaoDataTerminoPena').innerHTML = info.observacao.replace(/(\r\n|\n|\r)/gm,"<br/>");
+	
+	
+	if (info.manual == 'true'){
+		document.getElementById('trObservacaoTp').style.display = displayReq;
+		document.getElementById('trObservacaoTp').className = "temporalRequirement";
+		// Mostra os labels de "Manual"
+		document.getElementById('lbDataTermPenaManual').style.display = "";
+		document.getElementById('trUnificadoTp').style.display = "none";
+		document.getElementById('trUnificadoTp').className = "";
+	} else {
+		
+		document.getElementById('trTotalInterrupcaoTp').style.display = displayReq;
+		document.getElementById('trTotalInterrupcaoTp').className = "temporalRequirement";
+		document.getElementById('tdTotalInterrupcaoTp').innerHTML = info.totalInterrupcao;
+
+		document.getElementById('trTotalRemicaoTp').style.display = displayReq;
+		document.getElementById('trTotalRemicaoTp').className = "temporalRequirement";
+		document.getElementById('tdTotalRemicaoTp').innerHTML = info.totalRemicao;
+
+		// Esconde os labels de "Manual"
+		document.getElementById('lbDataTermPenaManual').style.display = "none";
+	}
+	
+}
+
+function atualizaCalculoRequisitosTemporais(info){
+
+	var possuimedidaSeguraca='false';
+
+	if (info.tipoCalculo == 'P'){
+		if(possuimedidaSeguraca=='false')
+			atualizaCalculoProgReg(info);
+	} else if (info.tipoCalculo == 'L'){
+		if(possuimedidaSeguraca=='false')
+		atualizaCalculoLivCond(info);
+	} else if (info.tipoCalculo == 'T'){
+		if(possuimedidaSeguraca=='false')
+		atualizaCalculoTermPena(info);
+	} else if (info.tipoCalculo == 'C'){
+		if(possuimedidaSeguraca=='false')
+		atualizaCalculoComutacao(info);
+	}
+else if (info.tipoCalculo == 'M'){
+	
+	
+		atualizaCalculoMedidaSeguranca(info);
+	}
+	
+}
+
+function showJustificativa(){
+	var numeroProcesso = 217943;
+	var backURL = '/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fba13e8a2277d4f0d0';
+	var acao = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=carregarJustificativa&numeroProcesso=" + numeroProcesso + "&backURL=" + backURL;
+	openDialog(acao,'Justificativa',600,470);
+}
+
+function selecionarProcessoCriminal(){
+	var idProcessoExecucaoPenal = 217943;
+	var backURL = '/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fba13e8a2277d4f0d0';
+	var acao = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=selecionarProcessoCriminal&idProcessoExecucaoPenal=" + idProcessoExecucaoPenal + "&backURL=" + backURL;
+	openDialog(acao,'Lista de Processos',600,470);
+	
+	/*var f=$('processoForm');
+	var idProcessoExecucaoPenal = 217943;
+	f.action = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=selecionarProcessoCriminal&idProcessoExecucaoPenal=" + idProcessoExecucaoPenal;
+	openWindow(f.action,'Lista de Processos',600,470);*/
+}
+
+function gerarResa(){
+	var idProcessoExecucaoPenal = 217943;
+	var acao = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=emitirRelatorioSituacaoProcessualExecutoria&report=relatorioSituacaoProcessualExecutoria&idProcessoExecucaoPenal=" + idProcessoExecucaoPenal;
+	openWindow(acao,'Situação Carcerária',600,470);
+}
+
+function gerarAtestado(){
+	var idProcessoExecucaoPenal = 217943;
+	var acao = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=emitirAtestadoPena&report=atestadoPena&idProcessoExecucaoPenal=" + idProcessoExecucaoPenal;
+	openWindow(acao,'Atestado de Pena',600,470);
+}
+
+function gerarAtestadoUnico(){
+	var idProcessoExecucaoPenal = 217943;
+	var acao = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=emitirAtestadoUnico&report=atestadoUnico&idProcessoExecucaoPenal=" + idProcessoExecucaoPenal;
+	openWindow(acao,'Atestado Único',600,470);
+}
+
+function gerarLinhaTempo() {
+	var idProcessoExecucaoPenal = 217943;
+	
+	var linhaTempo = document.getElementById('flagExibirDecreto');
+	
+	if(linhaTempo != null){
+		
+		var exibirDecreto = document.getElementById('flagExibirDecreto').checked
+		var acao = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=emitirLinhaTempo&report=listaLinhaTempo&idProcessoExecucaoPenal=" + idProcessoExecucaoPenal + "&exibirDecreto=" + exibirDecreto;
+		openWindow(acao,'Linha do Tempo',600,470);	
+		
+	}else{
+		alert("Processo Extinto");
+	}
+}
+
+function gerarPenaAlternativa(tipoRelatorio){
+	var idProcessoExecucaoPenal = 217943;
+	var acao = "/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=emitirRelatorioPenaAlternativa&report=relatorioPenaAlternativa&tipoRelatorio=" + tipoRelatorio + "&idProcessoExecucaoPenal=" + idProcessoExecucaoPenal;
+	openDialog(acao,'Visualizar Pdf',600,470);
+}
+
+function calculoManual(tipoCalculo){
+	if(typeof tipoCalculo != 'undefined' && tipoCalculo != ''){
+		var popupURL= '/projudi/processo/criminal/execucao/calculoManual.do?actionType=iniciar&idTipoRequisitoTemporal=' + tipoCalculo
+			+'&idProcessoExecucaoPenal='+217943
+			+'&parentForm=processoForm'
+			+'&parentURL=/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fba13e8a2277d4f0d0';
+		if( tipoCalculo == 'C') {
+			popupURL+= '&ehReincidente=true';
+		}
+		openDialog(popupURL,'Cálculo Manual dos Requisitos Temporais',0,0);	
+	}
+}
+	
+	
+</script>
+ 
+
+<tr>
+	<td colspan="5">
+		<h4>Condições/Suspensões/Substituições</h4>
+	</td>
+</tr>
+
+
+
+<tr>
+	<td class="label">
+		<label>SURSIS:</label>
+	</td>
+	<td colspan="4">
+		
+		
+		
+		
+			
+			
+				Sem SURSIS 
+			
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="label">
+		<label>Pena Substitutiva:</label>
+	</td>
+	<td colspan="4">
+		<!-- 
+		
+		
+		-->
+		
+		
+		
+		
+		
+			
+			
+				Sem Pena Substitutiva 
+			
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="label">
+		<label>Condição de Livramento Condicional:</label>
+	</td>
+	<td colspan="4">
+		
+		
+		
+		
+			
+			
+				Sentenciado sem Condição de Livramento  
+			
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="label">
+		<label>Condição de Regime Aberto:</label>
+	</td>
+	<td colspan="4">
+		
+		
+		
+		
+		
+			
+			
+				Sentenciado sem Condição de Regime Aberto  
+			
+		
+	</td>
+</tr>
+
+
+<tr>
+	<td colspan="5"><br/></td>
+</tr>
+
+<tr>
+	<td colspan="5">
+		<h4>Informações Adicionais</h4>
+	</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+	<td class="label">
+		<label>Guias de Recolhimento de Custas :</label>
+	</td>
+	<td colspan="4">	
+		
+			
+			
+			
+				
+				
+				
+					Não há guias de recolhimento cadastradas 
+				
+				
+			
+			
+	</td>
+</tr>	
+
+ 
+
+
+
+
+
+
+
+
+		
+		<tr>
+			<td class="label">
+				<label>Impedimento/Suspeição:</label>
+			</td>
+			<td colspan="4">
+				
+				
+				
+					
+					
+				
+				
+				
+				
+					
+					
+					
+						Sem Impedimento Cadastrado
+					
+					
+							
+			</td>
+		</tr>
+
+
+
+
+
+
+
+
+
+
+
+		
+
+	<tr>
+		<td class="label">
+			<label>
+				
+					
+					
+						Habilitações Provisórias
+					
+				
+			:</label>
+		</td>
+		<td colspan="4">
+			
+			
+			
+			
+				
+				
+				
+						Sem habilitações provisórias cadastradas
+				
+				
+			
+			
+		</td>
+	</tr>
+
+
+
+<tr>
+	<td class="label" nowrap>Data de Início do Cumprimento :</td>
+	<td nowrap></td>
+	<td class="label" nowrap>Regime Atual:</td>
+	<td nowrap> </td>
+	<td width="100%">&nbsp;</td>
+</tr>
+<!-- 
+<tr>
+	<td class="label" nowrap>Data de Fim do Cumprimento da Execução:</td>
+	<td nowrap></td>
+	<td class="label" nowrap>&nbsp;</td>
+	<td nowrap>&nbsp;</td>
+	<td width="100%">&nbsp;</td>
+</tr>
+-->
+
+
+		
+
+
+
+
+
+
+
+<tr>
+	<td class="label" nowrap>Réu Preso:</td>
+	<td colspan="4">
+		
+		
+			Não
+		
+		 
+			
+			
+				&nbsp;<a class="link" href="/projudi/processo/parteProcesso.do?actionType=visualizar&id=435884&selectedIcon=tabAcolhimentos">Há Prisões/Interrupções cadastradas (clique aqui para visualizar)</a>
+			
+		
+	</td>
+</tr>
+<!--
+
+<tr>
+	<td class="label" nowrap>Tem Benefício do Art. 75:</td>
+	<td nowrap>
+		
+		
+			Não
+		
+	</td>
+</tr>
+-->
+
+<tr>
+	<td class="label" nowrap>Está em Medida de Segurança:</td>
+	<td nowrap>
+		
+		
+			Não
+		
+	</td>
+	<td class="label" nowrap>Está Em Livramento Condicional :</td>
+	<td nowrap>
+		 
+		
+			Não
+		
+	</td>
+	<td width="100%">&nbsp;</td>
+</tr>
+<tr>
+	<td class="label" nowrap>
+		Em Pena Substitutiva:
+	</td>
+	<td nowrap>
+		 
+		
+			Não
+		
+	</td>
+	<td class="label" nowrap>
+		Foragido:
+	</td>
+	<td nowrap>
+		 
+		
+			Não
+		
+	</td>
+	<td width="100%">&nbsp;</td>
+</tr>
+
+	<tr>
+		<td class="label" nowrap>
+			Extinto:
+		</td>
+		<td nowrap>
+			 
+			
+				Não
+			
+		</td>
+		<td class="label" nowrap>Situação do Sentenciado:</td>
+		<td nowrap>
+			
+				Ativo
+			
+				
+		</td>
+		<td width="100%">&nbsp;</td>
+	</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+	<td class="label" nowrap>
+		Incidentes:
+	</td>
+	<td nowrap>
+		
+		<a href="/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fb2236fee15f2aa8088be0c60a4a5af7fd0204299686fa6847d7381ef661a7ef674a42f29f0c6a15b5a01f177ad1a18903" class="link" target="_blank">
+			Visualizar/Gerenciar Incidentes (clique para abrir em outra aba) 			
+		</a>		
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+
+
+
+
+<tr>
+	<td colspan="5">
+	<h4><a id="situacaoPrisional" href="javascript:toggleVisibility('situacaoPrisional', 'linhaSituacaoPrisional');" class="closedAdvancedSearch"> Situação Prisional (SEAP) </a></h4>
+	</td>
+</tr>
+
+
+<tr class="linhaSituacaoPrisional" style="display: none;">
+	<td colspan="5">
+		<table class="resultTable" width="100%">
+			<tbody id="dadosSituacaoPrisional">
+				
+				
+				
+				
+
+					
+						<tr>
+							<td colspan="4">
+								<H4>Ozeas da Cunha Ferreira - RG:0311993687 DIC/IFP/RJ </H4>
+							</td>
+						</tr>
+										
+
+					
+
+						<tr>
+							<td class="label">
+								Nome:
+							</td>
+							<td>
+								OZEAS DA CUNHA FERREIRA
+							</td>
+							<td class="label">
+								Data de Nascimento:
+							</td>
+							<td>
+								1992-09-06 00:00:00.0
+							</td>
+						</tr>
+						<tr>
+							<td class="label">
+								Nome da Mãe:
+							</td>
+							<td>
+								CATIA ALCILENE GONCALVES DA CUNHA FERREIRA
+							</td>
+							<td class="label">
+								Unidade:
+							</td>
+							
+							
+						</tr>
+						<tr>
+							<td class="label">
+								Observação:
+							</td>
+							<td>
+								
+							</td>
+							
+							<td class="label">
+								Situação:
+							</td>
+							
+								<td nowrap></td>
+							
+							
+						</tr>
+					
+					
+
+					<tr>
+						<td colspan="4">
+							<i>Consulta realizada em&nbsp;2019-05-23 13:07:46.977</i>
+						</td>
+					</tr>
+					
+				
+			</tbody>
+		</table>
+	</td>
+</tr>
+
+<tr class="linhaSituacaoPrisional" style="display: none;">
+	<td colspan="5">
+		<i>As informações da Situação Prisional são provenientes do sistema SEAP, de modo que sua alimentação é de responsabilidade exclusiva da SEAP.</i>   
+	</td>
+</tr>
+<tr class="linhaSituacaoPrisional" style="display: none;">
+	<td colspan="5">
+		<table class="buttonBar" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="100%">&nbsp;</td>
+				<td class="buttons">
+					
+					
+					
+					<input type="button" name="consButton" value="Consultar" onclick="openSubmitDialog('/projudi/processo/parteProcessoSelecaoDocumentos.do?_tj=40618dd3e508f88b77880f5511cb7a3456ed146b9377d31ab21adb45ef7d90d6967bc9a4ecbebc1b2d877b2f71eda40fb0e6fa8ed9e31d14424dbc34bde49e922a29ea69ec406d06ea3ea46a62b122a7e836501f670ceacf43720890ffd68053aa4f6d431e57b42d420935600d15dfb26f801dc3c39befd1081e3ed9ded202956e2b72f06d64b8a819742a5f87d18bc712489301096cc516','Núcleo do Ministério Público',0,0,'parteProcessoSelecaoDocumentosForm');" id="consButton" class="button">
+					<input type="button" name="atualizaSituacaoReu" value="Atualizar Situação" onclick="javascript:void(ajaxAtualizaSituacaoReu.execute());" id="atualizaSituacaoReu" class="button">
+				<script type="text/javascript">
+var ajaxAtualizaSituacaoReu = new AjaxJspTag.HtmlContent(
+"/projudi/processo/criminal/execucao/processoExecucaoPenal.do?actionType=ajaxAtualizaSituacaoReu", {
+source: "atualizaSituacaoReu",
+target: "dadosSituacaoPrisional",
+parameters: "idProcessoExecucao=217943",
+doPost: true
+});
+</script>
+
+
+
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+
+
+
+
+	<tr>
+		<td colspan="5">
+		<h4>
+			<a id="requisitoTemporal" href="javascript:toggleVisibility('requisitoTemporal', 'temporalRequirement');" class="closedAdvancedSearch"> Cálculo dos Requisitos Temporais </a>
+			
+					
+		</h4>
+		</td>
+	</tr>
+
+	
+	
+	
+	
+
+<tr class="temporalRequirement" style="display: none;">
+	<td colspan="2">
+	<h4>Progressão de Regime</h4>
+	</td>
+	<td>
+	<a class="link" href="javascript:calculoManual('P');">Cálculo Manual/Automático</a>
+	</td>
+	<td>&nbsp;</td>
+	<td colspan="1">&nbsp;</td>		
+</tr>
+
+<tr class="temporalRequirement" style="display: none;">
+	<td class="label" nowrap>Data Base  <span id="lbDataBaseProgRegManual">(MANUAL)</span>:</td>
+	<td id="tdDataBaseProgressaoRegime" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+	
+	 
+	<tr class="temporalRequirement" style="display: none;" id="trFormulaFracaoPr">
+		<td class="label" nowrap>&nbsp</td>
+		<td nowrap>(Pena Imposta - Pena Cumprida) * Fração = Pena Restante * Fração</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+				
+	<tr class="temporalRequirement" style="display: none;" id="trPenaImposta16Pr">
+		<td class="label" nowrap>Fração 1/6:</td>
+		<td id="tdPenaImposta16PrDias" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	
+	<tr class="temporalRequirement" style="display: none;" id="trPenaImposta25Pr">
+		<td class="label" nowrap>Fração 2/5:</td>
+		<td id="tdPenaImposta25PrDias" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	
+	<tr class="temporalRequirement" style="display: none;" id="trPenaImposta35Pr">
+		<td class="label" nowrap>Fração 3/5:</td>
+		<td id="tdPenaImposta35PrDias" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	 
+
+<tr class="temporalRequirement" style="display: none;">
+	<td class="label" nowrap>Data do Requisito Temporal<span id="lbDataProgRegManual">(MANUAL)</span>:</td>
+	<td id="tdDataProgressaoRegime" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+<tr class="temporalRequirement" style="display: none;" id="trObservacaoPr">
+	<td class="label" nowrap>Observação:</td>
+	<td id="tdObservacaoDataProgressaoRegime" nowrap>
+		
+	</td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+
+
+<script>
+	var tipoCalculo ='P';
+	var progressaoNaoConcedida="false";
+	var manual		= 'false';
+	var dataBase 	= '';		
+	var data 		= progressaoNaoConcedida=='false'?'':'';
+	var obeservacao = ''; 
+	var descricaoNaoConcedido='<span style=\'padding-left:30px;color:red\'><b>NÃO CONCEDIDO</b></span>'; 
+	var novaDataProgressao='<span style=\'padding-left:30px;color:red\'></span>';
+
+	var penaImposta16PrDias = ''; 
+	var penaImposta25PrDias = ''; 
+	var penaImposta35PrDias = '';
+	
+	
+   	
+   	
+	
+	var info = {"tipoCalculo":tipoCalculo,
+			"manual":manual,
+			"dataBase":dataBase,
+			"data":data,
+			"observacao":obeservacao,
+			"penaImposta16PrDias":penaImposta16PrDias,
+			"penaImposta25PrDias":penaImposta25PrDias,
+			"penaImposta35PrDias":penaImposta35PrDias,
+			"progressaoNaoConcedida":progressaoNaoConcedida,
+			"novaDataProgressao":novaDataProgressao,
+			"descricaoNaoConcedido":descricaoNaoConcedido
+	};		
+	atualizaCalculoRequisitosTemporais(info);	
+</script>
+
+
+
+
+<tr class="temporalRequirement" style="display: none;">
+	<td colspan="2">
+	<h4>Livramento Condicional</h4>
+	</td>
+	<td>
+		<a class="link" href="javascript:calculoManual('L');">Cálculo Manual/Automático</a>
+	</td>
+	<td colspan="2">&nbsp;</td>
+	
+</tr>
+
+<tr class="temporalRequirement" style="display: none;">
+	<td class="label" nowrap>Data Base  <span id="lbDataBaseLivCondManual">(MANUAL)</span>:</td>
+	<td id="tdDataBaseLivramentoCondicional" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+	 
+	<tr class="temporalRequirement" style="display: none;" id="trFormulaFracaoLc">
+		<td class="label" nowrap>&nbsp</td>
+		<td nowrap>Pena Imposta * Fração</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+	<tr class="temporalRequirement" style="display: none;" id="trLivramentoFracao">
+		<td class="label" nowrap>Cálculo do Livramento Condicional:</td>
+		<td id="tdLivramentoFracao" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	 
+
+<tr class="temporalRequirement" style="display: none;">
+	<td class="label" nowrap>Data do Requisito Temporal<span id="lbDataLivCondManual">(MANUAL)</span>:</td>
+	<td id="tdDataLivramentoCondicional" nowrap></td>
+	<td colspan="3">&nbsp;
+	<input id='hasSuspensao' type="hidden" value="">
+	</td>
+</tr>
+<tr class="temporalRequirement" style="display: none;" id="trObservacaoLc">
+	<td class="label" nowrap>Observação:</td>
+	<td id="tdObservacaoDataLivramentoCondicional" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+
+
+<script>
+	var tipoCalculo ='L';
+	var descricaoNaoConcedido='<span style=\'padding-left:30px;color:red\'><b>NÃO CONCEDIDO</b></span>';
+	var manual		= 'false';
+	var dataBase 	= '';	
+	var LCNaoConcedida='false';
+	var novaDataLC='<span style=\'padding-left:30px;color:red\'></span>';
+	var data 		= LCNaoConcedida=='false'?'':'';	
+	var obeservacao = ''; 
+	var hasSuspensao = document.getElementById('hasSuspensao').value;
+	var dtRequisitoLivramento = ''; 
+	if (hasSuspensao == 'S') {
+		data = 'SUSPENSÃO';
+		LCNaoConcedida=false;//?
+	}	
+	
+	var livramentoFracao = ''; 
+	
+
+	var info = {"tipoCalculo":tipoCalculo,
+			"manual":manual,
+			"dataBase":dataBase,
+			"data":data,
+			"observacao":obeservacao,
+			"livramentoFracao":livramentoFracao,
+			"LCNaoConcedida":LCNaoConcedida,
+			"novaDataLC":novaDataLC,
+			"descricaoNaoConcedido":descricaoNaoConcedido,
+			"dtRequisitoLivramento":dtRequisitoLivramento
+	};		
+	atualizaCalculoRequisitosTemporais(info);	
+</script>
+
+
+
+
+<tr class="temporalRequirement" style="display: none;">
+	<td colspan="2">
+	<h4>Término de Pena</h4>
+	</td>
+	<td>
+		<a class="link" href="javascript:calculoManual('T');">Cálculo Manual/Automático</a>
+	</td>
+	<td colspan="2">&nbsp;</td>
+	
+</tr>
+
+	 
+	<tr class="temporalRequirement" style="display: none;" id="trTotalInterrupcaoTp">
+		<td class="label" nowrap>Total de Interrupção :</td>
+		<td id="tdTotalInterrupcaoTp" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr class="temporalRequirement" style="display: none;" id="trTotalRemicaoTp">
+		<td class="label" nowrap>Total de Remição em Dias :</td>
+		<td id="tdTotalRemicaoTp" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	 
+
+<tr class="temporalRequirement" style="display: none;">
+	<td class="label" nowrap>Data do Requisito Temporal<span id="lbDataTermPenaManual">(MANUAL)</span>:</td>
+	<td id="tdDataTerminoPena" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+
+<tr class="temporalRequirement" style="display: none;" id="trUnificadoTp">
+	<td class="label" nowrap>Data do Requisito Temporal Unificado:</td>
+	<td id="tdDataTerminoPenaUnificado" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+
+<tr class="temporalRequirement" style="display: none;" id="trObservacaoTp">
+	<td class="label" nowrap>Observação:</td>
+	<td id="tdObservacaoDataTerminoPena" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+
+
+
+<script>
+	var tipoCalculo ='T';
+	var manual		= 'false';
+	var dataBase 	= '';		
+	var data 		= '';
+	var dataUnif    = '';
+	var obeservacao = ''; 
+	
+	var totalInterrupcao 	= '0a0m0d'; 
+	var totalRemicao 		= ''; 
+
+	var info = {"tipoCalculo":tipoCalculo,
+			"manual":manual,
+			"dataBase":dataBase,
+			"data":data,
+			"dataUnif":dataUnif,
+			"observacao":obeservacao,
+			"totalInterrupcao":totalInterrupcao,
+			"totalRemicao":totalRemicao	
+	};		
+	atualizaCalculoRequisitosTemporais(info);	
+</script>
+
+
+
+<!-- Começa Aqui a Medida de segurança -->
+
+
+
+<tr class="temporalRequirement" style="display: none;">
+	<td colspan="2">
+	<h4>Medida de Segurança</h4>
+	</td>
+	<td colspan="2">&nbsp;</td>
+	
+<tr class="temporalRequirement" style="display: none;">
+	<td class="label" nowrap>Data Base  <span id="msDataBase"></span>:</td>
+	<td id="tdDataBaseMedidaSeguranca" nowrap></td>
+	<td colspan="3">&nbsp;</td>
+</tr>
+
+	
+	<tr class="temporalRequirement" style="display: none;" id="trTempoMedida">
+		<td class="label" nowrap>Pena Total:</td>
+		<td id="tdPeriodoMedida" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+		<tr class="temporalRequirement" style="display: none;" id="trTempoMedida">
+		<td class="label" nowrap>Data de Término:</td>
+		<td id="tdDataTerminoMedidaSeguranca" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	
+	<tr class="temporalRequirement" style="display: none;" id="trClassificacao">
+		<td class="label" nowrap>Classificação da Medida de Segurança:</td>
+		<td id="trClassificacao" nowrap></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+<script>
+	var tipoCalculo ='M';
+	var dataBase 	= '';		
+	var data 		= '';
+	var periodo = ''; 
+
+	var info = {"tipoCalculo":tipoCalculo,
+			
+			"dataBase":dataBase,
+			"data":data,
+			"periodo":periodo
+	};		
+	atualizaCalculoRequisitosTemporais(info);	
+</script>
+
+
+
+
+	<tr>
+		<td colspan="5">
+		<h4>Inconsistência de Informações</h4>
+		</td>
+	</tr>
+	<tr>
+		<td class="label" nowrap>Mensagem Erro:</td>
+		<td colspan="4" nowrap><textarea style="color:#004F30;font-size:1em;border:1px solid #D7EAF7;" readonly="readonly" cols="80" rows="0">Processo de execução penal não possui nenhuma ação penal. Verifique!</textarea></td>
+	</tr>
+
+
+
+
+
+	<tr>
+		<td colspan="5">
+			<table class="buttonBar" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="100%">&nbsp;</td>
+					
+							
+					 
+					<td class="buttons"> <input type="button" name="imprimirButton" value="Situação Carcerária" onclick="javascript:gerarResa();" id="imprimirButton" class="button">
+					</td>
+
+					<td class="buttons"> <input type="button" name="imprimirAtestado" value="Atestado de Pena" onclick="javascript:gerarAtestado();" id="imprimirAtestado" class="button">
+					</td>
+					<td class="buttons"> <input type="button" name="imprimirButton" value="Linha do Tempo" onclick="javascript:gerarLinhaTempo();" id="imprimirButton" class="button">
+					</td>
+						
+				</tr>
+			</table>
+		</td>
+	<tr>		
+		
+<style type="text/css">
+.scpOn, .medidaSegOn, .sursisOn, .principalOn, .substitutivaOn {
+	color:#F56527;
+	font-weight:bold;
+}
+.scpOff, .medidaSegOff, .sursisOff, .principalOff, substitutivaOff {
+	color:##3E4034;
+	font-weight:normal;
+}
+</style>
+
+<script type="text/javascript">
+function realcarPenasExecucao(nomeClass,ligado){
+	var sels = document.getElementsByClassName(nomeClass+(ligado==true?"Off":"On"));
+	if(typeof sels == 'undefined' || sels == null)
+		return;
+	var alterados= 0;
+    for (var i = 0; i < sels.length; i++) {
+    	//alert(nomeClass+(ligado==true?'On':'Off'));
+    	sels[i].className=nomeClass+(ligado==true?'On':'Off');
+    	alterados++;
+    }
+    if(ligado && typeof openAllTreeNodes == 'function'){
+    	if(alterados > 0)
+    		openAllTreeNodes();
+    }
+}
+
+function openDialogAntecedentes() {
+	var closeURL = '/projudi/processo/processo.do?_tj=40618dd3e508f88b7d4424c78a05f47ffbb29b6fae6368204c2a591634193868b3136729f67832de';
+	//closeURL = '/processo/processo.do?actionType=listar&id=' + 217943;
+	var url = '/projudi/processo/parte.do?actionType=visualizarAntecedentes&parentForm=processoForm&numeroProcesso=' + 217943 + '&closeURL=' + closeURL;
+	openSubmitDialog(url,'Antecedentes Criminais',0,0,closeURL);
+}
+</script>
+
+	</table>
+
+	
+	
+</fieldset>
+					
+				
+      
+				
+			</div>
+			<hr/>
+		</div>
+		<a href='/projudi//include_common.html' style="text-decoration:none; cursor:default; position:fixed; bottom:-20px;">&nbsp;&nbsp;</a>	</body>
+	<!-- Verifica se exite edição de textos para aumento do timeout -->
+	<script type="text/javascript">
+	if( typeof ControladorSessao != 'undefined')
+		window._sControler= new ControladorSessao('editor');
+	</script>	
+</html>
+	      </div>
+	    
+	    
+	  
+	  
+	
+
+	
+	  
+	    
+	    
+	    
+	      
+	      
+	        
+	        <div id="tabprefix1" style="display:none;">
+	          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="BR">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta http-equiv="Cache-Control" content="no-store,no-cache,must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+
+<link rel="icon" href="favicon.ico"/>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		<title>Projudi - Processo Eletrônico do Judiciário do Rio de Janeiro</title>
+	</head>
+	
+	<body onmousemove="onBodyMouseMove()" onkeydown="onBodyKeyDown()">
+		<div id="container">
+			
+			
+			
+				
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+			
+			<hr/>
+
+			<div id="includeContent">
+				<div id="idCalPadrao" style="position:absolute;z-index:1000;float:right;visibility:hidden;background-color:white;layer-background-color:white;">
+				</div>
+
+				
+					
+						
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+						
+
+
+
+
+
+
+
+
+
+	<br/>
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<input type="hidden" name="promoventesPageSize" value="9999">
+	
+	<input type="hidden" name="promoventesPageNumber" value="1">
+	
+	<input type="hidden" name="promoventesSortColumn" value="parte.nome">
+	
+	<input type="hidden" name="promoventesSortOrder" value="asc">
+
+
+
+
+
+
+
+<h4>Ator</h4>
+
+
+
+  	
+  	
+  	
+
+	
+	<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+		
+		<colgroup>
+			
+				
+				
+					
+					<col width="1%"  /> 
+					<col width="30%" /> 
+					<col width="18%" /> 
+					<col width="15%" /> 
+					<col width="1%"/>   
+					<col width="35%" /> 
+				
+				
+				
+			
+			
+		</colgroup>
+	
+		
+		<thead>
+			<tr>
+				
+					<th>&nbsp;</th>
+				
+				<th><a class="orderAsc" title="Ordenar Descendente" href="javascript:document.forms[&#39;processoForm&#39;][&#39;promoventesPageNumber&#39;].value=&#39;1&#39;;document.forms[&#39;processoForm&#39;][&#39;promoventesSortColumn&#39;].value=&#39;parte.nome&#39;;document.forms[&#39;processoForm&#39;][&#39;promoventesSortOrder&#39;].value=&#39;DESC&#39;;document.forms[&#39;processoForm&#39;].submit();">Nome</a></th>
+				
+					<th>RG</th>
+					<th>CPF/CNPJ</th>
+					
+				
+					<th style="padding:0 50px 0 50px;">Observação</th>
+				
+				<th>Advogados</th>
+				
+			</tr>
+		</thead>
+		
+		
+		<tbody>
+			
+				
+				
+				
+				
+				
+					
+					 
+		         		
+					
+					
+						
+							<tr class="even">
+								
+									
+									
+									
+									
+										
+				 						
+					 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+					 							
+					 							
+					 							
+													<img src="/projudi/img/themes/olive/iPlus.gif" id="iconpromoventes0" onClick="showDetail('rowpromoventes0', 'iconpromoventes0')" />
+												
+												
+											</td> 			
+													
+				
+										
+				 						<td>
+				 							
+				 							
+						 						
+						 							
+						 							
+						 								
+														<a href="/projudi/processo/parteProcesso.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fb34a3cae8f8c0cc4941200bd020a6e2be827b65139856d3e9c992708bf2a28e2d29f48dad7482ab7d70587efb93fdf445af6bd1d60036532bedfec1cab01060f9d655624e684e572da7cd5db147b7c232e10425b1355882eecd9b77431637f83a67283b75875e3307" class="link">
+								 							
+			        										Estado do Rio de Janeiro
+			        										
+				       											
+							 							</a>	
+					 								
+						 							
+					 							
+					 							
+				 							
+				 						</td>
+				 						
+										
+				 						
+					 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+					 							
+					 							
+				 									
+				 								
+				 								
+				 							</td>
+				 							
+				
+										
+				 						
+					 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+					 							
+					 							
+				 									42.498.600/0001-71
+				 								
+				 								
+				 							</td>
+				 							
+				
+										
+				 						
+					 						<td nowrap="nowrap" align="left" style="padding:0 15px 0 5px;">
+					 							
+						 							
+													
+		
+													
+						 							
+		
+														
+													
+													
+		
+													
+													
+												
+													
+													
+		
+													
+														
+		
+													
+													
+												
+													
+													
+												
+													
+													
+		
+													
+													
+												
+				 							</td>
+				 							
+				 						
+										
+				 						<td>
+				 							
+					 							
+					 							
+					 								
+				 									
+				 								
+				 								
+				 						
+												
+												
+				 								
+																			
+												
+					 							
+					 								
+					 												 												 								
+					 								
+					 								
+					 								
+					 									
+					 										
+					 									
+					 													 								
+					 							
+					 						
+					 					</td>
+		
+										
+										
+									
+								
+							
+							
+							
+							
+							
+
+		 					</tr>
+		 					
+		 					
+		 						
+									<tr id="rowpromoventes0" class="even" style="display:none">
+										<td colspan="6">
+											<div id="div0" class="extendedinfo">
+												
+													
+														
+														
+														
+															
+														
+
+
+
+
+
+
+
+
+
+	<h4>Endereço</h4>
+
+
+
+<fieldset>
+	<table class="form">
+		
+		<tr>
+			<td class="label"><label>Descrição:</label></td>
+			<td>
+				
+					
+					Não Cadastrada
+				
+			</td>
+		</tr>
+
+		
+		<tr>
+			<td class="label"><label>Logradouro:</label></td>
+			<td>Avenida Erasmo Braga, 115</td>
+		</tr>
+		
+		
+		
+		
+		
+		
+			<tr>
+				<td class="label"><label>Bairro:</label></td>
+				<td>Centro</td>
+			</tr>
+		
+		
+		
+		<tr>
+			<td class="label"><label>Cidade:</label></td>
+			<td>RIO DE JANEIRO/RJ</td>
+		</tr>
+
+		
+		
+			<tr>
+				<td class="label"><label>CEP:</label></td>
+				<td>20020903</td>
+			</tr>
+		
+		
+		
+				
+		
+		
+						
+	</table>
+</fieldset>
+													
+													
+												
+											</div>
+										</td>
+									</tr>
+								
+														 					
+						
+					
+				
+			
+		</tbody>
+	</table>
+
+
+
+
+
+
+	<br/>
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<input type="hidden" name="promovidasPageSize" value="9999">
+	
+	<input type="hidden" name="promovidasPageNumber" value="1">
+	
+	<input type="hidden" name="promovidasSortColumn" value="parte.nome">
+	
+	<input type="hidden" name="promovidasSortOrder" value="asc">
+
+
+
+
+
+
+<h4>Réu</h4>
+
+
+
+  	
+  	
+  	
+
+	
+	<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+		
+		<colgroup>
+			
+				
+				
+					
+					<col width="1%"  /> 
+					<col width="30%" /> 
+					<col width="18%" /> 
+					<col width="15%" /> 
+					<col width="1%"/>   
+					<col width="35%" /> 
+				
+				
+				
+			
+			
+		</colgroup>
+	
+		
+		<thead>
+			<tr>
+				
+					<th>&nbsp;</th>
+				
+				<th><a class="orderAsc" title="Ordenar Descendente" href="javascript:document.forms[&#39;processoForm&#39;][&#39;promovidasPageNumber&#39;].value=&#39;1&#39;;document.forms[&#39;processoForm&#39;][&#39;promovidasSortColumn&#39;].value=&#39;parte.nome&#39;;document.forms[&#39;processoForm&#39;][&#39;promovidasSortOrder&#39;].value=&#39;DESC&#39;;document.forms[&#39;processoForm&#39;].submit();">Nome</a></th>
+				
+					<th>RG</th>
+					<th>CPF/CNPJ</th>
+					
+				
+					<th style="padding:0 50px 0 50px;">Observação</th>
+				
+				<th>Advogados</th>
+				
+			</tr>
+		</thead>
+		
+		
+		<tbody>
+			
+				
+				
+				
+				
+				
+					
+					 
+		         		
+					
+					
+						
+							<tr class="even">
+								
+									
+									
+									
+									
+										
+				 						
+					 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+					 							
+					 							
+					 							
+													<img src="/projudi/img/themes/olive/iPlus.gif" id="iconpromovidas0" onClick="showDetail('rowpromovidas0', 'iconpromovidas0')" />
+												
+												
+											</td> 			
+													
+				
+										
+				 						<td>
+				 							
+				 							
+						 						
+						 							
+						 							
+						 								
+														<a href="/projudi/processo/parteProcesso.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fb0036707375d54a1841200bd020a6e2be827b65139856d3e9c992708bf2a28e2d29f48dad7482ab7d70587efb93fdf445af6bd1d60036532bedfec1cab01060f9d655624e684e572da7cd5db147b7c232e10425b1355882eecd9b77431637f83a67283b75875e3307" class="link">
+								 							
+			        										Ozeas da Cunha Ferreira
+			        										
+				       											
+							 							</a>	
+					 								
+						 							
+					 							
+					 							
+				 							
+				 						</td>
+				 						
+										
+				 						
+					 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+					 							
+					 							
+				 									0311993687 DIC/IFP/RJ
+				 								
+				 								
+				 							</td>
+				 							
+				
+										
+				 						
+					 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+					 							
+					 							
+				 									Não Cadastrado
+				 								
+				 								
+				 							</td>
+				 							
+				
+										
+				 						
+					 						<td nowrap="nowrap" align="left" style="padding:0 15px 0 5px;">
+					 							
+						 							
+													
+		
+													
+						 							
+		
+														
+													
+													
+		
+													
+													
+												
+													
+													
+		
+													
+														
+		
+													
+													
+												
+													
+													
+												
+													
+													
+		
+													
+													
+												
+				 							</td>
+				 							
+				 						
+										
+				 						<td>
+				 							
+					 							
+					 							
+					 								
+				 									
+				 								
+				 								
+				 						
+												
+												
+				 								
+																			
+												
+					 							
+					 								
+					 												 												 								
+					 									
+					 									<ul>
+					 								 	
+																			
+																
+														  			 
+				 									    	 		
+				 									    	 			
+				 									    	 			
+				 									    	 		
+				 									    	 																																					 					 										
+				 													
+					 									</ul>					 															 											
+					 								
+					 								
+					 													 								
+					 							
+					 						
+					 					</td>
+		
+										
+										
+									
+								
+							
+							
+							
+							
+							
+
+		 					</tr>
+		 					
+		 					
+		 						
+									<tr id="rowpromovidas0" class="even" style="display:none">
+										<td colspan="6">
+											<div id="div0" class="extendedinfo">
+												
+													
+														
+														
+														
+															
+														
+
+
+
+
+
+
+
+
+
+	<h4>Endereço</h4>
+
+
+
+<fieldset>
+	<table class="form">
+		
+		<tr>
+			<td class="label"><label>Descrição:</label></td>
+			<td>
+				
+					Endereço Residencial
+					
+				
+			</td>
+		</tr>
+
+		
+		<tr>
+			<td class="label"><label>Logradouro:</label></td>
+			<td>Rua Maturacá, 16</td>
+		</tr>
+		
+		
+		
+		
+		
+		
+			<tr>
+				<td class="label"><label>Bairro:</label></td>
+				<td>Penha Circular</td>
+			</tr>
+		
+		
+		
+		<tr>
+			<td class="label"><label>Cidade:</label></td>
+			<td>RIO DE JANEIRO/33</td>
+		</tr>
+
+		
+		
+		
+		
+				
+		
+		
+						
+	</table>
+</fieldset>
+													
+													
+												
+											</div>
+										</td>
+									</tr>
+								
+														 					
+						
+					
+				
+			
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<br />
+	<table class="buttonBar" cellpadding="0" cellspacing="0">
+		<tr>
+			<td class="buttons" width="1%" nowrap="nowrap">
+			
+			
+			
+				
+				<input type="button" name="listHistoricoSubstabelecimentoButton" value="Histórico de Substabelecimentos" onclick="disableScreen(); document.location.href='/projudi/processo/advogadosParte.do?_tj=40618dd3e508f88b7d4424c78a05f47f9caba082bf9db0196b99fdb392d3b559c8ca8597ef77ed80508164d5d84be479eb3831b48d562f6686877fe8ea3bc671';" id="listHistoricoSubstabelecimentoButton" style="width:200px" class="button">
+			
+			
+			</td>
+		</tr>
+	</table>
+
+					
+				
+      
+				
+			</div>
+			<hr/>
+		</div>
+		<a href='/projudi//include_common.html' style="text-decoration:none; cursor:default; position:fixed; bottom:-20px;">&nbsp;&nbsp;</a>	</body>
+	<!-- Verifica se exite edição de textos para aumento do timeout -->
+	<script type="text/javascript">
+	if( typeof ControladorSessao != 'undefined')
+		window._sControler= new ControladorSessao('editor');
+	</script>	
+</html>
+	        </div>
+	      
+	    
+	  
+	  
+	
+
+	
+	  
+	    
+	    
+	    
+	      
+	      
+	        
+	        <div id="tabprefix2" style="display:none;">
+	          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="BR">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta http-equiv="Cache-Control" content="no-store,no-cache,must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+
+<link rel="icon" href="favicon.ico"/>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		<title>Projudi - Processo Eletrônico do Judiciário do Rio de Janeiro</title>
+	</head>
+	
+	<body onmousemove="onBodyMouseMove()" onkeydown="onBodyKeyDown()">
+		<div id="container">
+			
+			
+			
+				
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+			
+			<hr/>
+
+			<div id="includeContent">
+				<div id="idCalPadrao" style="position:absolute;z-index:1000;float:right;visibility:hidden;background-color:white;layer-background-color:white;">
+				</div>
+
+				
+					
+						
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+						
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	//===============================================================
+	// Função para realçar linhas em uma tabela
+	// - prefixo.: String que deverá ser iniciado pelas linhas que serão realçadas
+	// - tipo....: String informando que tipo de linha será realçada
+	// - checked.: Informação se é para realçar ou retirar o realce
+	//===============================================================
+	function realcar(prefixo,tipo,checked){
+		var sels = getElementsById('TR',prefixo,tipo);
+	    for (var i = 0; i < sels.length; i++) {
+		    if (checked == true){
+			   if (sels[i].className=='even')
+				   	sels[i].className='evenMark';
+			   if (sels[i].className=='odd')
+					sels[i].className='oddMark';
+		    }else{
+			   if (sels[i].className=='evenMark')
+				   	sels[i].className='even';
+			   if (sels[i].className=='oddMark')
+					sels[i].className='odd';
+		    }
+		}
+		var image = getElementsById('IMG','IMG'+prefixo,tipo);
+	
+	    for (var k = 0; k < image.length; k++) {
+		    if (checked == true)
+		    	image[k].style.display='';
+		    else
+		    	image[k].style.display='none';
+		}
+
+		var links = getElementsById('A','LNK'+prefixo,tipo);
+	    for (var k = 0; k < links.length; k++) {
+		    if (checked == true)
+		    	links[k].className='linkMark';		
+		    else
+				links[k].className='link';
+		}		    
+	}
+	//===============================================================
+	// Função para Mostrar/Ocultar uma linha de uma tabela
+	// - idPrefixo.: Padrão utilizado na tela onde o id do componente terá um prefixo único se for de processo, recurso ou processo do 1º grau.
+	// - tipo......: String que será buscada em componentes que contém esse valor, exemplo, INT para intimações
+	//===============================================================
+	function displayRow(idPrefixo,strPrefixo,tipo){
+		// hide/unhide as movimentações
+		var sels = getElementsById('TR',idPrefixo,tipo);
+		   for (var i = 0; i < sels.length; i++) {
+		        if (sels[i].style.display == ''){
+		        	   sels[i].style.display ='none';
+		        } else {
+		           	sels[i].style.display = '';
+		        }
+			}
+		   
+		 // acerta as cores das movimentações
+	     var sels2 = getElementsById('TR',idPrefixo,'mov');
+	     var par=true;
+		 for (var j = 0; j < sels2.length; j++) {
+		 	if (sels2[j].style.display == ''){
+		 		// movimentações
+				if (par){			        	
+					sels2[j].className=sels2[j].className.replace(/odd/g,'even');			        	
+			    }else{			        	
+			    	sels2[j].className=sels2[j].className.replace(/even/g,'odd');			    		
+			    }
+				
+		 		// arquivos
+				var linkArq = sels2[j].getElementsByTagName('A');
+			 	for( var k = 0; k < linkArq.length; k++ ) {
+			 		var className = 'linkArquivos' + strPrefixo;
+			 		if( linkArq[k].className.substring(0, className.length) == className ) {
+			 			var idxMov = linkArq[k].className.replace(className, '');
+			 			var idRow  = 'row' + strPrefixo + idxMov;
+						var rowObj = document.getElementById(idRow);
+						rowObj.className = sels2[j].className; 
+			 		}
+			 	}
+
+			 	// acerta par/ímpar
+			    par = !par;
+	        }
+		}
+	}
+	//===============================================================
+	//Obtém os elementos do documento com a mesmo ID
+	//Adaptado de http://javascript.about.com/library/bldom08.htm
+	//===============================================================
+	function getElementsById(tagName,idPrefixo,id) {
+		var retNode = [];
+		var elem    = document.getElementsByTagName(tagName);
+		for( var i=0; i < elem.length; i++ ) {
+			if ((elem[i].id.substring(0, idPrefixo.length) == idPrefixo ) && ( elem[i].id.search(id) >-1))
+				retNode.push(elem[i]);
+		}
+		return retNode;
+	} 
+</script>
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<input type="hidden" name="movimentacoesPageSize" value="9999">
+	
+	<input type="hidden" name="movimentacoesPageNumber" value="1">
+	
+	<input type="hidden" name="movimentacoesSortColumn" value="codDocumento">
+	
+	<input type="hidden" name="movimentacoesSortOrder" value="desc">
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+<table>
+	<tr>
+		<td align="right"><b>Realçar Movimentos de:</b></td>
+		<td style="width:100px"><input type="checkbox" onclick="realcar('mov1Grau','JUIZ',this.checked)">&nbsp;Magistrado&nbsp;&nbsp;&nbsp;</td>
+		<td style="width:100px"><input type="checkbox" onclick="realcar('mov1Grau','SERVIDOR',this.checked)">&nbsp;Servidor&nbsp;&nbsp;&nbsp;</td> 
+		<td style="width:100px"><input type="checkbox" onclick="realcar('mov1Grau','ADVOGADO',this.checked)">&nbsp;Advogado&nbsp;&nbsp;&nbsp;</td>
+		<td style="width:100px"><input type="checkbox" onclick="realcar('mov1Grau','PROMOTOR',this.checked)">&nbsp;Promotor&nbsp;&nbsp;&nbsp;</td> 
+		<td style="width:100px"><input type="checkbox" onclick="realcar('mov1Grau','PROCURADOR',this.checked)">&nbsp;Procurador&nbsp;&nbsp;&nbsp;</td> 
+		<td style="width:80px"><input type="checkbox" onclick="realcar('mov1Grau','OUTROS',this.checked)">&nbsp;Outros&nbsp;&nbsp;&nbsp;</td>
+		<td style="width:105px"><input type="checkbox" onclick="realcar('mov1Grau','AUDIENCIA',this.checked)">&nbsp;Audiência&nbsp;&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td align="right"><b>Ocultar Movimentos:</b></td>
+		<td style="width:100px"><input type="checkbox" onclick="displayRow('mov1Grau','movimentacoes','INVALIDO')">&nbsp;Inválidos&nbsp;&nbsp;&nbsp;</td>
+		<td style="width:105px"><input type="checkbox" onclick="displayRow('mov1Grau','movimentacoes','SEMARQUIVO')">&nbsp;Sem Arquivo&nbsp;&nbsp;&nbsp;</td>
+		<td style="width:120px"><input type="checkbox" onclick="displayRow('mov1Grau','movimentacoes','HABILITACAOPROV')">&nbsp;Hab. Provisória&nbsp;&nbsp;&nbsp;</td>		
+	</tr>
+</table>
+<br>
+<br>
+
+
+
+
+  	
+  	
+  	
+
+	
+	<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+		
+		<colgroup>
+			<col width="1%" />
+			<col width="1%" />
+			<col width="1%" />
+			<col width="67%" />
+			<col width="30%" />
+		</colgroup>
+	
+		
+		<thead>
+			<tr>
+				<th>&nbsp;</th>
+				
+				
+					<th style="padding:0 25px 0 5px;">Seq.</th>
+					<th><a class="orderDesc" title="Ordenar Ascendente" href="javascript:document.forms[&#39;processoForm&#39;][&#39;movimentacoesPageNumber&#39;].value=&#39;1&#39;;document.forms[&#39;processoForm&#39;][&#39;movimentacoesSortColumn&#39;].value=&#39;dataRecebimento&#39;;document.forms[&#39;processoForm&#39;][&#39;movimentacoesSortOrder&#39;].value=&#39;ASC&#39;;document.forms[&#39;processoForm&#39;].submit();">Data</a></th>
+				
+				
+				<th>Evento</th>
+				<th>Movimentado Por</th>
+			</tr>
+		</thead>
+		
+		
+		<tbody>
+			
+			 
+			
+         		
+			
+			
+				
+					
+						
+					
+					
+					 							
+						
+						
+							 									
+						
+					
+
+					<tr class="even" id="mov1Grau,OUTROS,,SEMARQUIVO,," >
+ 						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+ 								
+						</td> 						
+
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;"> 							
+ 							6 							
+ 						</td>
+ 						
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+ 							2019-01-23 13:55:10.316
+							2019-01-23 13:55:10.316 							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+ 							
+ 								
+ 								
+									
+									
+ 								
+ 							 	
+ 											
+ 													
+							
+            				<b>
+            					
+            					
+
+								
+								
+	            					
+    	        					
+        	    						
+            							
+            								
+	            							RECEBIDOS OS AUTOS
+	            						
+    	        					
+
+									
+									
+								
+
+								
+								 
+            				</b>
+            				
+							
+             				            					            				
+ 	            				 
+ 	            					<br>
+	            					
+ 	            					Recebido do(a) DISTRIBUIDOR
+	            					 
+ 	            				
+             				
+            				
+							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+							<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMGmov1Grau,OUTROS,,SEMARQUIVO,,">&nbsp;
+							
+							
+								
+								
+									SISTEMA PROJUDI
+								
+							
+							
+							
+						</td> 						
+ 					</tr>
+
+					
+					
+					
+					
+						<tr id="rowmovimentacoes0" class="even" style="display:none">
+							<td colspan="5">
+								<div id="divArquivosMovimentacaoProcessomovimentacoes0" class="extendedinfo">
+									
+								</div>
+							</td>
+						</tr>
+						
+										 					
+					
+				
+					
+						
+					
+					
+					 							
+						
+						
+							 									
+						
+					
+
+					<tr class="odd" id="mov1Grau,OUTROS,,,," >
+ 						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+ 							
+								
+								
+									
+										<a href="javascript://nop/" class="linkArquivosmovimentacoes1">
+											<img onclick="showDetail('rowmovimentacoes1', 'iconmovimentacoes1')" 
+												src="/projudi/img/themes/olive/iPlus.gif" 
+												id="iconmovimentacoes1" 
+											/>
+										</a>
+										
+										<script type="text/javascript">
+var aj_null = new AjaxJspTag.HtmlContent(
+"/projudi/processo/movimentacaoArquivoDocumento.do?_tj=40618dd3e508f88b7d4424c78a05f47ff207b5786fa8e60d3a81974a8e648747da4df8725de973f374e7bc07225789b569052ae4e2d655b7bfc34cc445507c32", {
+sourceClass: "linkArquivosmovimentacoes1",
+target: "divArquivosMovimentacaoProcessomovimentacoes1",
+parameters: "tipoLayout=1",
+doPost: true
+});
+</script>
+
+
+
+														 					
+								
+								
+								
+						</td> 						
+
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;"> 							
+ 							5 							
+ 						</td>
+ 						
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+ 							2019-01-23 13:55:10.3
+							2019-01-23 13:55:10.3 							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+ 							
+ 								
+ 								
+									
+									
+ 								
+ 							 	
+ 											
+ 													
+							
+            				<b>
+            					
+            					
+
+								
+								
+	            					
+    	        					
+        	    						
+            							
+            								
+	            							JUNTADA DE ANOTAÇÃO DE DISTRIBUIÇÃO
+	            						
+    	        					
+
+									
+									
+								
+
+								
+								 
+            				</b>
+            				
+							
+             				            					            				
+ 	            				
+             				
+            				
+							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+							<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMGmov1Grau,OUTROS,,,,">&nbsp;
+							
+							
+								
+								
+									Distribuidor
+								
+							
+							
+							
+								<br>
+								<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMG">&nbsp;<font size="1"><b>Distribuidor</b></font>
+							
+						</td> 						
+ 					</tr>
+
+					
+					
+					
+					
+						<tr id="rowmovimentacoes1" class="odd" style="display:none">
+							<td colspan="5">
+								<div id="divArquivosMovimentacaoProcessomovimentacoes1" class="extendedinfo">
+									
+								</div>
+							</td>
+						</tr>
+						
+										 					
+					
+				
+					
+						
+					
+					
+					 							
+						
+						
+							 									
+						
+					
+
+					<tr class="even" id="mov1Grau,OUTROS,,SEMARQUIVO,," >
+ 						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+ 								
+						</td> 						
+
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;"> 							
+ 							4 							
+ 						</td>
+ 						
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+ 							2019-01-02 14:57:06.474
+							2019-01-02 14:57:06.474 							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+ 							
+ 								
+ 								
+									
+									
+ 								
+ 							 	
+ 											
+ 													
+							
+            				<b>
+            					
+            					
+
+								
+								
+	            					
+    	        					
+        	    						
+            							
+            								
+	            							RECEBIDOS OS AUTOS
+	            						
+    	        					
+
+									
+									
+								
+
+								
+								 
+            				</b>
+            				
+							
+             				            					            				
+ 	            				
+             				
+            				
+							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+							<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMGmov1Grau,OUTROS,,SEMARQUIVO,,">&nbsp;
+							
+							
+								
+								
+									SISTEMA PROJUDI
+								
+							
+							
+							
+						</td> 						
+ 					</tr>
+
+					
+					
+					
+					
+						<tr id="rowmovimentacoes2" class="even" style="display:none">
+							<td colspan="5">
+								<div id="divArquivosMovimentacaoProcessomovimentacoes2" class="extendedinfo">
+									
+								</div>
+							</td>
+						</tr>
+						
+										 					
+					
+				
+					
+						
+					
+					
+					 							
+						
+						
+							 									
+						
+					
+
+					<tr class="odd" id="mov1Grau,OUTROS,,SEMARQUIVO,," >
+ 						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+ 								
+						</td> 						
+
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;"> 							
+ 							3 							
+ 						</td>
+ 						
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+ 							2019-01-02 14:57:06.392
+							2019-01-02 14:57:06.392 							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+ 							
+ 								
+ 								
+									
+									
+ 								
+ 							 	
+ 											
+ 													
+							
+            				<b>
+            					
+            					
+
+								
+								
+	            					
+    	        					
+        	    						
+            							
+            								
+	            							REMETIDOS OS AUTOS PARA DISTRIBUIDOR
+	            						
+    	        					
+
+									
+									
+								
+
+								
+								 
+            				</b>
+            				
+							
+             				            					            				
+ 	            				 
+ 	            					<br>
+	            					
+ 	            					Registro de Distribuição
+	            					 
+ 	            				
+             				
+            				
+							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+							<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMGmov1Grau,OUTROS,,SEMARQUIVO,,">&nbsp;
+							
+							
+								
+								
+									SISTEMA PROJUDI
+								
+							
+							
+							
+						</td> 						
+ 					</tr>
+
+					
+					
+					
+					
+						<tr id="rowmovimentacoes3" class="odd" style="display:none">
+							<td colspan="5">
+								<div id="divArquivosMovimentacaoProcessomovimentacoes3" class="extendedinfo">
+									
+								</div>
+							</td>
+						</tr>
+						
+										 					
+					
+				
+					
+						
+					
+					
+					 							
+						
+						
+							 									
+						
+					
+
+					<tr class="even" id="mov1Grau,OUTROS,,SEMARQUIVO,," >
+ 						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+ 								
+						</td> 						
+
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;"> 							
+ 							2 							
+ 						</td>
+ 						
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+ 							2019-01-02 14:57:06.336
+							2019-01-02 14:57:06.336 							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+ 							
+ 								
+ 								
+									
+									
+ 								
+ 							 	
+ 											
+ 													
+							
+            				<b>
+            					
+            					
+
+								
+								
+	            					
+    	        					
+        	    						
+            							
+            								
+	            							PROCESSO ENCAMINHADO
+	            						
+    	        					
+
+									
+									
+								
+
+								
+								 
+            				</b>
+            				
+							
+             				            					            				
+ 	            				 
+ 	            					<br>
+	            					
+ 	            					Vara de Execuções Penais - Cartório de Réu Preso e Cartório de Livramento Condicional
+	            					 
+ 	            				
+             				
+            				
+							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+							<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMGmov1Grau,OUTROS,,SEMARQUIVO,,">&nbsp;
+							
+							
+								
+								
+									SISTEMA PROJUDI
+								
+							
+							
+							
+						</td> 						
+ 					</tr>
+
+					
+					
+					
+					
+						<tr id="rowmovimentacoes4" class="even" style="display:none">
+							<td colspan="5">
+								<div id="divArquivosMovimentacaoProcessomovimentacoes4" class="extendedinfo">
+									
+								</div>
+							</td>
+						</tr>
+						
+										 					
+					
+				
+					
+						
+					
+					
+					 							
+						
+						
+							 									
+						
+					
+
+					<tr class="odd" id="mov1Grau,SERVIDOR,,,," >
+ 						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;" valign="middle">
+ 							
+								
+								
+									
+										<a href="javascript://nop/" class="linkArquivosmovimentacoes5">
+											<img onclick="showDetail('rowmovimentacoes5', 'iconmovimentacoes5')" 
+												src="/projudi/img/themes/olive/iPlus.gif" 
+												id="iconmovimentacoes5" 
+											/>
+										</a>
+										
+										<script type="text/javascript">
+var aj_null = new AjaxJspTag.HtmlContent(
+"/projudi/processo/movimentacaoArquivoDocumento.do?_tj=40618dd3e508f88b7d4424c78a05f47ff207b5786fa8e60d3a81974a8e6487477623d14b178b15a9fab88bd8447bc6d169052ae4e2d655b783934ae1f7191556", {
+sourceClass: "linkArquivosmovimentacoes5",
+target: "divArquivosMovimentacaoProcessomovimentacoes5",
+parameters: "tipoLayout=1",
+doPost: true
+});
+</script>
+
+
+
+														 					
+								
+								
+								
+						</td> 						
+
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;"> 							
+ 							1 							
+ 						</td>
+ 						
+						
+ 						<td nowrap="nowrap" align="center" style="padding:0 5px 0 5px;">
+ 							2019-01-02 14:57:06.131
+							2019-01-02 14:57:06.131 							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+ 							
+ 								
+ 								
+									
+									
+ 								
+ 							 	
+ 											
+ 													
+							
+            				<b>
+            					
+            					
+
+								
+								
+	            					
+    	        					
+        	    						
+            							
+            								
+	            							JUNTADA DE PETIÇÃO DE INICIAL
+	            						
+    	        					
+
+									
+									
+								
+
+								
+								 
+            				</b>
+            				
+							
+             				            					            				
+ 	            				
+             				
+            				
+							
+ 						</td>
+ 						
+						
+ 						<td>
+ 							
+							<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMGmov1Grau,SERVIDOR,,,,">&nbsp;
+							
+							
+								
+									Funcionário
+								
+								
+							
+							
+							
+								<br>
+								<img src="/projudi/img/themes/olive/seta.png" style="display: none" id="IMG">&nbsp;<font size="1"><b>Analista Judiciário</b></font>
+							
+						</td> 						
+ 					</tr>
+
+					
+					
+					
+					
+						<tr id="rowmovimentacoes5" class="odd" style="display:none">
+							<td colspan="5">
+								<div id="divArquivosMovimentacaoProcessomovimentacoes5" class="extendedinfo">
+									
+								</div>
+							</td>
+						</tr>
+						
+										 					
+					
+				
+ 			 
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+					
+				
+      
+				
+			</div>
+			<hr/>
+		</div>
+		<a href='/projudi//include_common.html' style="text-decoration:none; cursor:default; position:fixed; bottom:-20px;">&nbsp;&nbsp;</a>	</body>
+	<!-- Verifica se exite edição de textos para aumento do timeout -->
+	<script type="text/javascript">
+	if( typeof ControladorSessao != 'undefined')
+		window._sControler= new ControladorSessao('editor');
+	</script>	
+</html>
+	        </div>
+	      
+	    
+	  
+	  
+	
+
+	
+	  
+	    
+	    
+	    
+	      
+	      
+	        
+	        <div id="tabprefix3" style="display:none;">
+	          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="BR">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta http-equiv="Cache-Control" content="no-store,no-cache,must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+
+<link rel="icon" href="favicon.ico"/>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+		<title>Projudi - Processo Eletrônico do Judiciário do Rio de Janeiro</title>
+	</head>
+	
+	<body onmousemove="onBodyMouseMove()" onkeydown="onBodyKeyDown()">
+		<div id="container">
+			
+			
+			
+				
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+			
+			<hr/>
+
+			<div id="includeContent">
+				<div id="idCalPadrao" style="position:absolute;z-index:1000;float:right;visibility:hidden;background-color:white;layer-background-color:white;">
+				</div>
+
+				
+					
+						
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<body>
+</body>
+</html>
+						
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/projudi/js/projudi_ext/tree-vep.js?v=1.1"></script>
+
+<form name="acaoPenalVinculadaForm" method="post" action="/projudi/processo/criminal/execucao/acao_penal_vinculada.do?actionType=gerarArvore">
+
+<table border="0">
+	<tbody>
+	<tr>
+		<td style="width:12px">&nbsp;</td> 
+		<td nowrap="nowrap">		
+			<a class="link" href="javascript:openAllTreeNodes()">[Abrir Tudo]</a>
+			&nbsp;
+			<a class="link" href="javascript:closeAllTreeNodes()">[Fechar Tudo]</a>
+			&nbsp;
+		</td> 
+		<td nowrap="nowrap">&nbsp;&nbsp;<b>Realçar:&nbsp;</b></td>
+		<td nowrap="nowrap"><input type="checkbox"  id="chkPrinc" onclick="realcarPenasExecucao('principal',this.checked)">&nbsp;Principal&nbsp;&nbsp;</td> 
+		<td nowrap="nowrap"><input type="checkbox" id="chkMedSeg" onclick="realcarPenasExecucao('medidaSeg',this.checked)"><nobr>&nbsp;Medida de Segurança&nbsp;&nbsp;</nobr></td> 
+		<td nowrap="nowrap"><input type="checkbox" id="chkScp" onclick="realcarPenasExecucao('scp',this.checked)"><nobr>&nbsp;Susp. Condicional do Processo&nbsp;&nbsp;</nobr></td>
+		<td nowrap="nowrap"><input type="checkbox" id="chkSursis" onclick="realcarPenasExecucao('sursis',this.checked)">&nbsp;SURSIS&nbsp;&nbsp;</td> 
+		<td nowrap="nowrap"><input type="checkbox" id="chkPenaSubst" onclick="realcarPenasExecucao('substitutiva',this.checked)">&nbsp;Substitutiva&nbsp;&nbsp;</td> 
+	</tr>
+</tbody></table>
+
+<div class="tree" style="margin-left:20px">
+	<script type="text/javascript">
+		var tree = new Array();
+		tree = ["1|0|Processo de Execução Penal|#"];
+		
+		createTree(tree,1, 1);  // inicia a arvore no topo e aberta no node 7
+	</script>
+</div>
+
+</form>
+
+					
+				
+      
+				
+			</div>
+			<hr/>
+		</div>
+		<a href='/projudi//include_common.html' style="text-decoration:none; cursor:default; position:fixed; bottom:-20px;">&nbsp;&nbsp;</a>	</body>
+	<!-- Verifica se exite edição de textos para aumento do timeout -->
+	<script type="text/javascript">
+	if( typeof ControladorSessao != 'undefined')
+		window._sControler= new ControladorSessao('editor');
+	</script>	
+</html>
+	        </div>
+	      
+	    
+	  
+	  
+	
+
+	
+	  
+	    
+	    
+	    
+	      
+	      
+	        
+	        <div id="tabprefix4" style="display:none;">
+	          
+
+
+
+
+
+
+
+
+
+
+ 	
+<script type="text/javascript">
+function openIncidente(incidente){
+	var f=$('processoForm');
+	var idProcessoExecucaoPenal = 217943;
+	
+	var idIncidente= incidente.split(';')[0];
+	var tipoIncidente= incidente.split(';')[1];
+	var idPeticao = incidente.split(';')[2];
+
+	var path=getPathIncidente(tipoIncidente);
+	metodo= 'visualizar&id='+idIncidente+'&idTipoIncidente='+tipoIncidente;
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+ 
+			'&parentForm=processoForm&idPeticao='+idPeticao+'&numeroProcesso='+idProcessoExecucaoPenal;
+		//+'&backURL=/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a53e57f146fcdc65330cc9438f971e740b9ca852284eeb605675482f30bc858b50f';
+	document.location.replace(url);
+}
+
+function getPathIncidente(tipoIncidente){
+	
+	var enumTipoCadAdic= {
+		
+			
+		
+			
+		
+			'enum10':'saida_temporaria.do',
+		
+			'enum16':'trabalho_externo.do',
+		
+			'enum18':'prisao_domiciliar.do',
+		
+			'enum21':'liberdade_vigiada.do',
+		
+			'enum7':'extincao.do',
+		
+			'enum2':'indulto.do',
+		
+			'enum11':'adequacao.do',
+		
+			'enum22':'somatorioPenas.do',
+		
+			'enum6':'unificacao.do',
+		
+			'enum3':'comutacao.do',
+		
+			'enum17':'sursis.do',
+		
+			'enum9':'livramentoCondicional.do',
+		
+			'enum35':'medidaSeguranca.do',
+		
+			'enum23':'falta_grave.do',
+		
+			'enum24':'interrupcao.do',
+		
+			'enum25':'prisao.do',
+		
+			'enum1':'remicao.do',
+		
+			'enum31':'diasPerdidosRemicao.do',
+		
+			'enum12':'cumprimentoPenaComarca.do',
+		
+			'enum27':'dataBasePR.do',
+		
+			'enum26':'revogacao.do',
+		
+			'enum36':'semEfeito.do',
+		
+			'enum30':'reconsideracao.do',
+		
+			'enum29':'alteracao_regime.do',
+		
+			'enum32':'recursoAgravo.do',
+		
+			'enum33':'outros.do',
+		
+			'enum34':'suspensao.do',
+		
+			'enum37':'termino_de_pena.do',
+		
+			'enum38':'absolvicao.do',
+		
+		'enumFim':''
+	};
+	
+	eval('var pathIncidente= enumTipoCadAdic.enum'+tipoIncidente);
+	return pathIncidente;
+}
+
+//===============================================================
+// Função para realçar linhas em uma tabela
+// - prefixo.: String que deverá ser iniciado pelas linhas que serão realçadas
+// - tipo....: String informando que tipo de linha será realçada
+// - checked.: Informação se é para realçar ou retirar o realce
+//===============================================================
+function realcar(prefixo,tipo,checked){
+	var sels = getElementsById('TR',prefixo,tipo);
+    for (var i = 0; i < sels.length; i++) {
+	    if (checked == true){
+		   if (sels[i].className=='even')
+			   	sels[i].className='evenMark';
+		   if (sels[i].className=='odd')
+				sels[i].className='oddMark';
+	    }else{
+		   if (sels[i].className=='evenMark')
+			   	sels[i].className='even';
+		   if (sels[i].className=='oddMark')
+				sels[i].className='odd';
+	    }
+	}
+	var image = getElementsById('IMG','IMG'+prefixo,tipo);
+
+    for (var k = 0; k < image.length; k++) {
+	    if (checked == true)
+	    	image[k].style.display='';
+	    else
+	    	image[k].style.display='none';
+	}
+
+	var links = getElementsById('A','LNK'+prefixo,tipo);
+    for (var k = 0; k < links.length; k++) {
+	    if (checked == true)
+	    	links[k].className='linkMark';		
+	    else
+			links[k].className='link';
+	}	
+    
+ 	//===============================================================
+	//Obtém os elementos do documento com a mesmo ID
+	//Adaptado de http://javascript.about.com/library/bldom08.htm
+	//===============================================================
+	function getElementsById(tagName,prefixo,id) {
+		var retNode = [];
+		var elem    = document.getElementsByTagName(tagName);
+		for( var i=0; i < elem.length; i++ ) {
+			if ((elem[i].id.substring(0, prefixo.length) == prefixo ) && ( elem[i].id.search(id) >-1))
+				retNode.push(elem[i]);
+		}
+		return retNode;
+	} 
+}
+
+function selecionarEvento() {
+	var tipoAnterior = document.getElementById('tipoAnteriorE').value;
+	if(tipoAnterior != -1) {
+		realcar('','Evento_'+tipoAnterior+'_',false);
+	}
+	var tipo = document.getElementById('codTipoIncidente').value;
+	if(tipo != -1) {
+		realcar('','Evento_'+tipo+'_',true);
+	}
+	document.getElementById('tipoAnteriorE').value = tipo;
+}
+</script>
+
+
+<input type="hidden" name="tipoAnteriorE" id="tipoAnteriorE" value="-1"/>
+
+<fieldset>	
+
+
+	
+	
+		
+		
+		<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+			<colgroup>
+				<col width="1%" />
+				<col width="10%" />
+				<col width="20%" />
+				<col width="30%" />
+				<col width="10%" />
+				<col width="10%" />				
+				<col width="20%" />
+			</colgroup>
+						
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>Nº do Incidente</th>					
+					<th>Tipo do Incidente</th>
+					<th>Complemento</th>
+					<th>Data de Referência</th>
+					<th>Eletrônico/Físico</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				
+				
+					<tr>
+						<td colspan="6">
+							Nenhum registro encontrado
+						</td>
+					</tr>
+				
+				
+				
+			</tbody>
+			</table>
+
+			
+			
+			
+			 	
+			 	
+			 	
+			
+			
+						
+			
+	
+</fieldset>
+
+<script type="text/javascript">
+function getCloseURL(f){
+	if(f.name == 'movimentarProcessoForm'){
+		closeURL="/projudi/movimentarProcesso.do?_tj=40618dd3e508f88bc924a87f7240a4e538236b8aaf7829d5821aa4babded857c9ae9fbd1b149c992e39cd08abffad3c73d55482db082823a4bfc6844c3b2a311";
+	}else if(f.name == 'incidenteForm'){
+		closeURL="/projudi/processo/criminal/execucao/incidente.do?_tj=40618dd3e508f88b7d4424c78a05f47f0ea16f52156aa63a3598d0b7bab308d0030a56e6a0653e53c1ffd018fd8e1bfe63af60a1ad122eeb8be5300d13c009bad6b64901b45e8a9ec6ba15b2d744e88fe4e41d204116b356a3ffdc33b17ed0ab";
+	}else{
+		closeURL="/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fb2236fee15f2aa8088be0c60a4a5af7fd0204299686fa6847d7381ef661a7ef67e55adf9d8dab755b";
+	}
+	return closeURL;
+}
+function openEdicaoEvento(f,acao){
+	var metodo="";
+	var radioSelecionado=getRadioObjectSelected(f.idCadastroAdicionalSelecionado);
+	var idSelecionado= (radioSelecionado!=null?radioSelecionado.value:null);
+	
+	var isNovo=(acao == 'add');
+	var path="";
+	if(!isNovo){
+		if(acao == 'edit'){
+			if( !isAnyRadioSelected(f.idCadastroAdicionalSelecionado)) {
+				alert('Nenhum incidente foi selecionado.');
+				return;	
+			}
+			var idIncidente= idSelecionado.split(';')[0];
+			var tipoIncidente= idSelecionado.split(';')[1];
+			metodo= "editar&id="+idIncidente;			
+		}else if(acao == 'addAutomatico' ){  //cadastro automatico
+			tipoIncidente= f.idTipoIncidente.value;
+			metodo= "editar&id=&novo=true&codPendenciaIncidenteExecucao="+f.codPendenciaIncidenteExecucao.value+'&backURL='+getCloseURL(f);
+		}
+		path=getPathIncidente(tipoIncidente);
+	}else{
+		path="incidente.do";
+		metodo= "pesquisarTipoIncidente";
+	}
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+
+		'&parentForm='+f.name+
+		'&numeroProcesso=217943'+
+		'&idPeticao=-1'+
+		'&requerConclusao='+ 'N'+
+		
+		'&evento='+'S'+
+		'&backURL='+getCloseURL(f)+'&ehEvento=true';
+	openSubmitDialog(url,'Incidentes',0,0,getCloseURL(f));
+	
+}
+</script>
+	        </div>
+	      
+	    
+	  
+	  
+	
+
+	
+	  
+	    
+	    
+	    
+	      
+	      
+	        
+	        <div id="tabprefix5" style="display:none;">
+	          
+
+
+
+
+
+
+
+
+
+
+ 	
+<script type="text/javascript">
+function openIncidente(incidente){
+	var f=$('processoForm');
+	var idProcessoExecucaoPenal = 217943;
+	
+	var idIncidente= incidente.split(';')[0];
+	var tipoIncidente= incidente.split(';')[1];
+	var idPeticao = incidente.split(';')[2];
+
+	var path=getPathIncidente(tipoIncidente);
+	metodo= 'visualizar&id='+idIncidente+'&idTipoIncidente='+tipoIncidente;
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+ 
+			'&parentForm=processoForm&idPeticao='+idPeticao+'&numeroProcesso='+idProcessoExecucaoPenal+'&ehIncidenteFisico=S';
+		//+'&backURL=/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a53e57f146fcdc65330cc9438f971e740b9ca852284eeb605675482f30bc858b50f';
+	document.location.replace(url);
+}
+
+function getPathIncidente(tipoIncidente){
+	
+	var enumTipoCadAdic= {
+		
+			
+		
+			
+		
+			'enum10':'saida_temporaria.do',
+		
+			'enum16':'trabalho_externo.do',
+		
+			'enum18':'prisao_domiciliar.do',
+		
+			'enum21':'liberdade_vigiada.do',
+		
+			'enum7':'extincao.do',
+		
+			'enum2':'indulto.do',
+		
+			'enum11':'adequacao.do',
+		
+			'enum22':'somatorioPenas.do',
+		
+			'enum6':'unificacao.do',
+		
+			'enum3':'comutacao.do',
+		
+			'enum17':'sursis.do',
+		
+			'enum9':'livramentoCondicional.do',
+		
+			'enum35':'medidaSeguranca.do',
+		
+			'enum23':'falta_grave.do',
+		
+			'enum24':'interrupcao.do',
+		
+			'enum25':'prisao.do',
+		
+			'enum1':'remicao.do',
+		
+			'enum31':'diasPerdidosRemicao.do',
+		
+			'enum12':'cumprimentoPenaComarca.do',
+		
+			'enum27':'dataBasePR.do',
+		
+			'enum26':'revogacao.do',
+		
+			'enum36':'semEfeito.do',
+		
+			'enum30':'reconsideracao.do',
+		
+			'enum29':'alteracao_regime.do',
+		
+			'enum32':'recursoAgravo.do',
+		
+			'enum33':'outros.do',
+		
+			'enum34':'suspensao.do',
+		
+			'enum37':'termino_de_pena.do',
+		
+			'enum38':'absolvicao.do',
+		
+		'enumFim':''
+	};
+	
+	eval('var pathIncidente= enumTipoCadAdic.enum'+tipoIncidente);
+	return pathIncidente;
+}
+
+//===============================================================
+// Função para realçar linhas em uma tabela
+// - prefixo.: String que deverá ser iniciado pelas linhas que serão realçadas
+// - tipo....: String informando que tipo de linha será realçada
+// - checked.: Informação se é para realçar ou retirar o realce
+//===============================================================
+function realcar(prefixo,tipo,checked){
+	var sels = getElementsById('TR',prefixo,tipo);
+    for (var i = 0; i < sels.length; i++) {
+	    if (checked == true){
+		   if (sels[i].className=='even')
+			   	sels[i].className='evenMark';
+		   if (sels[i].className=='odd')
+				sels[i].className='oddMark';
+	    }else{
+		   if (sels[i].className=='evenMark')
+			   	sels[i].className='even';
+		   if (sels[i].className=='oddMark')
+				sels[i].className='odd';
+	    }
+	}
+	var image = getElementsById('IMG','IMG'+prefixo,tipo);
+
+    for (var k = 0; k < image.length; k++) {
+	    if (checked == true)
+	    	image[k].style.display='';
+	    else
+	    	image[k].style.display='none';
+	}
+
+	var links = getElementsById('A','LNK'+prefixo,tipo);
+    for (var k = 0; k < links.length; k++) {
+	    if (checked == true)
+	    	links[k].className='linkMark';		
+	    else
+			links[k].className='link';
+	}	
+    
+ 	//===============================================================
+	//Obtém os elementos do documento com a mesmo ID
+	//Adaptado de http://javascript.about.com/library/bldom08.htm
+	//===============================================================
+	function getElementsById(tagName,prefixo,id) {
+		var retNode = [];
+		var elem    = document.getElementsByTagName(tagName);
+		for( var i=0; i < elem.length; i++ ) {
+			if ((elem[i].id.substring(0, prefixo.length) == prefixo ) && ( elem[i].id.search(id) >-1))
+				retNode.push(elem[i]);
+		}
+		return retNode;
+	} 
+}
+
+function selecionarIncidente() {
+	var tipoAnterior = document.getElementById('tipoAnterior').value;
+	if(tipoAnterior != -1) {
+		realcar('','Concedido_'+tipoAnterior+'_',false);
+	}
+	var tipo = document.getElementById('codTipoIncidente').value;
+	if(tipo != -1) {
+		realcar('','Concedido_'+tipo+'_',true);
+	}
+	document.getElementById('tipoAnterior').value = tipo;
+}
+</script>
+
+
+<input type="hidden" name="tipoAnterior" id="tipoAnterior" value="-1"/>
+
+<fieldset>	
+
+<table>
+	<tr>
+		<td align="right"><b>Realçar Incidentes:</b></td>
+		<td>
+			
+			<select name="codTipoIncidente" id="codTipoIncidente" onchange="selecionarIncidente();">
+				<option value="-1">-- CLIQUE AQUI PARA SELECIONAR --</option>
+				
+					<option value="38">ABSOLVIÇÃO</option>
+				
+					<option value="11">ADEQUAÇÃO</option>
+				
+					<option value="27">ALTERAÇÃO DE DATA-BASE DE PROGRESSÃO DE REGIME/LIVRAMENTO CONDICIONAL</option>
+				
+					<option value="12">ALTERAÇÃO DE LOCAL DE CUMPRIMENTO DE PENA</option>
+				
+					<option value="3">COMUTAÇÃO</option>
+				
+					<option value="31">DIAS PERDIDOS NA REMIÇÃO</option>
+				
+					<option value="7">EXTINÇÃO</option>
+				
+					<option value="29">FIXAÇÃO/HARMONIZAÇÃO/ALTERAÇÃO DE REGIME</option>
+				
+					<option value="23">HOMOLOGAÇÃO DE FALTA GRAVE</option>
+				
+					<option value="2">INDULTO</option>
+				
+					<option value="24">INTERRUPÇÃO</option>
+				
+					<option value="21">LIBERDADE VIGIADA</option>
+				
+					<option value="9">LIVRAMENTO CONDICIONAL</option>
+				
+					<option value="35">MEDIDA DE SEGURANÇA</option>
+				
+					<option value="33">OUTROS</option>
+				
+					<option value="18">PRISÃO DOMICILIAR</option>
+				
+					<option value="25">PRISÃO/INÍCIO DE CUMPRIMENTO</option>
+				
+					<option value="30">RECONSIDERAÇÃO</option>
+				
+					<option value="32">RECURSO DE AGRAVO</option>
+				
+					<option value="1">REMIÇÃO</option>
+				
+					<option value="26">REVOGAÇÃO</option>
+				
+					<option value="10">SAÍDA TEMPORÁRIA</option>
+				
+					<option value="36">SEM EFEITO</option>
+				
+					<option value="22">SOMATÓRIO DAS PENAS</option>
+				
+					<option value="17">SURSIS</option>
+				
+					<option value="34">SUSPENSÃO</option>
+				
+					<option value="16">TRABALHO EXTERNO</option>
+				
+					<option value="37">TÉRMINO DE PENA</option>
+				
+					<option value="6">UNIFICAÇÃO</option>
+				
+			</select>
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+
+	
+	
+		
+		
+		<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+			<colgroup>
+				<col width="1%" />
+				<col width="9%" />
+				<col width="14%" />
+				<col width="16%" />
+				<col width="11%" />
+				<col width="11%" />
+				<col width="10%" />				
+				<col width="10%" />
+				<col width="11%" />
+				<col width="7%" />
+			</colgroup>
+						
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>Nº do Incidente</th>					
+					<th>Tipo do Incidente</th>
+					<th>Complemento</th>
+					<th>Data de Referência</th>
+					<th>Data de Autuação</th>
+					<th>Petição</th>
+					<th>Data de Decisão</th>
+					<th>Juiz</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				
+				
+					<tr>
+						<td colspan="9">
+							Nenhum registro encontrado
+						</td>
+					</tr>
+				
+				
+				
+			</tbody>
+			</table>
+
+			
+			
+			
+			 	
+			 	
+			 	
+			
+			
+						
+	
+</fieldset>
+
+<script type="text/javascript">
+function getCloseURL(f){
+	if(f.name == 'movimentarProcessoForm'){
+		closeURL="/projudi/movimentarProcesso.do?_tj=40618dd3e508f88bc924a87f7240a4e538236b8aaf7829d5821aa4babded857c9ae9fbd1b149c992e39cd08abffad3c73d55482db082823a4bfc6844c3b2a311";
+	}else if(f.name == 'incidenteForm'){
+		closeURL="/projudi/processo/criminal/execucao/incidente.do?_tj=40618dd3e508f88b7d4424c78a05f47f0ea16f52156aa63a3598d0b7bab308d0030a56e6a0653e53c1ffd018fd8e1bfe63af60a1ad122eeb8be5300d13c009bad6b64901b45e8a9ec6ba15b2d744e88fe4e41d204116b356a3ffdc33b17ed0ab";
+	}else{
+		closeURL="/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fb2236fee15f2aa8088be0c60a4a5af7fd0204299686fa6847d7381ef661a7ef67e55adf9d8dab755b";
+	}
+	return closeURL;
+}
+function openEdicao(f,acao){
+	var metodo="";
+	var radioSelecionado=getRadioObjectSelected(f.idCadastroAdicionalSelecionado);
+	var idSelecionado= (radioSelecionado!=null?radioSelecionado.value:null);
+	
+	var isNovo=(acao == 'add');
+	var path="";
+	if(!isNovo){
+		if(acao == 'edit'){
+			if( !isAnyRadioSelected(f.idCadastroAdicionalSelecionado)) {
+				alert('Nenhum incidente foi selecionado.');
+				return;	
+			}
+			var idIncidente= idSelecionado.split(';')[0];
+			var tipoIncidente= idSelecionado.split(';')[1];
+			metodo= "editar&id="+idIncidente;			
+		}else if(acao == 'addAutomatico' ){  //cadastro automatico
+			tipoIncidente= f.idTipoIncidente.value;
+			metodo= "editar&id=&novo=true&codPendenciaIncidenteExecucao="+f.codPendenciaIncidenteExecucao.value+'&backURL='+getCloseURL(f);
+		}
+		path=getPathIncidente(tipoIncidente);
+	}else{
+		path="incidente.do";
+		metodo= "pesquisarTipoIncidente";
+	}
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+
+		'&parentForm='+f.name+
+		'&numeroProcesso=217943'+
+		'&idPeticao=-1'+
+		'&requerConclusao='+ 'N'+
+		'&ehIncidenteFisico='+ 'S'+
+		 
+		'&backURL='+getCloseURL(f)+
+		'&concedidoJuiz=' + 'S';
+	openSubmitDialog(url,'Incidentes',0,0,getCloseURL(f));
+	
+	
+}
+</script>
+	        </div>
+	      
+	    
+	  
+	  
+	
+
+	
+	  
+	    
+	    
+	    
+	      
+	      
+	        
+	        <div id="tabprefix6" style="display:none;">
+	          
+
+
+
+
+
+
+
+
+
+
+ 	
+<script type="text/javascript">
+/*function openIncidente(incidente){
+	var f=$('processoForm');
+	
+	var idIncidente= incidente.split(';')[0];
+	var tipoIncidente= incidente.split(';')[1];
+	var idPeticao = incidente.split(';')[2];
+
+	var path=getPathIncidente(tipoIncidente);
+	metodo= 'visualizar&id='+idIncidente+'&idTipoIncidente='+tipoIncidente;
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+ 
+			'&parentForm=processoForm&idPeticao='+idPeticao;
+		//+'&backURL=/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a53e57f146fcdc65330cc9438f971e740b9ca852284eeb605675482f30bc858b50f';
+	document.location.replace(url);
+	
+}
+
+function getPathIncidente(tipoIncidente){
+	
+	var enumTipoCadAdic= {
+		
+			
+		
+			
+		
+			'enum10':'saida_temporaria.do',
+		
+			'enum16':'trabalho_externo.do',
+		
+			'enum18':'prisao_domiciliar.do',
+		
+			'enum21':'liberdade_vigiada.do',
+		
+			'enum7':'extincao.do',
+		
+			'enum2':'indulto.do',
+		
+			'enum11':'adequacao.do',
+		
+			'enum22':'somatorioPenas.do',
+		
+			'enum6':'unificacao.do',
+		
+			'enum3':'comutacao.do',
+		
+			'enum17':'sursis.do',
+		
+			'enum9':'livramentoCondicional.do',
+		
+			'enum35':'medidaSeguranca.do',
+		
+			'enum23':'falta_grave.do',
+		
+			'enum24':'interrupcao.do',
+		
+			'enum25':'prisao.do',
+		
+			'enum1':'remicao.do',
+		
+			'enum31':'diasPerdidosRemicao.do',
+		
+			'enum12':'cumprimentoPenaComarca.do',
+		
+			'enum27':'dataBasePR.do',
+		
+			'enum26':'revogacao.do',
+		
+			'enum36':'semEfeito.do',
+		
+			'enum30':'reconsideracao.do',
+		
+			'enum29':'alteracao_regime.do',
+		
+			'enum32':'recursoAgravo.do',
+		
+			'enum33':'outros.do',
+		
+			'enum34':'suspensao.do',
+		
+			'enum37':'termino_de_pena.do',
+		
+			'enum38':'absolvicao.do',
+		
+		'enumFim':''
+	};
+	
+	eval('var pathIncidente= enumTipoCadAdic.enum'+tipoIncidente);
+	return pathIncidente;
+}
+
+//===============================================================
+// Função para realçar linhas em uma tabela
+// - prefixo.: String que deverá ser iniciado pelas linhas que serão realçadas
+// - tipo....: String informando que tipo de linha será realçada
+// - checked.: Informação se é para realçar ou retirar o realce
+//===============================================================
+function realcar(prefixo,tipo,checked){
+	var sels = getElementsById('TR',prefixo,tipo);
+    for (var i = 0; i < sels.length; i++) {
+	    if (checked == true){
+		   if (sels[i].className=='even')
+			   	sels[i].className='evenMark';
+		   if (sels[i].className=='odd')
+				sels[i].className='oddMark';
+	    }else{
+		   if (sels[i].className=='evenMark')
+			   	sels[i].className='even';
+		   if (sels[i].className=='oddMark')
+				sels[i].className='odd';
+	    }
+	}
+	var image = getElementsById('IMG','IMG'+prefixo,tipo);
+
+    for (var k = 0; k < image.length; k++) {
+	    if (checked == true)
+	    	image[k].style.display='';
+	    else
+	    	image[k].style.display='none';
+	}
+
+	var links = getElementsById('A','LNK'+prefixo,tipo);
+    for (var k = 0; k < links.length; k++) {
+	    if (checked == true)
+	    	links[k].className='linkMark';		
+	    else
+			links[k].className='link';
+	}	
+    
+ 	//===============================================================
+	//Obtém os elementos do documento com a mesmo ID
+	//Adaptado de http://javascript.about.com/library/bldom08.htm
+	//===============================================================
+	function getElementsById(tagName,prefixo,id) {
+		var retNode = [];
+		var elem    = document.getElementsByTagName(tagName);
+		for( var i=0; i < elem.length; i++ ) {
+			if ((elem[i].id.substring(0, prefixo.length) == prefixo ) && ( elem[i].id.search(id) >-1))
+				retNode.push(elem[i]);
+		}
+		return retNode;
+	} 
+}*/
+
+function selecionarIncidenteN() {
+	var tipoAnterior = document.getElementById('tipoAnteriorN').value;
+	if(tipoAnterior != -1) {
+		realcar('','Nao_'+tipoAnterior+'_',false);
+	}
+	var tipo = document.getElementById('codTipoIncidenteN').value;
+	if(tipo != -1) {
+		realcar('','Nao_'+tipo+'_',true);
+	}
+	document.getElementById('tipoAnteriorN').value = tipo;
+}
+</script>
+
+
+<input type="hidden" name="tipoAnteriorN" id="tipoAnteriorN" value="-1"/>
+
+<fieldset>	
+
+<table>
+	<tr>
+		<td align="right"><b>Realçar Incidentes:</b></td>
+		<td>
+			
+			<select name="codTipoIncidenteN" id="codTipoIncidenteN" onchange="selecionarIncidenteN();">
+				<option value="-1">-- CLIQUE AQUI PARA SELECIONAR --</option>
+				
+					<option value="38">ABSOLVIÇÃO</option>
+				
+					<option value="11">ADEQUAÇÃO</option>
+				
+					<option value="27">ALTERAÇÃO DE DATA-BASE DE PROGRESSÃO DE REGIME/LIVRAMENTO CONDICIONAL</option>
+				
+					<option value="12">ALTERAÇÃO DE LOCAL DE CUMPRIMENTO DE PENA</option>
+				
+					<option value="3">COMUTAÇÃO</option>
+				
+					<option value="31">DIAS PERDIDOS NA REMIÇÃO</option>
+				
+					<option value="7">EXTINÇÃO</option>
+				
+					<option value="29">FIXAÇÃO/HARMONIZAÇÃO/ALTERAÇÃO DE REGIME</option>
+				
+					<option value="23">HOMOLOGAÇÃO DE FALTA GRAVE</option>
+				
+					<option value="2">INDULTO</option>
+				
+					<option value="24">INTERRUPÇÃO</option>
+				
+					<option value="21">LIBERDADE VIGIADA</option>
+				
+					<option value="9">LIVRAMENTO CONDICIONAL</option>
+				
+					<option value="35">MEDIDA DE SEGURANÇA</option>
+				
+					<option value="33">OUTROS</option>
+				
+					<option value="18">PRISÃO DOMICILIAR</option>
+				
+					<option value="25">PRISÃO/INÍCIO DE CUMPRIMENTO</option>
+				
+					<option value="30">RECONSIDERAÇÃO</option>
+				
+					<option value="32">RECURSO DE AGRAVO</option>
+				
+					<option value="1">REMIÇÃO</option>
+				
+					<option value="26">REVOGAÇÃO</option>
+				
+					<option value="10">SAÍDA TEMPORÁRIA</option>
+				
+					<option value="36">SEM EFEITO</option>
+				
+					<option value="22">SOMATÓRIO DAS PENAS</option>
+				
+					<option value="17">SURSIS</option>
+				
+					<option value="34">SUSPENSÃO</option>
+				
+					<option value="16">TRABALHO EXTERNO</option>
+				
+					<option value="37">TÉRMINO DE PENA</option>
+				
+					<option value="6">UNIFICAÇÃO</option>
+				
+			</select>
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+
+	
+	
+		
+		
+		<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+			<colgroup>
+				<col width="1%" />
+				<col width="9%" />
+				<col width="14%" />
+				<col width="16%" />
+				<col width="11%" />
+				<col width="11%" />
+				<col width="10%" />				
+				<col width="10%" />
+				<col width="11%" />
+				<col width="7%" />
+			</colgroup>
+						
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>Nº do Incidente</th>					
+					<th>Tipo do Incidente</th>
+					<th>Complemento</th>
+					<th>Data de Referência</th>
+					<th>Data de Autuação</th>
+					<th>Petição</th>
+					<th>Data de Decisão</th>
+					<th>Juiz</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				
+				
+					<tr>
+						<td colspan="9">
+							Nenhum registro encontrado
+						</td>
+					</tr>
+				
+				
+				
+			</tbody>
+			</table>
+
+			
+			
+			 	
+			 	
+			 	
+	
+</fieldset>
+
+<script type="text/javascript">
+/*function getCloseURL(f){
+	if(f.name == 'movimentarProcessoForm'){
+		closeURL="/projudi/movimentarProcesso.do?_tj=40618dd3e508f88bc924a87f7240a4e538236b8aaf7829d5821aa4babded857c9ae9fbd1b149c992e39cd08abffad3c73d55482db082823a4bfc6844c3b2a311";
+	}else if(f.name == 'incidenteForm'){
+		closeURL="/projudi/processo/criminal/execucao/incidente.do?_tj=40618dd3e508f88b7d4424c78a05f47f0ea16f52156aa63a3598d0b7bab308d0030a56e6a0653e53c1ffd018fd8e1bfe63af60a1ad122eeb8be5300d13c009bad6b64901b45e8a9ec6ba15b2d744e88fe4e41d204116b356a3ffdc33b17ed0ab";
+	}else{
+		closeURL="/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fb2236fee15f2aa8088be0c60a4a5af7fd0204299686fa6847d7381ef661a7ef67e55adf9d8dab755b";
+	}
+	return closeURL;
+}
+*/
+function openEdicaoN(f,acao){
+	var metodo="";
+	var radioSelecionado=getRadioObjectSelected(f.idCadastroAdicionalSelecionado);
+	var idSelecionado= (radioSelecionado!=null?radioSelecionado.value:null);
+	
+	var isNovo=(acao == 'add');
+	var path="";
+	if(!isNovo){
+		if(acao == 'edit'){
+			if( !isAnyRadioSelected(f.idCadastroAdicionalSelecionado)) {
+				alert('Nenhum incidente foi selecionado.');
+				return;	
+			}
+			var idIncidente= idSelecionado.split(';')[0];
+			var tipoIncidente= idSelecionado.split(';')[1];
+			metodo= "editar&id="+idIncidente;			
+		}else if(acao == 'addAutomatico' ){  //cadastro automatico
+			tipoIncidente= f.idTipoIncidente.value;
+			metodo= "editar&id=&novo=true&codPendenciaIncidenteExecucao="+f.codPendenciaIncidenteExecucao.value+'&backURL='+getCloseURL(f);
+		}
+		path=getPathIncidente(tipoIncidente);
+	}else{
+		path="incidente.do";
+		metodo= "pesquisarTipoIncidente";
+	}
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+
+		'&parentForm='+f.name+
+		'&numeroProcesso=217943'+
+		'&idPeticao=-1'+
+		'&requerConclusao='+ 'N'+
+		'&ehIncidenteFisico='+ 'S'+
+		 
+		'&backURL='+getCloseURL(f)+
+		'&concedidoJuiz=' + 'N';
+	openSubmitDialog(url,'Incidentes',0,0,getCloseURL(f));
+
+	
+}
+</script>
+	        </div>
+	      
+	    
+	  
+	  
+	
+
+	
+	  
+	    
+	    
+	    
+	      
+	      
+	        
+	        <div id="tabprefix7" style="display:none;">
+	          
+
+
+
+
+
+
+
+
+
+
+ 	
+<script type="text/javascript">
+/*function openIncidente(incidente){
+	var f=$('processoForm');
+	
+	var idIncidente= incidente.split(';')[0];
+	var tipoIncidente= incidente.split(';')[1];
+	var idPeticao = incidente.split(';')[2];
+
+	var path=getPathIncidente(tipoIncidente);
+	metodo= 'visualizar&id='+idIncidente+'&idTipoIncidente='+tipoIncidente;
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+ 
+			'&parentForm=processoForm&idPeticao='+idPeticao;
+		//+'&backURL=/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a53e57f146fcdc65330cc9438f971e740b9ca852284eeb605675482f30bc858b50f';
+	document.location.replace(url);
+	
+}
+
+function getPathIncidente(tipoIncidente){
+	
+	var enumTipoCadAdic= {
+		
+			
+		
+			
+		
+			'enum10':'saida_temporaria.do',
+		
+			'enum16':'trabalho_externo.do',
+		
+			'enum18':'prisao_domiciliar.do',
+		
+			'enum21':'liberdade_vigiada.do',
+		
+			'enum7':'extincao.do',
+		
+			'enum2':'indulto.do',
+		
+			'enum11':'adequacao.do',
+		
+			'enum22':'somatorioPenas.do',
+		
+			'enum6':'unificacao.do',
+		
+			'enum3':'comutacao.do',
+		
+			'enum17':'sursis.do',
+		
+			'enum9':'livramentoCondicional.do',
+		
+			'enum35':'medidaSeguranca.do',
+		
+			'enum23':'falta_grave.do',
+		
+			'enum24':'interrupcao.do',
+		
+			'enum25':'prisao.do',
+		
+			'enum1':'remicao.do',
+		
+			'enum31':'diasPerdidosRemicao.do',
+		
+			'enum12':'cumprimentoPenaComarca.do',
+		
+			'enum27':'dataBasePR.do',
+		
+			'enum26':'revogacao.do',
+		
+			'enum36':'semEfeito.do',
+		
+			'enum30':'reconsideracao.do',
+		
+			'enum29':'alteracao_regime.do',
+		
+			'enum32':'recursoAgravo.do',
+		
+			'enum33':'outros.do',
+		
+			'enum34':'suspensao.do',
+		
+			'enum37':'termino_de_pena.do',
+		
+			'enum38':'absolvicao.do',
+		
+		'enumFim':''
+	};
+	
+	eval('var pathIncidente= enumTipoCadAdic.enum'+tipoIncidente);
+	return pathIncidente;
+}
+
+//===============================================================
+// Função para realçar linhas em uma tabela
+// - prefixo.: String que deverá ser iniciado pelas linhas que serão realçadas
+// - tipo....: String informando que tipo de linha será realçada
+// - checked.: Informação se é para realçar ou retirar o realce
+//===============================================================
+function realcar(prefixo,tipo,checked){
+	var sels = getElementsById('TR',prefixo,tipo);
+    for (var i = 0; i < sels.length; i++) {
+	    if (checked == true){
+		   if (sels[i].className=='even')
+			   	sels[i].className='evenMark';
+		   if (sels[i].className=='odd')
+				sels[i].className='oddMark';
+	    }else{
+		   if (sels[i].className=='evenMark')
+			   	sels[i].className='even';
+		   if (sels[i].className=='oddMark')
+				sels[i].className='odd';
+	    }
+	}
+	var image = getElementsById('IMG','IMG'+prefixo,tipo);
+
+    for (var k = 0; k < image.length; k++) {
+	    if (checked == true)
+	    	image[k].style.display='';
+	    else
+	    	image[k].style.display='none';
+	}
+
+	var links = getElementsById('A','LNK'+prefixo,tipo);
+    for (var k = 0; k < links.length; k++) {
+	    if (checked == true)
+	    	links[k].className='linkMark';		
+	    else
+			links[k].className='link';
+	}	
+    
+ 	//===============================================================
+	//Obtém os elementos do documento com a mesmo ID
+	//Adaptado de http://javascript.about.com/library/bldom08.htm
+	//===============================================================
+	function getElementsById(tagName,prefixo,id) {
+		var retNode = [];
+		var elem    = document.getElementsByTagName(tagName);
+		for( var i=0; i < elem.length; i++ ) {
+			if ((elem[i].id.substring(0, prefixo.length) == prefixo ) && ( elem[i].id.search(id) >-1))
+				retNode.push(elem[i]);
+		}
+		return retNode;
+	} 
+}*/
+
+function selecionarIncidenteP() {
+	var tipoAnterior = document.getElementById('tipoAnteriorP').value;
+	if(tipoAnterior != -1) {
+		realcar('','ConcedidoPendente_'+tipoAnterior+'_',false);
+	}
+	var tipo = document.getElementById('codTipoIncidenteP').value;
+	if(tipo != -1) {
+		realcar('','ConcedidoPendente_'+tipo+'_',true);
+	}
+	document.getElementById('tipoAnteriorP').value = tipo;
+}
+</script>
+
+
+<input type="hidden" name="tipoAnteriorP" id="tipoAnteriorP" value="-1"/>
+
+<fieldset>	
+
+<table id="idTbRealcarIncidentes">
+	<tr>
+		<td align="right"><b>Realçar Incidentes:</b></td>
+		<td>
+			
+			<select name="codTipoIncidenteP" id="codTipoIncidenteP" onchange="selecionarIncidenteP();">
+				<option value="-1">-- CLIQUE AQUI PARA SELECIONAR --</option>
+				
+					<option value="38">ABSOLVIÇÃO</option>
+				
+					<option value="11">ADEQUAÇÃO</option>
+				
+					<option value="27">ALTERAÇÃO DE DATA-BASE DE PROGRESSÃO DE REGIME/LIVRAMENTO CONDICIONAL</option>
+				
+					<option value="12">ALTERAÇÃO DE LOCAL DE CUMPRIMENTO DE PENA</option>
+				
+					<option value="3">COMUTAÇÃO</option>
+				
+					<option value="31">DIAS PERDIDOS NA REMIÇÃO</option>
+				
+					<option value="7">EXTINÇÃO</option>
+				
+					<option value="29">FIXAÇÃO/HARMONIZAÇÃO/ALTERAÇÃO DE REGIME</option>
+				
+					<option value="23">HOMOLOGAÇÃO DE FALTA GRAVE</option>
+				
+					<option value="2">INDULTO</option>
+				
+					<option value="24">INTERRUPÇÃO</option>
+				
+					<option value="21">LIBERDADE VIGIADA</option>
+				
+					<option value="9">LIVRAMENTO CONDICIONAL</option>
+				
+					<option value="35">MEDIDA DE SEGURANÇA</option>
+				
+					<option value="33">OUTROS</option>
+				
+					<option value="18">PRISÃO DOMICILIAR</option>
+				
+					<option value="25">PRISÃO/INÍCIO DE CUMPRIMENTO</option>
+				
+					<option value="30">RECONSIDERAÇÃO</option>
+				
+					<option value="32">RECURSO DE AGRAVO</option>
+				
+					<option value="1">REMIÇÃO</option>
+				
+					<option value="26">REVOGAÇÃO</option>
+				
+					<option value="10">SAÍDA TEMPORÁRIA</option>
+				
+					<option value="36">SEM EFEITO</option>
+				
+					<option value="22">SOMATÓRIO DAS PENAS</option>
+				
+					<option value="17">SURSIS</option>
+				
+					<option value="34">SUSPENSÃO</option>
+				
+					<option value="16">TRABALHO EXTERNO</option>
+				
+					<option value="37">TÉRMINO DE PENA</option>
+				
+					<option value="6">UNIFICAÇÃO</option>
+				
+			</select>
+		</td>
+	</tr>
+</table>
+<br>
+	
+	
+		
+		
+		<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+			<colgroup>
+				<col width="1%" />
+				<col width="10%" />
+				<col width="20%" />
+				<col width="21%" />
+				<col width="12%" />
+				<col width="12%" />
+				<col width="18%" />				
+				<col width="6%" />
+			</colgroup>
+						
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>Nº do Incidente</th>					
+					<th>Tipo do Incidente</th>
+					<th>Complemento</th>
+					<th>Data de Referência</th>
+					<th>Data de Autuação</th>
+					<th>Petição</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				
+				
+					<tr>
+						<td colspan="9">
+							Nenhum registro encontrado
+						</td>
+					</tr>
+				
+				
+				
+			</tbody>
+			</table>
+
+			
+			
+			 	
+			 	
+			 	
+	
+</fieldset>
+
+<script type="text/javascript">
+/*function getCloseURL(f){
+	if(f.name == 'movimentarProcessoForm'){
+		closeURL="/projudi/movimentarProcesso.do?_tj=40618dd3e508f88bc924a87f7240a4e538236b8aaf7829d5821aa4babded857c9ae9fbd1b149c992e39cd08abffad3c73d55482db082823a4bfc6844c3b2a311";
+	}else if(f.name == 'incidenteForm'){
+		closeURL="/projudi/processo/criminal/execucao/incidente.do?_tj=40618dd3e508f88b7d4424c78a05f47f0ea16f52156aa63a3598d0b7bab308d0030a56e6a0653e53c1ffd018fd8e1bfe63af60a1ad122eeb8be5300d13c009bad6b64901b45e8a9ec6ba15b2d744e88fe4e41d204116b356a3ffdc33b17ed0ab";
+	}else{
+		closeURL="/projudi/processo.do?_tj=40618dd3e508f88b8806353afecc7a537b972c8717a662fb2236fee15f2aa8088be0c60a4a5af7fd0204299686fa6847d7381ef661a7ef67e55adf9d8dab755b";
+	}
+	return closeURL;
+}
+*/
+function openEdicaoP(f,acao){
+	var metodo="";
+	var radioSelecionado=getRadioObjectSelected(f.idCadastroAdicionalSelecionado);
+	var idSelecionado= (radioSelecionado!=null?radioSelecionado.value:null);
+	
+	var isNovo=(acao == 'add');
+	var path="";
+	if(!isNovo){
+		if(acao == 'edit'){
+			if( !isAnyRadioSelected(f.idCadastroAdicionalSelecionado)) {
+				alert('Nenhum incidente foi selecionado.');
+				return;	
+			}
+			var idIncidente= idSelecionado.split(';')[0];
+			var tipoIncidente= idSelecionado.split(';')[1];
+			metodo= "editar&id="+idIncidente;			
+		}else if(acao == 'addAutomatico' ){  //cadastro automatico
+			tipoIncidente= f.idTipoIncidente.value;
+			metodo= "editar&id=&novo=true&codPendenciaIncidenteExecucao="+f.codPendenciaIncidenteExecucao.value+'&backURL='+getCloseURL(f);
+		}
+		path=getPathIncidente(tipoIncidente);
+	}else{
+		path="incidente.do";
+		metodo= "pesquisarTipoIncidente";
+	}
+	var url='/projudi/processo/criminal/execucao/'+path+'?actionType='+metodo+
+		'&parentForm='+f.name+
+		'&numeroProcesso=217943'+
+		'&idPeticao=-1'+
+		'&requerConclusao='+ 'N'+
+		'&ehIncidenteFisico='+ 'S'+
+		 
+		'&backURL='+getCloseURL(f);
+	openSubmitDialog(url,'Incidentes',0,0,getCloseURL(f));
+	
+}
+</script>
+	        </div>
+	      
+	    
+	  
+	  
+	
+
+    </td></tr>
+  
+</table> 
+					
+				 
+	
+	</fieldset>
+	
+	
+	
+</form>	
+<script type="text/javascript"> 
+
+Event.observe(window, 'load', function() {
+	var _idImg = window.gp_semaforoProcesso[0].id;
+	var _img = document.getElementById(_idImg);
+
+	if(_img.title != 'Livre' && _img.title != 'Bloqueado por mim' && _img.title != 'Certidão de Conformidade/Certidão de Integral Digitalização' && _img.title != 'Certidão de Informação' && _img.title != 'Aguardando Certificação/Digitalização'){
+		alert('Esse processo está bloqueado por outro usuário.\nAguarde o desbloqueio para prosseguir com andamento do processo');
+//  		disableScreen();
+ 		
+ 	}
+});
+ 
+ 
+</script>
+
+					
+				
+      
+				
+			</div>
+			
+				<div id="anotacaoAssessoriaPopup" style="display:none; top: 42px; left:77%;" onmouseover="$('anotacaoAssessoriaPopupTitulo').setStyle({visibility: 'visible'});"
+					 onmouseout="$('anotacaoAssessoriaPopupTitulo').setStyle({visibility: 'hidden'});">
+					 
+
+
+
+
+
+
+<script type="text/javascript">
+AnotacaoAssessoria = function(){
+	this.toggleVisualizarNota = function(view, divNotaId){
+		var divLista = document.getElementById("listaAnotacao");
+		var divNota = document.getElementById(divNotaId);
+		var autor = document.getElementById(divNota.id+"autor");
+		var autorData = document.getElementById(divNota.id+"autorData");
+		var resumo = document.getElementById(divNota.id+"resumo");
+		if (view == true || view == "true"){
+			for (i=0; i<divLista.childNodes.length; i++){
+				if (divLista.childNodes[i].nodeName == "DIV")
+					divLista.childNodes[i].style.display="none";
+			}
+			if (autor != null)
+				autor.style.display="none";
+			if (autorData != null)
+				autorData.style.display="";
+			if (resumo != null)
+				resumo.style.display="none";
+			try {
+				document.getElementById(divNota.id+"texto").style.display="";
+			}catch(e){
+				//se era edição, o elemento acima não existe.
+			}
+			this.configurarBarraBtns("view", divNotaId);
+			if (divNota.className.indexOf("ultimaAnotacao") == -1)
+				divNota.className += " anotacaoSelecionada";
+			Effect.Appear(divNota);
+		}else {
+			if (divNota.className.indexOf("ultimaAnotacao") == -1){
+				divNota.className = divNota.className.replace("anotacaoSelecionada", "");
+				if (autor != null)
+					autor.style.display="";
+				if (autorData != null)
+					autorData.style.display="none";
+				if (resumo != null)
+					resumo.style.display="";
+				document.getElementById(divNota.id+"texto").style.display="none";
+				this.configurarBarraBtns("item", divNotaId);
+			}else {
+				this.configurarBarraBtns("lastItem", divNotaId);
+			}
+			divNota.style.opacity="";
+			divNota.style.display="none";
+			divLista.style.display="none";
+			for (i=0; i<divLista.childNodes.length; i++){
+				if (divLista.childNodes[i].nodeName == "DIV")
+					divLista.childNodes[i].style.display="";
+			}
+			Effect.Appear(divLista);
+		}
+	}
+
+	this.criarNota = function(){
+		this.selecionarNota(null, null, "notaAmarela");
+		var divLista = document.getElementById("listaAnotacao");
+		var divEdicao = document.getElementById("edicao_");
+		divEdicao.className = "anotacao edicaoAnotacao notaAmarela";
+		document.getElementById("tituloEdicao").firstChild.nodeValue = "Novo Comentário";
+		document.getElementById("edicao_conteudoEditor").value = "";
+		divLista.style.display = "none";
+		this.configurarBarraBtns("edit", divEdicao.id);
+		Effect.Appear(divEdicao, {duration: 0.3});
+		new Effect.Morph("anotacaoAssessoriaPopup", {style: 'width: 680px; height: auto; left: 50%;', duration: 0.5});
+		this.loadCKEDITOR('edicao_conteudoEditor',true);
+	}
+
+	this.editar = function(id, divNotaId, color){
+		this.selecionarNota(id, divNotaId, color);
+		var divLista = document.getElementById("listaAnotacao");
+		var divEdicao = document.getElementById("edicao_");
+		divEdicao.className = "anotacao edicaoAnotacao " + color;
+		document.getElementById("tituloEdicao").firstChild.nodeValue = document.getElementById(divNotaId+"autor").firstChild.nodeValue;
+		document.getElementById("edicao_conteudoEditor").value = this.storeText(id);
+		divLista.style.display = "none";
+		this.configurarBarraBtns("edit", divEdicao.id);
+		Effect.Appear(divEdicao, {duration: 0.3});
+		new Effect.Morph("anotacaoAssessoriaPopup", {style: 'width: 680px; height: auto; left: 50%;', duration: 0.5});
+		this.loadCKEDITOR('edicao_conteudoEditor',true);
+	}
+
+	this.desfazer = function(){
+		var divLista = document.getElementById("listaAnotacao");
+		var divNota = document.getElementById(this.getDivNotaSelecionada());
+		var divEdicao = document.getElementById("edicao_");
+		var textarea = document.getElementById("edicao_conteudoEditor");
+	
+		if (this.getNotaSelecionada() == "" || this.getNotaSelecionada() == null){
+			//Cancelando nova nota:
+			divEdicao.style.display="none";
+			divLista.style.display="none";
+			for (i=0; i<divLista.childNodes.length; i++){
+				if (divLista.childNodes[i].nodeName == "DIV")
+					divLista.childNodes[i].style.display="";
+			}
+			Effect.Appear(divLista);
+			this.reposicionar();
+		}else {
+			//Cancelando edição:
+			this.restoreText(textarea);
+			this.destroyCKEDITOR("edicao_conteudoEditor");
+			textarea.disabled=true;
+			textarea.style.background="inherit";
+			divEdicao.style.display="none";
+			this.toggleVisualizarNota(false, divNota.id);
+			this.toggleVisualizarNota(true, divNota.id);
+			this.reposicionar();
+		}
+	
+		if (divLista.children.length == 0)
+			this.fechar();
+	}
+
+	this.salvar = function() {
+		try {
+		CKEDITOR.instances['edicao_conteudoEditor'].updateElement();
+		new Ajax.Updater('anotacaoAssessoriaPopup',
+						 '/projudi/processo/anotacaoAssessoria.do?_tj=40618dd3e508f88be462f48c7e6fe925ec06bc4954ba1989',
+						 {parameters: {idAnotacao: this.getNotaSelecionada(),
+							 		   conteudoEditor: $F('edicao_conteudoEditor'),
+							 		   isProcesso: $F('processo'),
+							 		   idProcessoRecurso: $F('idProcessoRecurso'),
+							 		   bgColor: $F('bg_color')},
+						  evalScripts: true,
+						  onComplete: this.reposicionar()});
+		}catch(e){
+			alert(e);
+		}
+		return false;
+	}	
+	
+	this.remover = function(idAnotacao) {		
+		if ( confirm('Confirma a exclusão do comentário?') ) {
+			new Ajax.Updater('anotacaoAssessoriaPopup',
+					 		 '/projudi/processo/anotacaoAssessoria.do?_tj=40618dd3e508f88b904277c24b98ab08137e98d7e9277ef2',
+					 		 {parameters: {idAnotacao: idAnotacao,
+						 		   		   isProcesso: $F('processo'),
+						 		   		   idProcessoRecurso: $F('idProcessoRecurso')},
+					  		  evalScripts: true});
+		}
+		return false;
+	}
+
+	this.fechar = function() {
+		var divEdicao = document.getElementById("edicao_");
+		if (divEdicao.style.display == "")
+			this.reposicionar();
+		Effect.Fade("anotacaoAssessoriaPopup", {duration:0.3});
+	}
+	
+	this.incluirLink = function(e){
+		try {
+		    var keynum;  
+	          
+	        if(window.event) { //IE  
+	            keynum = event.keyCode  
+	        } else if(e.which) { // Netscape/Firefox/Opera  
+	            keynum = e.which  
+	        }
+	        if(keynum != 13 ) { <!-- 13 é o código do Enter -->  
+	        	return;
+	        } 
+			var idDocumento = document.getElementById("idDocumento").value;
+			var descricaoDocumento = document.getElementById("descricaoDocumento").value;
+			var element = CKEDITOR.dom.element.createFromHtml( '<a id="_docid'+idDocumento+'docid_" onclick="diech9ohTie3();" href="javascript:aa.viewDoc('+idDocumento+');">' + descricaoDocumento + '</a>');
+			CKEDITOR.instances['edicao_conteudoEditor'].insertElement(element);
+			this.clearAutocomplete();
+		}catch(e){
+			
+		}
+		
+	}
+	
+	this.viewDoc = function (idDocumento){
+		window.open('/projudi/arquivo.do?_tj=40618dd3e508f88b9ef96db0306af792391c599df90c078c' + '&id='+idDocumento);
+	}
+	
+	this.changeColor = function (color){
+		document.getElementById("bg_color").value = color;
+		document.getElementById("edicao_").className = "anotacao edicaoAnotacao " + color;
+	}
+	
+	this.reposicionar = function(){
+		new Effect.Morph("anotacaoAssessoriaPopup", {style: 'width: 344px; height: auto; top: 42px; left: 77%;', duration: 0.5});
+	}
+	
+	this.selecionarNota = function(id, divNotaId, color){
+		document.getElementById("idNotaSelecionada").value = id;
+		document.getElementById("divNotaSelecionada").value = divNotaId;
+		document.getElementById("bg_color").value = color;
+	}
+	
+	this.getNotaSelecionada = function(){
+		return document.getElementById("idNotaSelecionada").value;
+	}
+	
+	this.getDivNotaSelecionada = function(){
+		return document.getElementById("divNotaSelecionada").value;
+	}
+	
+	this.ajaxAutoCompleteClearInput = function(){
+		try {
+			//delega:
+			ajaxAutoCompleteClearInput("idDocumento", "descricaoDocumento");			
+		}catch(e){
+			//campo ainda não está criado por não estar na tela de edição de nota.
+		}
+	}
+	
+	this.clearAutocomplete = function(){
+		Form.Element.clear('idDocumento');
+		Form.Element.clear('descricaoDocumento');
+		void(0);
+	}
+	
+	this.loadCKEDITOR = function(id, hideToolbar){
+		this.destroyCKEDITOR(id);
+		CKEDITOR.replace(id, {toolbarCanCollapse: true, toolbarStartupExpanded: !hideToolbar});
+	}
+	
+	this.destroyCKEDITOR = function(id){
+		try {
+			//Tenta destruir a instância atual:
+			CKEDITOR.instances[id].destroy(true);
+		}catch (e){
+			//não havia instância...
+		}
+	}
+	
+	this.storeText = function(id){
+		var hidden = document.getElementById("conteudoEditorStore");
+		if (id == null){
+			//limpa:
+			hidden.value = "";
+		}else {
+			var input = document.getElementById("nota"+id+"conteudoEditor");
+			hidden.value = input.value;
+		}
+		return hidden.value;
+	}
+	
+	this.restoreText = function(textarea){
+		var hidden = document.getElementById("conteudoEditorStore");
+		textarea.value = hidden.value;
+		hidden.value = "";
+		return textarea.value;
+	}
+	
+	this.toggleBtn = function(id, show){
+		var btn = document.getElementById(id);
+		if (btn != null)
+			btn.style.display = show == true || show == "true" ? "" : "none";
+	}
+	
+	this.configurarBarraBtns = function(type, itemId){
+		if (type == "item"){
+			this.toggleBtn(itemId+"view", true);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", false);
+			this.toggleBtn(itemId+"edit", false);
+			this.toggleBtn(itemId+"cancel", false);
+			this.toggleBtn(itemId+"close", false);
+		}else if (type == "lastItem"){
+			this.toggleBtn(itemId+"view", false);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", false);
+			this.toggleBtn(itemId+"edit", true);
+			this.toggleBtn(itemId+"cancel", false);
+			this.toggleBtn(itemId+"close", false);
+		}else if (type == "view"){
+			this.toggleBtn(itemId+"view", false);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", false);
+			this.toggleBtn(itemId+"edit", true);
+			this.toggleBtn(itemId+"cancel", false);
+			this.toggleBtn(itemId+"close", true);
+		}else if (type == "edit"){
+			this.toggleBtn(itemId+"view", false);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", true);
+			this.toggleBtn(itemId+"edit", false);
+			this.toggleBtn(itemId+"cancel", true);
+			this.toggleBtn(itemId+"close", true);
+		}else {
+			//
+		}
+	}
+	
+	this.drag = function(e){
+		var div = document.getElementById("anotacaoAssessoriaPopup");
+		div.style.top = e.clientY + 'px';
+		div.style.left = e.clientX + 'px';
+	}
+	
+	this.msg = function() {
+		// mensagem para o evento de fechar a janela
+		return 'Qualquer alteração feita no texto e não salva será perdida.';
+	}
+}
+</script>
+<script type="text/javascript">var aa = new AnotacaoAssessoria();</script>
+<div>
+	<script type="text/javascript" src="/projudi/imagens/ckeditor/ckeditor.js?updateIdx="></script>
+	<form name="anotacaoAssessoriaForm" id="anotacaoAssessoriaForm" method="post" action="/projudi/processo/anotacaoAssessoria.do?actionType=listar" onsubmit="disableScreen();">
+		<input type="hidden" name="idNotaSelecionada" value="" id="idNotaSelecionada">
+		<input type="hidden" name="idProcessoRecurso" value="" id="idProcessoRecurso">
+		<input type="hidden" name="processo" value="false" id="processo">
+		<input type="hidden" id="divNotaSelecionada"/>
+		<input type="hidden" id="conteudoEditorStore"/>
+		<input type="hidden" id="bg_color"/>
+		<div id="anotacaoAssessoriaPopupTitulo" style="visibility: hidden;">
+			<table style="width: 100%;">
+				<tr>
+					<td><h3>Comentários</h3></td>
+					<td class="anotacaoBtnBar">
+						<img id="new" class="new" src="/projudi/img/themes/olive/iPlus.gif" alt="Criar" title="Adicionar Comentário" onclick="aa.criarNota();"/>
+						<img id="close" class="close" src="/projudi/img/themes/olive/iClose.gif" alt="Fechar" title="Fechar" onclick="aa.fechar();"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="listaAnotacao">
+			
+		</div>
+		<script type="text/javascript">var list = document.getElementById("listaAnotacao"); if (list){ list.scrollTop = list.scrollHeight;}</script>
+		<br>
+		<!-- Editar/Incluir anotação -->
+		<div id="edicao_" class="anotacao edicaoAnotacao" style="display: none;">
+			<table>
+				<tr>
+					<td style="width: 80%;">
+						<b id="tituloEdicao">Novo Comentário</b>
+						<table class="paletaAnotacao" style="width: auto; vertical-align: super;">
+							<tr>
+								
+									<td class="itemPaletaAnotacao notaAmarela" onclick="aa.changeColor('notaAmarela');"></td>
+								
+									<td class="itemPaletaAnotacao notaAzul" onclick="aa.changeColor('notaAzul');"></td>
+								
+									<td class="itemPaletaAnotacao notaBranca" onclick="aa.changeColor('notaBranca');"></td>
+								
+									<td class="itemPaletaAnotacao notaRoxa" onclick="aa.changeColor('notaRoxa');"></td>
+								
+									<td class="itemPaletaAnotacao notaVerde" onclick="aa.changeColor('notaVerde');"></td>
+								
+							</tr>
+						</table>
+					</td>
+					<td  style="width: 20%;" class="anotacaoBtnBar" colspan="2">
+						<img id="edicao_save"	 class="save"   src="/projudi/img/themes/olive/iSuccess.gif" alt="Salvar"  title="Salvar"   
+							 onclick="aa.salvar();"/>
+						<img id="edicao_cancel"  class="cancel" src="/projudi/img/themes/olive/iUndo.ico"    alt="Cancel"  title="Desfazer alterações"
+							 onclick="aa.desfazer();"/>						 
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table style="display: ;"><!-- Para desabilitar a busca de documentos, altere o valor da propriedade CSS display para none -->
+				<tr>
+					<td>Incluir link para documento do recurso: (Ex.: 1.1 Petição Inicial)</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="hidden" name="idDocumento" value="" id="idDocumento">
+		    			<input type="text" name="descricaoDocumento" value="" onkeyup="aa.incluirLink(event);" onkeypress="return event.keyCode != 13;" onblur="ajaxAutoCompleteOnBlurInput('idDocumento','descricaoDocumento')" id="descricaoDocumento" style="width: 80%;" title="Ao digitar, escolha uma das opções sugeridas ou selecione através da pesquisa ao lado">
+						
+				    	<span id="indicatorClasseOff" style="display:inline;">
+							<img src="/projudi/img/indicatorOff.gif" align="top" class="indicatorOff" title="Campo autocompletar: ao digitar, escolha uma das opções sugeridas">
+				    	</span>
+				    	<span id="indicatorClasse" style="display:none; margin-left:-20px;">
+							<img src="/projudi/img/indicator.gif" align="top" class="indicatorOn">
+				    	</span>
+						<script type="text/javascript">
+new AjaxJspTag.Autocomplete(
+"/projudi/processo/anotacaoAssessoria.do?", {
+indicator: "indicatorClasse",
+source: "descricaoDocumento",
+preFunction: aa.ajaxAutoCompleteClearInput,
+target: "idDocumento",
+minimumCharacters: "3",
+className: "autocomplete",
+parameters: "actionType=ajaxListarDocumentosProcesso,isProcesso=false,idProcessoRecurso=,descricaoPesquisa={descricaoDocumento}"
+});
+</script>
+
+
+
+						<a href="javascript:aa.clearAutocomplete();" class="eraseButton" title="Limpar">
+							<span>Limpar</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<textarea name="conteudoEditor" id="edicao_conteudoEditor" style="background-color: white;"></textarea>
+		</div>
+		<script	type="text/javascript">
+			//Se não houver anotações ainda, exibe div de cadastro ao abrir o popup:
+			var p = document.getElementById("anotacaoAssessoriaPopup");
+			var l = document.getElementById("listaAnotacao");
+			if (p.style.display != "none" && l.children.length == 0) aa.criarNota();
+		</script>
+	</form>
+</div>
+				</div>
+				<script type="text/javascript">new Draggable("anotacaoAssessoriaPopup");</script>
+			
+			<hr/>
+		</div>
+		<a href='/projudi//include_common.html' style="text-decoration:none; cursor:default; position:fixed; bottom:-20px;">&nbsp;&nbsp;</a>
+		<!-- Verifica se exite edição de textos para aumento do timeout -->
+		<script type="text/javascript">
+		if( typeof ControladorSessao != 'undefined'){
+			window._sControler= new ControladorSessao('editor');
+		}
+		</script>
+	</body>
+</html>

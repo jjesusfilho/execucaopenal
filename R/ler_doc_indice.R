@@ -18,7 +18,7 @@ ler_doc_indice <- function(arquivos = NULL, diretorio = "."){
   purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
 
 
-    numero <- stringr::str_extract(.x,"\\d+")
+    numero <- stringr::str_extract(.x,"\\d+(?=\\.pdf)")
 
     x <- pdftools::pdf_text(.x)
 
@@ -46,7 +46,9 @@ ler_doc_indice <- function(arquivos = NULL, diretorio = "."){
                       pagina = 1L,
                       data = lag(data),
                       doc = "capa",
-                      .before = 1)
+                      .before = 1) %>%
+      tibble::add_column(texto = x)
+
 
 
   }),NULL))

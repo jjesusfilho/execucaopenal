@@ -4,14 +4,22 @@
 \alias{baixar_pdf}
 \title{Baixa pdfs}
 \usage{
-baixar_pdf(usuario = NULL, senha = NULL, id_proc = NULL, arquivo = NULL)
+baixar_pdf(
+  usuario = NULL,
+  senha = NULL,
+  id_proc = NULL,
+  processo = NULL,
+  arquivo = NULL
+)
 }
 \arguments{
 \item{usuario}{Usuário}
 
 \item{senha}{Senha}
 
-\item{id_proc}{id_execucao}
+\item{id_proc}{Id do processo}
+
+\item{processo}{Número do processo}
 
 \item{arquivo}{arquivo}
 }
