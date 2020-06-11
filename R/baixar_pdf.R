@@ -17,7 +17,10 @@ if (is.null(id_proc)){
 
 id_proc <- id_processo(ses, processo)
 
+arquivo <- paste0(id_proc,".pdf")
 }
+
+
 
  ses <-   navegar(ses, id_proc)
 
