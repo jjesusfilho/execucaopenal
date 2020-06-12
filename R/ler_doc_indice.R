@@ -26,28 +26,30 @@ ler_doc_indice <- function(arquivos = NULL, diretorio = "."){
       stringr::str_extract("(?<=Processo\\s).+?(?=\\sComarca)") %>%
       stringr::str_remove_all("\\D+")
 
+
     purrr::map_dfr(x[-1],purrr::possibly(~{
 
       p <-  stringr::str_match(.x,"(\\d{2}/\\d{2}/\\d{4})(?:\\:)(.+)")[2:3]
 
       pagina <- stringr::str_extract(.x,"(?<=Página\\s)\\d+") %>%
-                as.integer()
+        as.integer()
 
       data <-lubridate::dmy(p[1])
 
       doc <- stringr::str_squish(p[2])
 
-      tibble::tibble(pagina = pagina,data = data, doc = p[2])
+      tibble::tibble(pagina = pagina, data = data, doc = p[2])
 
     },NULL)) %>%
       tibble::add_column(processo = processo, numero = numero, .before = 1) %>%
       tibble::add_row(processo = processo,
                       numero = numero,
                       pagina = 1L,
-                      data = lag(data),
+                      data = NA,
                       doc = "capa",
                       .before = 1) %>%
-      tibble::add_column(texto = x)
+      tibble::add_column(texto = x) %>%
+      tidyr::fill(data,.direction="up")
 
 
 
