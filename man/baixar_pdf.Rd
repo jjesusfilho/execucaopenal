@@ -9,7 +9,7 @@ baixar_pdf(
   senha = NULL,
   id_proc = NULL,
   processo = NULL,
-  arquivo = NULL
+  direitorio = "."
 )
 }
 \arguments{
@@ -21,7 +21,7 @@ baixar_pdf(
 
 \item{processo}{Número do processo}
 
-\item{arquivo}{arquivo}
+\item{diretorio}{Onde colocar os pdfs}
 }
 \value{
 pdf
