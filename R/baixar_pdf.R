@@ -9,7 +9,7 @@
 #' @return pdf
 #' @export
 #'
-baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, processo = NULL, direitorio = ".") {
+baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, processo = NULL, diretorio = ".") {
 
 ses <- autentica(usuario, senha)
 

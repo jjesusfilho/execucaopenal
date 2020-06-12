@@ -9,7 +9,7 @@ baixar_pdf(
   senha = NULL,
   id_proc = NULL,
   processo = NULL,
-  direitorio = "."
+  diretorio = "."
 )
 }
 \arguments{
