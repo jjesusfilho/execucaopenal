@@ -4,12 +4,12 @@
 #' @param senha  Senha
 #' @param id_proc Id do processo
 #' @param processo Número do processo
-#' @param arquivo arquivo
+#' @param diretorio Onde colocar os pdfs
 #'
 #' @return pdf
 #' @export
 #'
-baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, processo = NULL, arquivo = NULL) {
+baixar_pdf <- function(usuario = NULL, senha = NULL, id_proc = NULL, processo = NULL, direitorio = ".") {
 
 ses <- autentica(usuario, senha)
 
@@ -28,10 +28,10 @@ id_proc <- httr::POST(url,body= body,encode = "form",handle= ses$handle) %>%
   httr::content("text") %>%
   stringr::str_extract("(?<=numeroProcesso = )\\d+")
 
-arquivo <- paste0(id_proc,".pdf")
 
 }
 
+arquivo <- file.path(diretorio,paste0(id_proc,".pdf"))
 
 
  ses <-   navegar(ses, id_proc)
