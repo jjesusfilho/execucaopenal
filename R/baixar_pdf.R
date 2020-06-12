@@ -15,9 +15,21 @@ ses <- autentica(usuario, senha)
 
 if (is.null(id_proc)){
 
-id_proc <- id_processo(ses, processo)
+url <- "https://www3.tjrj.jus.br/projudi/processo/buscaProcesso.do?actionType=pesquisaSimples"
+
+body <- list(
+  page = "1",
+  flagNumeroUnico = "true",
+  flagNumeroFisicoAntigo = "false",
+  numeroProcesso = processo
+)
+
+id_proc <- httr::POST(url,body= body,encode = "form",handle= ses$handle) %>%
+  httr::content("text") %>%
+  stringr::str_extract("(?<=numeroProcesso = )\\d+")
 
 arquivo <- paste0(id_proc,".pdf")
+
 }
 
 
@@ -188,3 +200,6 @@ id_processo <- function(ses, processo) {
     stringr::str_extract("(?<=numeroProcesso = )\\d+")
 
 }
+
+
+
