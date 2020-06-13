@@ -5,5 +5,5 @@
 \alias{execucaopenal}
 \title{\code{execucaopenal} package}
 \description{
-Baixa  e organiza decisões da vec do TJRJ
+Baixa  e organiza execução penal do Rio de Janeiro
 }
