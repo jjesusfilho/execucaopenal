@@ -104,7 +104,7 @@ poe_valores <-
   function(ses,
            mov = "false",
            lim = "false",
-           tamanho = 200) {
+           tamanho = 300) {
 
     form <- ses %>%
       rvest::html_form() %>%
