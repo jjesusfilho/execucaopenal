@@ -1,0 +1,405 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+
+	
+
+
+	
+	
+
+	<title>Projudi - Processo Eletrônico do Judiciário do Rio de Janeiro</title>
+	
+	<link rel="stylesheet" type="text/css" href="/projudi/estilo.css?updateIdx=3">
+	<link rel="stylesheet" type="text/css" href="/projudi/css/common.css?updateIdx=1592102957530">
+	<script type="text/javascript" language="javascript" src="/projudi/scripts/default.js?updateIdx=3"></script>	
+	<script type="text/javascript" language="javascript" src="/projudi/js/login.js?updateIdx=3"></script>	
+
+	<script type="text/javascript">
+		diech9ohTie3();
+		// habilita o scroll no frame principal
+		parent.document.getElementById('mainFrame').scrolling = 'AUTO';
+		
+	 	function logarComA3() {
+	 		var isFirefox = navigator.userAgent.toLowerCase().indexOf( "firefox" ) != -1;
+		 	var isIE = navigator.userAgent.toLowerCase().indexOf( "msie" ) != -1;
+		 	
+		 	if (isFirefox) {
+		 	    if (window.crypto) {
+		 	        try {
+		 	        	window.crypto.logout();
+		 	        } catch (err) {//Safari, Opera, Chrome (try with tis session breaking)
+		 	        }
+		 	    }
+		 	   
+		 	} 
+		 	//else {
+			//	alert('Por enquanto, o login por certificado está homologado para o navegador Firefox somente.');
+		 	//}	
+		 	if (isIE) { // MSIE 6+
+		 	    document.execCommand('ClearAuthenticationCache');
+		 	}
+		 	document.location.href='/projudi/token/logon.do;jsessionid=D8B12E0657093DDA86E2439E545C264B?_tj=6b6ae4642273044678ec484cae36f3fd8b3ae22d360ce6e914df63a7ffcc003b';
+	 	}
+	 	
+	 	var bodyKeyDown = false;
+	 	function onBodyKeyDown() {
+	 		if ( !bodyKeyDown ) {
+	 			var img = new Image();
+	 			img.src = '/projudi/img/spacer_10_30.jpg';
+	 			bodyKeyDown = true;
+	 		}
+	 	}
+
+	</script>
+
+	<!--[if IE]>
+	<style>
+		body#mainPage {
+			font-family: Verdana, Arial, Helvetica, Sans-Serif;
+			font-size: 11px;
+		    margin: 10px 0px 0px 0px;
+			width: expression(document.body.clientWidth <= 771 ? "771px" : "100%" );
+			background: #FFF url( ./img/themes/olive/bDegrade.jpg ) repeat-y scroll top left;
+			color: #3E4034;
+		}
+	</style>
+	<![endif]-->
+	
+</head>
+
+
+
+
+
+ 
+<body id="mainPage" onmousemove="onBodyMouseMove()"> <!-- onload="checkJavaSupport()" -->
+	<table class="form" style="height: 100%">
+		<tr>
+			
+			<td width="30px">&nbsp;</td>
+			
+			
+			<td width="1%" nowrap="nowrap" style="vertical-align:top;">
+				<table class="form">
+					<tr style="height:6px"><td></td></tr>
+						
+					
+					<tr>
+						<td class="labelLink">
+													
+							<a id="infoAdvogados" href="/projudi/interno.jsp?endereco=/projudi/informacoesAdvogado.do;jsessionid=D8B12E0657093DDA86E2439E545C264B?_tj=6b6ae464227304463feaeedcd37ae431a0ffa0aeb9808c9f">
+								Informações ao Advogado
+							</a>					
+						</td>
+					</tr>
+
+					
+					<tr>
+						<td class="labelLink">
+							<a id="consultaPublica" href="https://www3.tjrj.jus.br/projudi/processo/consultaPublica.do?actionType=iniciar" target="_blank">
+								Consulta Pública
+							</a>					
+						</td>
+					</tr>
+
+					
+					
+					<tr>
+						<td class="labelLink">
+							
+							<a id="validacaoDocumentos" href="/projudi/processo/validacaoDocumentos.do;jsessionid=D8B12E0657093DDA86E2439E545C264B?_tj=6b6ae4642273044678ec484cae36f3fdd6ce8915eb20394c">
+								Validação de Documentos
+							</a>					
+						</td>
+					</tr>
+					
+
+					
+					<tr>
+						<td class="labelLink">
+							<a id="parteProcesso" href="https://www3.tjrj.jus.br/projudi/usuario/logonParte.do?_tj=8a6c53f8698c7ff7826b4c776d71316d3a6b758b3d398283" target="_parent">
+								Parte em Processo
+							</a>
+						</td>
+					</tr>
+
+					
+					<tr>
+						<td class="labelLink">
+							<a id="legislacao" href="/projudi/interno.jsp?endereco=/projudi/legislacao.jsp;jsessionid=D8B12E0657093DDA86E2439E545C264B">
+								Legislação
+							</a>	
+						</td>
+					</tr>
+
+					
+					<tr>
+						<td class="labelLink">
+							<a id="softwaresRequeridos" href="/projudi/interno.jsp?endereco=/projudi/softwaresRequeridos.jsp;jsessionid=D8B12E0657093DDA86E2439E545C264B">
+								Softwares Requeridos
+							</a>	
+						</td>
+					</tr>
+
+					
+					<tr>
+						<td class="labelLink">
+													
+							<a id="estatisticaPublica" href="/projudi/interno.jsp?endereco=/projudi/estatisticaPublica.do;jsessionid=D8B12E0657093DDA86E2439E545C264B?_tj=6b6ae464227304463feaeedcd37ae431a0ffa0aeb9808c9f">
+								Estatísticas
+							</a>					
+						</td>
+					</tr>
+
+					
+					<tr>
+						<td class="labelLink">
+							<a id="noticias" href="/projudi/interno.jsp?endereco=/projudi/noticias.jsp;jsessionid=D8B12E0657093DDA86E2439E545C264B">
+								Histórico de Notícias
+							</a>					
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td class="labelLink">
+							<a id="noticias" href="/projudi/interno.jsp?endereco=/projudi/indisponibilidades.jsp;jsessionid=D8B12E0657093DDA86E2439E545C264B">
+								Histórico de Indisponibilidade
+							</a>					
+						</td>
+					</tr>
+
+					
+					<tr>
+						<td class="labelLink">
+							<a id="ajuda"  href="/projudi/interno.jsp?endereco=/projudi/Ajuda.jsp;jsessionid=D8B12E0657093DDA86E2439E545C264B">
+								Ajuda
+							</a>
+						</td>
+					</tr>
+	
+					
+					<tr>
+						<td class="labelLink">
+							<a id="contato" href="mailto:provep@tjrj.jus.br">
+								Contato
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			
+			
+			<td width="30px">&nbsp;</td>
+			<td width="1px" style="border-right:1px dotted #63735F;">&nbsp;</td>
+			<td width="35px">&nbsp;</td>
+			
+			
+			<td style="vertical-align:top;">
+				
+				<form method="post" action="/projudi/usuario/logon.do;jsessionid=D8B12E0657093DDA86E2439E545C264B?_tj=6b6ae46422730446b32f2360ccfff38d5a9c683029f0ba3a" name="formLogin" id="formLogin" onsubmit="return submitLogin()">
+					
+					
+					
+
+					
+					
+						 
+						<table class="form">
+						<tr>
+							<td style="vertical-align:top; width:380px;">
+								<table class="form">
+									
+									<tr><td colspan="2"><h3>Acesso ao Sistema</h3></td></tr>
+									
+									
+									<tr>
+										<td width="1%" class="label"></td>
+										<td style="text-align:justify;">
+											<font color="#F56527" style="font-weight:bold;">Atenção:</font> as partes que desejam acessar seus processos devem fazer o login no sistema clicando 
+											<a id="parteProcesso" href="https://www3.tjrj.jus.br/projudi/usuario/logonParte.do?_tj=8a6c53f8698c7ff7826b4c776d71316d3a6b758b3d398283">
+												aqui.
+											</a>					
+										</td>
+									</tr>
+										
+									
+									<tr>
+										<td width="1%" class="label">Login:</td>
+										<td width="auto"><input type="text" id="login" name="login" value="" size="25" maxlength="25" autocomplete="off"></td>
+									</tr>
+									<tr>
+										<td width="1%" class="label">Senha:</td>
+										<td width="auto"><input type="password" id="senha" name="senha" size="25" maxlength="25" autocomplete="off"></td>
+									</tr>
+									<tr>
+										<td width="auto">&nbsp;</td>
+										<td width="auto"><a href="/projudi/usuario/resetSenha.do?actionType=inicio">[Esqueci a senha]</a></td>
+										<td width="auto">&nbsp;</td>
+									</tr>
+
+									
+									
+									
+									
+									<tr>
+										<td colspan="2">
+											<table class="buttonBar" cellpadding="0" cellspacing="0">
+												<tr>
+													<td>&nbsp;</td>
+													<td class="buttons" width="1%" nowrap="nowrap">
+														<input style="disabled:false" type="submit" id="btEntrar" value="Entrar" class="button"/>
+													</td>
+												</tr>
+											</table>
+										</td>	
+									</tr>
+								</table>			
+							</td>
+							
+						</tr>		
+						</table>
+					
+					
+					
+					
+					
+										
+					<input type="hidden" name="tck" id="tck" value="principal"/>
+					
+					<div id="divAguarde" style='margin-top:0;margin-bottom:6px;display:none;width:100%;float:left'>
+						<img src='/projudi/img/indicator.gif' hspace="0" vspace="0"><em style='color:#F56527;font-weight:bold'>&nbsp;Recarregando devido a inatividade, por favor aguarde.</em>
+					</div>
+				</form>
+				
+				
+				<!-- notícias -->
+<h3>Notícias</h3>
+<ul style="text-align: justify; padding-right:10px">
+<li><b>20/05/2020</b>&nbsp;Manutenção programada-MAIO/2020
+
+Srs. Usuários,
+
+Em cumprimento ao determinado no art. 4º do Ato Executivo n.º 854/2013, a manutenção programada dos equipamentos e sistemas centrais de informática referente ao mês de MAIO de 2020 será realizada a partir das 20:00h do dia 23/05/2020 (Sábado). 
+
+Os sistemas não ficarão indisponíveis, mas poderão apresentar alguma instabilidade, exceto em relação ao Portal Corporativo do TJRJ, que ficará indisponível entre 00:00h e 02:00h do dia 24/05/2020 (Domingo).
+
+Outrossim, informamos que as manutenções programadas referentes aos meses de JUNHO, JULHO e AGOSTO do ano corrente estão previstas conforme a seguir.
+
+JUNHO - 20 e 21 de JUNHO
+JULHO - 18 e 19 de JULHO
+AGOSTO - 22 e 23 de AGOSTO
+
+Atenciosamente.
+Diretoria Geral de Tecnologia da Informação e Comunicação de Dados
+
+
+</li>
+<li><b>15/01/2020</b>&nbsp;ATO NORMATIVO Nº 1/2020
+Dispõe sobre a implantação do Sistema Eletrônico de Execução Unificado - SEEU no Poder Judiciário do Estado do Rio de Janeiro.
+O PRESIDENTE DO TRIBUNAL DE JUSTIÇA DO ESTADO DO RIO DE JANEIRO, Desembargador CLAUDIO DE MELLO TAVARES, no uso de suas atribuições legais;
+CONSIDERANDO os termos da Resolução do Conselho Nacional de Justiça – CNJ, nº 223, de 27 de maio de 2016, que institui e regulamenta o Sistema Eletrônico de Execução Unificado - SEEU;
+CONSIDERANDO a Resolução do Conselho Nacional de Justiça – CNJ, nº 280, de 09 de abril de 2019, que estabeleceu diretrizes e parâmetros para o processamento da execução penal nos tribunais brasileiros por intermédio do Sistema Eletrônico de Execução Unificado - SEEU;
+CONSIDERANDO as diretrizes do Conselho Nacional de Justiça, consubstanciadas nas Resoluções nº 96/2009, 113/2010, 288/2019 que visam ao controle informatizado da execução penal e das informações relacionadas ao sistema carcerário brasileiro em todo território nacional;
+CONSIDERANDO os termos da Resolução TJ/OE nº 7, de 26 de março de 2012, que regulamenta o procedimento da execução penal no âmbito do Estado do Rio de Janeiro.
+CONSIDERANDO a necessidade de implantação e regulamentação do Sistema Eletrônico de Execução Unificado – SEEU, na Vara de Execuções Penais, no âmbito do Poder Judiciário do Estado do Rio de Janeiro;
+CONSIDERANDO a adesão deste Tribunal de Justiça ao Termo de Cooperação Técnica n 002/2016 (Processo CNJ n. 05179/2015), no dia 06 de maio de 2019, para a implantação do Sistema Eletrônico de Execução Unificado – SEEU – no Poder Judiciário do Estado do Rio de Janeiro;
+CONSIDERANDO o Cronograma do Conselho Nacional de Justiça que estabelece o início da Implantação do Sistema Eletrônico de Execução Unificado, SEEU, neste Tribunal de Justiça a partir de 28/01/2020, por meio dos Ofícios CNJ nº 1114 e 1123.
+RESOLVEM:
+Art. 1º. Implantar o Sistema Eletrônico de Execução Unificado (SEEU) como sistema de processamento de informações e da prática
+de atos processuais relativos à Execução Penal, no âmbito do Poder Judiciário do Estado do Rio de Janeiro, respeitadas as diretrizes e requisitos do SEEU e da Lei 11.419/2006.
+Art. 2.º Tramitarão no SEEU as execuções de penas privativas de liberdade, nos regimes fechado, semiaberto, aberto e de cumprimento de livramento condicional, além das penas restritivas de direitos, SURSIS e medidas de segurança.
+Art. 3º. Serão migrados para SEEU todos os processos da competência de execução penal que hoje tramitam fisicamente pela Central de Penas Alternativas da Vara de Execuções (sistema SCP), pelo Núcleo de Penas e Medidas Alternativas do 1º e 5º Juizados de Violência Doméstica (sistema DCP) ou eletronicamente na Vara de Execuções Penais (sistema PROJUDI).
+Art. 4º. O processo de preparação e migração do acervo da Vara de Execuções Penais para o novo Sistema Eletrônico de Execução Unificado (SEEU) observará o seguinte cronograma:
+I - Na Divisão de Penas e Medidas Alternativas - DPMA, iniciar-se-á em 13/01/2020, com término programado para 21/02/2020.
+II – Na Divisão de Apoio ao Processamento – DVAP, iniciar-se-á em 21/01/2020, com término programado para 21/02/2020.
+§ 1º. Na Divisão de Penas e Medidas Alternativas – DPMA, ficarão suspensos os prazos processuais no período de 13/01/2020, com término programado para 21/02/2020.
+§ 2º. Na Divisão de Apoio ao Processamento - DVAP, ficarão suspensos os prazos processuais no período de 16/01/2020, com término programado para 21/02/2020.
+Art. 5º. Nos períodos especificados nos incisos I e II do artigo anterior, ficará suspenso o expediente na Vara de Execuções Penais,
+ressalvadas as medidas consideradas urgentes, a saber:
+I – Autorização de Viagem e saídas excepcionais previstas no art. 120 da LEP;
+II – Saúde do custodiado que implique risco de vida;
+III – Prisão ilegal
+IV – Progressão do regime semiaberto para o aberto, nos casos em que já houver instrução no PROJUDI;
+V – Livramento condicional, salvo se já houver instrução no PROJUDI e somente para os apenados que não se encontram em regime aberto.
+§ 1º. Os requerimentos referentes às medidas urgentes acima descritas serão formalizados fisicamente com os dados qualificativos do apenado, número da Carta de Execução de Sentença, CES, ou Processo, devendo ser protocolizados no serviço de protocolo da Vara de Execuções Penais que formará o incidente fisicamente para análise do pleito.
+§ 2º. Após a implantação do novo sistema SEEU, os referidos procedimentos físicos deverão ser digitalizados para os devidos lançamentos nos respectivos autos.
+Art. 6º. No período de processo de implantação do novo Sistema, o envio de Cartas de Execução de Sentença para à Divisão de Penas e Medidas Alternativas - DPMA, eletrônicas e físicas, pelo Sistema DCP, Malote Digital ou pelo SISCOMA ficará suspenso de 13/01/2020 a 21/02/2020.
+Art.7º. No período de processo de implantação do novo Sistema, o envio de Cartas de Execução de Sentença das Penas Privativas de Liberdade, eletrônicas e físicas, pelo Sistema DCP, Malote Digital ou pelo SISCOMA ficará suspenso de 21/01/2020 a 21/02/2020.
+Art.8º. A Vara de Execuções Penais procederá até o dia 15/01/2020 ao processamento de todos os feitos, cujas penas se encerrem no período compreendido de 16/01/2020 a 21/02/2020, com vista às partes, manifestação judicial e expedição do alvará de soltura, quando cabível, para cumprimento somente na data do término da pena.
+Art. 9º. Os processos da Vara de Execuções Penais, que estejam com vistas ao Ministério Público, à Defensoria Pública, aos Advogados e aos demais órgãos, deverão ser devolvidos até o dia 15/01/2020.
+Parágrafo Único. Processos com remessa a órgãos externos, com intimação com prazo fluindo e ainda não respondido, deverão ser compulsoriamente retornados e, após a implementação do SEEU, os prazos serão integralmente devolvidos.
+Art. 10. Com a migração dos dados, os processos de execução penal e seus incidentes tramitarão exclusivamente no sistema SEEU, sem prejuízo da manutenção dos dados e peças eletrônicas do PROJUDI e do SCP, apenas para fins de consulta.
+Art. 11. O processo migrado para o SEEU deverá manter a integridade de suas peças processuais, bem como o registro das principais informações processuais, sem prejuízo de eventuais correções desses dados no novo sistema.
+Art. 12. Com a implantação do SEEU, todas as manifestações processuais dar-se-ão, obrigatoriamente, por meio do novo sistema eletrônico.
+Art. 13. Para cada indivíduo será formado um único processo de execução penal, individual e indivisível, que reunirá todas as condenações que lhe forem impostas, inclusive aquelas que vierem a ocorrer no curso da execução em andamento.
+§ 1º. O setor responsável pelo cadastramento de feitos no sistema SEEU deverá zelar para evitar a duplicidade de execuções da mesma pena ou a execução simultânea em processos diversos.
+§ 2º. Sobrevindo condenação, após a extinção de processo de execução anterior, será formado novo processo de execução penal,com novo registro numérico único.
+§ 3º. Sendo encaminhada nova Carta de Execução de Sentença, no curso da execução, será registrada e distribuída por dependência, bem como será anexada ao processo de execução em andamento, sem nova autuação, preservando-se a numeração única.
+Art. 14. Recebidas as Cartas de Execução de Sentença, oriundas de outros Estados da Federação, por meio físico ou eletrônico,deverão ser cadastradas e processadas diretamente no sistema SEEU.
+Art. 15. Os prazos e a suspensão do expediente estabelecidos nos artigos 4º, 5º, 6º e 7º, poderão ser prorrogados por ato da Presidência do Tribunal de Justiça do Estado do Rio de Janeiro, atendendo à necessidade decorrente da implementação do sistema.
+Art. 16. Este ato entra em vigor na data de sua publicação, revogando-se as disposições em contrário.
+Rio de Janeiro, 10 de janeiro de 2020
+Desembargador CLAUDIO DE MELLO TAVARES
+Presidente do Tribunal de Justiça do Estado do Rio de Janeiro</li>
+</ul>
+
+
+				
+			</td>	
+		</tr>
+		<tfoot	align="center">
+			
+			
+			
+			<tr>
+				<td colspan="6"><b>PROJUDI TJERJ v3.2.3</b></td>
+			</tr>
+		</tfoot>
+	</table>
+	<a href='/projudi//include_common.html;jsessionid=D8B12E0657093DDA86E2439E545C264B' style="text-decoration:none; cursor:default; position:fixed; bottom:-20px;">&nbsp;&nbsp;</a>
+</body>
+<script type="text/javascript" language="javascript">	
+	// seta o foco na campo "login" 
+	document.getElementById('login').focus();
+
+	// acerta window.location para não contar sessão dupla
+	var pagina = parent.frames[0].window.location.href; 
+	if(pagina == null || pagina.indexOf('cabecalho.jsp') == -1){
+		parent.frames[0].window.location = '/projudi/cabecalho.jsp';
+	}
+function __rTmtPg()
+{		
+	document.getElementById('divAguarde').style.display="block";
+	document.getElementById('login').value="";
+	document.getElementById('senha').value="";
+	document.getElementById('btEntrar').value="Aguarde..."
+	if(typeof window.PJD_INTERVAL != "undefined")
+		clearInterval(window.PJD_INTERVAL);
+	window.setTimeout("window.location.href='/projudi/paginaPrincipal.jsp?r='+Math.random()",2000);
+}
+function submitLogin(){
+	var login =document.formLogin.login.value;
+	var key = hex_md5("4e1ea446c49d0a4e56d4147d79578d6cdc0cbbaf9543d6748b2908a6b0b1cc7e" + login);
+	document.formLogin.tck.value=key;
+	document.formLogin.submit();
+}
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,7843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="BR">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta http-equiv="Cache-Control" content="no-store,no-cache,must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+
+<link rel="icon" href="favicon.ico"/>
+		
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/projudi/css/layout.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/typo.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/menu.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/ajaxtags.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/assinatura_servidor.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/themes/olive.css?updateIdx=128"/>
+
+
+<link rel="stylesheet" type="text/css" href="/projudi/css/window/default.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" href="/projudi/css/window/tjpr.css?updateIdx=128"/>
+<link rel="stylesheet" type="text/css" media="print" href="/projudi/css/print.css?updateIdx=128"/>
+
+<link rel="stylesheet" type="text/css" href="/projudi/css/common.css?updateIdx=1592107106161"/>
+
+
+ 
+
+
+		
+
+
+
+
+
+
+<script type="text/javascript" src="/projudi/js/prototype.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/window/window.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/window/effects.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_crossframe.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_iframe.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_hide.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/overlibmws/overlibmws_shadow.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/scriptaculous/scriptaculous.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/scriptaculous/dragdrop.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/ajax/ajaxtags.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/ajax/ajaxtags_controls.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/ajax/ajaxtags_parser.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/calendarpopup/CalendarPopup.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/html-form-input-mask.js?updateIdx=140"></script>
+
+
+<script type="text/javascript" src="/projudi/js/tjpr.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/projudi.js?updateIdx=140"></script>
+<script type="text/javascript" src="/projudi/js/uploader.js?updateIdx=140"></script>
+
+<script type="text/javascript">
+  diech9ohTie3();
+
+  // Application root path for JavaScript functions
+  var appRootPath = "/projudi/";
+
+  // Multiple onload function created by: Simon Willison
+  // http://simonwillison.net/2004/May/26/addLoadEvent/
+  function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+      window.onload = func;
+    } else {
+      window.onload = function() {
+        if (oldonload) {
+          oldonload();
+        }
+        func();
+      }
+    }
+  }
+  
+  addLoadEvent(function() {
+	// adds fields masks javascript listener
+    Xaprb.InputMask.setupElementMasks();
+
+    // adiciona contador de tempo para expirar a sessão
+    if( typeof(functionDisplaySessionTimeout) != 'undefined' )
+    	functionDisplaySessionTimeout();
+  });
+
+</script>
+		<title>
+			
+				
+				
+				
+					Projudi - Processo Eletrônico do Judiciário do Rio de Janeiro
+				
+					
+		</title>
+	</head>
+	
+	
+	<body onmousemove="onBodyMouseMove()" onkeydown="onBodyKeyDown()">
+		<div id="container">
+			
+			
+								
+				
+				 
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var sessionTimeout = 60;
+	var serverdate = calcServerTime(new Date(1592107106163),3); 
+
+	function calcServerTime(timeServidor, offset) {
+		dataServidor = new Date(timeServidor);
+	    utc = dataServidor.getTime() + (dataServidor.getTimezoneOffset() * 60000);
+	    nd  = new Date(utc - (3600000*offset));
+	    return nd;
+	}
+	
+	function padlength(what){
+		var output=(what.toString().length==1)? "0"+what : what;
+		return output;
+	}
+
+	function displayTime() {
+		var month=serverdate.getMonth()+1;
+		var day=serverdate.getDate();
+		var year=serverdate.getFullYear();
+		var timestring="<strong>&nbsp;Data:</strong>&nbsp;"+padlength(day)+"/"+padlength(month)+"/"+padlength(year)+" "+padlength(serverdate.getHours())+":"+padlength(serverdate.getMinutes());
+		document.getElementById("serverTime").innerHTML = timestring;
+		serverdate.setMinutes(serverdate.getMinutes()+1);
+	}
+
+	function displaySessionTime(sTimeout){
+		document.getElementById('sessionField').innerHTML = '<strong>&nbsp;Expira em:</strong>&nbsp;'+sTimeout+' min';
+	}
+	
+	var functionDisplaySessionTimeout = function() {
+		// se for grupo população, não exibe informação de "tempo de sessão"
+		var isPopulacao = false;
+		if( isPopulacao )
+			return;
+
+		//assigning minutes left to session timeout to Label
+		displaySessionTime(sessionTimeout);
+		sessionTimeout = sessionTimeout - 1;
+	    
+		//if session is not less than 0
+		if (sessionTimeout >= 0) {
+			//call the function again after 1 minute delay
+			window.setTimeout("functionDisplaySessionTimeout()", 60000);
+			displayTime();
+		} else {
+			//show message box
+			document.getElementById('sessionField').innerHTML = '<strong>&nbsp;Expira em:</strong>&nbsp;Sessão expirada';
+		}
+	}
+
+
+	/**
+	 * Abre o manual
+	 */
+	function abreManual(url) {
+		window.open(url,'janela','width=750,height=450,left=10,top=30,' +
+					'screenX=10,screenY=30,toolbar=yes,location=no,' + 
+					'directories=no,status=no,menubar=yes,scrollbars=yes,' +
+					'copyhistory=no,resizable=yes');
+	}
+	
+	/**
+	 * Abre a popup com o histórico dos processos/recursos recentemente visualizados
+	 */
+	function openDialogHistoricoProcessosRecursos(titulo) {
+		// abre a popup (sem encriptar a url)
+		var url = '/projudi/historicoProcessosRecursos.do?actionType=listar';
+		openDialog(url, titulo, 0, 0);
+	}
+
+</script>
+
+
+
+<table id="userinfo" class="naoImprimir" cellpadding="0" cellspacing="0">
+	<tr>
+		
+		<td>
+			
+			<strong>::</strong>
+			
+				<strong>Usuário:</strong>&nbsp;SP215217 (Consulta ao 1º Grau)
+				
+			
+			
+			
+			
+			
+
+ 			
+			
+			<span id="serverTime"></span>
+			
+			
+			<span id="sessionField"></span>
+			
+			
+			
+			
+			
+			
+		</td>
+		
+		
+		<td width="1%" nowrap="nowrap" style="text-align: right; vertical-align: top;">
+			
+						
+					&nbsp;
+					<a id="processoBusca" href="/projudi/processo/buscaProcesso.do?actionType=iniciar" class="shortcuts">
+			    		RG
+			    	</a>
+			    	&nbsp;
+								
+				
+
+					<a id="processoBusca" href="/projudi/processo/buscaProcesso.do?actionType=iniciarSimples" class="shortcuts">
+			    		Processo
+			    	</a>
+			    	&nbsp;
+		    	
+				<a id="history" href="javascript: openDialogHistoricoProcessosRecursos('');" title="" class="shortcuts">
+		    		Histórico
+		    	</a>
+		    	
+		    	&nbsp;
+	    	
+			<a id="close" href="/projudi/usuario/logon.do?actionType=logout&forcarLogout=true" class="shortcuts" target="mainFrame">
+	    		Sair
+			</a>		
+		</td>
+	</tr>
+
+	
+		
+
+	
+	
+
+	
+</table>
+			
+			<hr/>
+			
+			<div id="content">
+				<div id="idCalPadrao" style="position:absolute;z-index:1000;float:right;visibility:hidden;background-color:white;layer-background-color:white;">
+				</div>
+				
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	/**
+	 * Função para limpar o conteúdo das mensagens
+	 */
+	function clearMessages(){
+		var successMsgs = document.getElementById('successMessages');
+		if(successMsgs != null && "" + successMsgs != "undefined"){
+			successMsgs.style.display="none";
+		}
+	}
+	// chama a função após 4 segundos
+	var flagfixedSuccessMessage = "";
+	if( (flagfixedSuccessMessage == "") || !flagfixedSuccessMessage )
+		window.setTimeout("clearMessages()", 4000);
+//-->
+</script>
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="processoBuscaForm" id="buscaProcessoForm" method="post" action="/projudi/processo/buscaProcesso.do?actionType=pesquisar" onsubmit="disableScreen();">
+
+<h3>Busca Avançada por Processos</h3>
+
+<br><div align="left"><b>BUSCA POR:</b><br><b>Opção:</b> PARTE PROMOVENTE e PROMOVIDA <br><b>Juízo:</b> Vara de Execuções Penais - Cartório de Réu Preso e Cartório de Livramento Condicional <br><b>Data Início Distribuição:</b> 01/04/2019 <br><b>Data Final Distribuição:</b> 03/04/2019 <br></div><br>
+
+<table class="buttonBar" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>&nbsp;</td>
+		<td class="buttons" width="1%" nowrap="nowrap">
+	       	
+	       	
+	   		<input type="button" name="backButton" value="Refazer Pesquisa" onclick="disableScreen(); document.location.href='/projudi/processo/buscaProcesso.do?_tj=6b6ae4642273044678ec484cae36f3fdd6ce8915eb20394c';" id="backButton" class="button">
+		</td>
+	</tr>			        	
+</table>
+
+<br>
+	
+	
+	<input type="hidden" name="idObjetoAcao" value="-1">
+	<input type="hidden" name="nomeParte" value="">
+	<input type="hidden" name="cpfCnpj" value="">
+	<input type="hidden" name="opcao" value="ambos">
+	<input type="hidden" name="codVara" value="3067">
+	<input type="hidden" name="idClassificacaoProcessual" value="-1">
+	<input type="hidden" name="idClasseProcessual" value="0">
+	<input type="hidden" name="idAssuntoPrincipal" value="0">
+	<input type="hidden" name="flagSomentePrioritarios" value="false">
+	<input type="hidden" name="codTipoPrioridade" value="-1">
+	<input type="hidden" name="idStatus" value="-1">
+	<input type="hidden" name="segredo" value="-1">
+	<input type="hidden" name="idLocalizador" value="-1">
+	<input type="hidden" name="idSituacao" value="">
+	<input type="hidden" name="dataInicio" value="01/04/2019">
+	<input type="hidden" name="dataFim" value="03/04/2019">
+	<input type="hidden" name="filtroAdvogado" value="">
+	<input type="hidden" name="siglaAdvogado" value="">
+	<input type="hidden" name="origemProcesso" value="-1">
+	
+	<input type="hidden" name="tipoPesqNome" value="">
+	<input type="hidden" name="nomeMae" value="">
+	<input type="hidden" name="tipoPesqNomeMae" value="F">
+	<input type="hidden" name="nomePai" value="">
+	<input type="hidden" name="tipoPesqNomePai" value="F">
+	<input type="hidden" name="somenteProcessoFisico" value="false">
+
+	<input type="hidden" name="buscarTodasVarasMesmaCompetencia" value="false">
+	<input type="hidden" name="buscarCompetenciasSemelhantesComarca" value="">
+	
+	<input type="hidden" name="codTipoAcaoVinculada" value="-1">
+	<input type="hidden" name="numeroAcaoVinculada" value="">
+
+	
+	<input type="hidden" name="processoPageSize" value="100">
+	
+	<input type="hidden" name="processoPageNumber" value="1">
+	
+	<input type="hidden" name="processoSortColumn" value="p.numeroUnico">
+	
+	<input type="hidden" name="processoSortOrder" value="asc">
+
+	
+	
+	
+		
+		
+		
+		
+		<div id="navigator"><div class="navRight"><a class="arrowFirstOff" title="Ir para a primeira página">&nbsp;<span>Primeira Página</span></a><a class="arrowPreviousOff" title="Ir para a página anterior">&nbsp;<span>Página Anterior</span></a><b>1</b>,&nbsp;<a title="Ir para a página 2" href="javascript:document.forms[&#39;buscaProcessoForm&#39;][&#39;processoPageNumber&#39;].value=&#39;2&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortColumn&#39;].value=&#39;p.numeroUnico&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortOrder&#39;].value=&#39;ASC&#39;;document.forms[&#39;buscaProcessoForm&#39;].submit();">2</a><a class="arrowNextOn" title="Ir para a próxima página" href="javascript:document.forms[&#39;buscaProcessoForm&#39;][&#39;processoPageNumber&#39;].value=&#39;2&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortColumn&#39;].value=&#39;p.numeroUnico&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortOrder&#39;].value=&#39;ASC&#39;;document.forms[&#39;buscaProcessoForm&#39;].submit();">&nbsp;<span>Próxima Página</span></a><a class="arrowLastOn" title="Ir para a última página" href="javascript:document.forms[&#39;buscaProcessoForm&#39;][&#39;processoPageNumber&#39;].value=&#39;2&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortColumn&#39;].value=&#39;p.numeroUnico&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortOrder&#39;].value=&#39;ASC&#39;;document.forms[&#39;buscaProcessoForm&#39;].submit();">&nbsp;<span>Última Página</span></a></div><div class="navLeft">149 registro(s) encontrado(s), exibindo de 1 até 100</div><div style="clear:both"></div></div>
+
+		
+		<table class="resultTable" cellpadding="0" cellspacing="0" width="100%">
+			
+			<colgroup>
+				
+				<col width="14%" />
+				<col width="32%" />
+				<col width="6%" />
+				<col width="24%" />											
+				
+				
+			</colgroup>
+
+			
+			<thead>
+				<tr>
+					
+					<th><a class="orderOff" title="Ordenar Ascendente" href="javascript:document.forms[&#39;buscaProcessoForm&#39;][&#39;processoPageNumber&#39;].value=&#39;1&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortColumn&#39;].value=&#39;p.dataRecebimento&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortOrder&#39;].value=&#39;ASC&#39;;document.forms[&#39;buscaProcessoForm&#39;].submit();">Processo</a></th>
+					<th>Partes</th>
+					<th><a class="orderOff" title="Ordenar Ascendente" href="javascript:document.forms[&#39;buscaProcessoForm&#39;][&#39;processoPageNumber&#39;].value=&#39;1&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortColumn&#39;].value=&#39;p.dataRecebimento&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortOrder&#39;].value=&#39;ASC&#39;;document.forms[&#39;buscaProcessoForm&#39;].submit();">Distribuição</a></th>
+					<th><a class="orderOff" title="Ordenar Ascendente" href="javascript:document.forms[&#39;buscaProcessoForm&#39;][&#39;processoPageNumber&#39;].value=&#39;1&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortColumn&#39;].value=&#39;classeProcessual.descricao&#39;;document.forms[&#39;buscaProcessoForm&#39;][&#39;processoSortOrder&#39;].value=&#39;ASC&#39;;document.forms[&#39;buscaProcessoForm&#39;].submit();">Classe Processual<br>(Assunto Principal)</a></th>
+					
+					
+				</tr>
+			</thead>
+
+			
+			<tbody>
+				
+				 
+
+				
+				 
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68cd58a2b7aa90445" class="link">
+											<em class="attention">0073539-30.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Marcos Antonio da Silva Travassos</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 08:29:46.397
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af66071e1a547f2696a" class="link">
+											<em class="attention">0073560-06.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Andre Luis de Araujo Goncalves da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 09:10:55.069
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6814994e122ac9cfd" class="link">
+											<em class="attention">0073565-28.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Glaucio Luciano da Silva Souza</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 09:17:39.053
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af691b544a4606db7eb" class="link">
+											<em class="normal">0073570-50.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Rondineli da Silva Nascimento</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 09:29:44.601
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6f39234976e4f33e6" class="link">
+											<em class="attention">0073576-57.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Jhonys Patrick Gomes Florenço</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 10:01:13.505
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af610362d2d883100fa" class="link">
+											<em class="attention">0073580-94.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Carlos Henrique Menezes Correia Lopes</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 10:13:56.489
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6c36c9df34aa7e021" class="link">
+											<em class="attention">0073591-26.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Alef dos Santos</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 10:27:15.894
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6e1c913122b464b01" class="link">
+											<em class="livramentoCondicional">0073599-03.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Edson da Silva Cordeiro Junior</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 10:41:43.399
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af65216994d2bb28927" class="link">
+											<em class="attention">0073606-92.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Fabrício Oliveira Lima Soares Viana</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 10:50:52.427
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6f3621e0ddaec1405" class="link">
+											<em class="normal">0073612-02.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>CICERO AGRIPINO BEZERRA</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 10:58:33.767
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af64862293c3ffadc19" class="link">
+											<em class="attention">0073647-59.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>André Magalhães Corrêa</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 11:20:02.661
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6437973cc1f7f2c56" class="link">
+											<em class="normal">0073684-86.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>LUAN VIRIATO DINIZ PEREIRA</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 11:38:31.58
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6fae71494f426b9eb" class="link">
+											<em class="attention">0073687-41.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Thiago Daniel Oliveira de Lima</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 11:38:54.747
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6930f387cdb531470" class="link">
+											<em class="attention">0073701-25.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Pedro Henrique Vitorino Mattos Correia</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 11:50:14.667
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af67b694c6d64579c2d" class="link">
+											<em class="attention">0073732-45.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Marlon Victor Luiz Abreu</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 12:01:35.269
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6a78bd53fedc13a9e" class="link">
+											<em class="normal">0073946-36.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>MARCELO SANTOS DE OLIVEIRA</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 13:12:05.103
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6fd05630390a86046" class="link">
+											<em class="normal">0073947-21.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estevão de Oliveira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 13:12:10.931
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6cdf0060c171a6bf3" class="link">
+											<em class="normal">0073977-56.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Maicon Pereria Duarte</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 13:27:12.747
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6fe719ca3de459cf7" class="link">
+											<em class="normal">0073979-26.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>AUGUSTO RODRIGO ALVES DOS SANTOS</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 13:27:47.097
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6479584f7e088b803" class="link">
+											<em class="normal">0073991-40.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>MAYARA MAGATON ALVES DA CRUZ</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 13:41:25.678
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6d75c32e65449135a" class="link">
+											<em class="attention">0074032-07.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Fabio Henrique Pereira Ribeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:05:32.306
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6bb0ec54015636a9f" class="link">
+											<em class="attention">0074043-36.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Caique Miranda Ramos da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:12:21.677
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af659ec3da479595c42" class="link">
+											<em class="normal">0074060-72.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>RODRIGO DE ALMEIDA VENTURA</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:19:39.092
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af691706d736272fd02" class="link">
+											<em class="normal">0074067-64.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Bruno Lima Dias</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:24:51.452
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af62f35f65d4f581f23" class="link">
+											<em class="attention">0074076-26.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Rogério Pereira de Souza</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:29:17.839
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af622441b04c10554fd" class="link">
+											<em class="normal">0074078-93.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>CARLOS ANTONIO DE OLIVEIRA COSTA</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:31:28.566
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6822b72d0900d85fd" class="link">
+											<em class="normal">0074090-10.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>BRENDO WASHINGTON GOMES DE SOUZA</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:36:09.882
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af60225e4042b62ac29" class="link">
+											<em class="attention">0074093-62.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Josemberg de Oliveira Araujo</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:38:41.577
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68b3b508f5625f363" class="link">
+											<em class="attention">0074102-24.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Marcelo Domingos Teixeira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:44:31.346
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6415695c98914e1c2" class="link">
+											<em class="attention">0074104-91.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Josimara Stoco de Oliveira Rocha</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:45:50.33
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af636fc25561c5c0cd5" class="link">
+											<em class="normal">0074105-76.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Ana Carla Gomes de Assunção Santos</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:46:45.557
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af635d695ecbc11cf30" class="link">
+											<em class="normal">0074112-68.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>WASHINGTON LUIZ SILVA JUNIOR</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:49:55.81
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68e74b3178e39920c" class="link">
+											<em class="normal">0074129-07.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>JULIO CESAR BATISTA DA SILVA</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 14:56:55.772
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af60cb6eb851541b3fb" class="link">
+											<em class="livramentoCondicional">0074136-96.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Rafael Martiniano de Moura</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:00:58.805
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6586a9a86e0cf76db" class="link">
+											<em class="normal">0074144-73.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>PAULO DE CASTRO</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:04:18.68
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af681e56ece34f083ec" class="link">
+											<em class="normal">0074165-49.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Elazir dos Santos Cardoso</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:14:12.417
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68c8b2178d16a439c" class="link">
+											<em class="attention">0074202-76.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Leonardo Vieira Alves da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:31:49.966
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af615b9abee011e94ca" class="link">
+											<em class="attention">0074207-98.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Bruno Ferreira Borges</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:34:54.786
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6aa781f4af6c318a1" class="link">
+											<em class="normal">0074208-83.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Luan Ferreira dos Santos</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:35:07.557
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6b30e9b369e94e278" class="link">
+											<em class="attention">0074237-36.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Matheus Oliveira de Souza</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:56:12.158
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af616733bd2f5470702" class="link">
+											<em class="attention">0074240-88.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Andre da Conceição Pereira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 15:58:02.953
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6eeba5b27ed8eea17" class="link">
+											<em class="normal">0074292-84.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Douglas Lemos Filetto</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 16:31:09.336
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af632fb7b227903c623" class="link">
+											<em class="normal">0074296-24.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Felipe Rosario Marinho</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 16:33:19.854
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6d07a18c919350ec6" class="link">
+											<em class="attention">0074315-30.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Douglas Alexandre Rodrigues Oliveira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 16:44:20.062
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6962aa7b7c381d034" class="link">
+											<em class="attention">0074321-37.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Felipe Sergio da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 16:46:51.838
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6baee25ea85df3e78" class="link">
+											<em class="livramentoCondicional">0074344-80.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Marven Silva da Conceição</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 16:59:40.501
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af603772933eadeef7f" class="link">
+											<em class="normal">0074401-98.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Fabiana de Oliveira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:22:09.548
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6a139d13a44bf3cfa" class="link">
+											<em class="attention">0074403-68.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Leandro Tavares de Lemos</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:23:32.039
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6b936c8a92821c032" class="link">
+											<em class="normal">0074421-89.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Pablo Luciano Gonçalves Santana</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:31:41.769
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af67f715e143119bb2e" class="link">
+											<em class="normal">0074428-81.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Fabio Renato Pinto Guimarães</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:34:23.165
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6e00b657b57036c72" class="link">
+											<em class="livramentoCondicional">0074430-51.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Roni Silva de Oliveira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:36:00.019
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af604334aed48d091f4" class="link">
+											<em class="livramentoCondicional">0074433-06.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Iago da Rosa Pedro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:38:04.708
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af60d874132aec5628d" class="link">
+											<em class="attention">0074441-80.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Johnny Carlos da Silva Mateus</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:42:41.841
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af64f0ccd6b907475b5" class="link">
+											<em class="normal">0074468-63.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Clessio Galeno Barros</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 17:51:48.346
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6119016fa4ac43714" class="link">
+											<em class="attention">0074520-59.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Roberto Elizeu dos Santos</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 18:20:50.43
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6d2801e59687dde99" class="link">
+											<em class="attention">0074527-51.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Anderson Peixoto Paixão</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 18:28:20.435
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af61c6f93f97a8e94b3" class="link">
+											<em class="attention">0074536-13.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Raielsôn Lopes da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 18:37:29.804
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6e595b240c05e941f" class="link">
+											<em class="attention">0074565-63.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Patrick Henrique Rodrigues de Sá</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 19:03:42.113
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af656810962d0af4bfd" class="link">
+											<em class="attention">0074593-31.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Jhonata Vieira de Santana</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 19:59:15.474
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6a5f4f40c30738dab" class="link">
+											<em class="normal">0074599-38.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>André Luiz de Jesus</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-01 20:07:25.213
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af62d45d6d3ab753c6f" class="link">
+											<em class="normal">0074784-76.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Marlom Silva Castro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 09:49:31.262
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6050d1fbf8abc96cc" class="link">
+											<em class="normal">0074844-49.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Fernando Henrique Prado</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 10:58:45.848
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6d5dc6a9554a89935" class="link">
+											<em class="attention">0074924-13.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Everson Gonçalves da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 11:49:22.415
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af601c517722aa32cf2" class="link">
+											<em class="normal">0074941-49.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Iago da Silva Castro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 11:59:19.963
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af63f0f242ea0c475c1" class="link">
+											<em class="normal">0074951-93.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Edwin Orlando Rico</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 12:01:56.945
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af683a883b0efa1dc9f" class="link">
+											<em class="normal">0074963-10.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>WANDERSON DE ALMEIDA CALDAS</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 12:05:21.532
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af67f66e34d3c0b47d5" class="link">
+											<em class="attention">0075040-19.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Lucas Gaspar Dantas</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 12:54:12.074
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68153e62e898d3164" class="link">
+											<em class="normal">0075098-22.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>RAPHAEL THEOPHILO DO NASCIMENTO</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 13:29:56.459
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6bfb583d486be4eca" class="link">
+											<em class="attention">0075102-59.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Diego Filipe Gonçalves do Nascimento</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 13:31:59.807
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af63f7220264c3fa055" class="link">
+											<em class="normal">0075114-73.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Alcides Francisco de Souza</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 13:35:35.944
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af66105c27f39cb401e" class="link">
+											<em class="normal">0075130-27.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>CARLOS HENRIQUE ARAUJO MARTINS</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 13:40:28.085
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68ecaed7766eab496" class="link">
+											<em class="attention">0075157-10.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Jonas Batista da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 13:52:33.708
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6bfbb54526b93bd17" class="link">
+											<em class="normal">0075174-46.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Everton Ferreira da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:03:25.794
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6fde1b6d6bea19e3e" class="link">
+											<em class="normal">0075187-45.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>LUIZ FELIPE DA SILVA </li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:08:51.291
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6d7345ea7f60ce9c7" class="link">
+											<em class="normal">0075205-66.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Edivaldo de Sousa Damasceno</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:15:11.51
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af64fa0285760285496" class="link">
+											<em class="normal">0075216-95.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>LEANDRO DA CONCEIÇÃO DOS SANTOS</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:19:42.057
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6aee09eab9e26685c" class="link">
+											<em class="attention">0075217-80.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Alexsandro Pacheco Meireles</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:20:39.656
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6e7bbde06ed1cf690" class="link">
+											<em class="normal">0075234-19.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Moyses Cerqueira Garcia Ferreira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:26:40.263
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af69952ed5cc97aad10" class="link">
+											<em class="attention">0075246-33.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Rogério de Souza Ribeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:29:57.812
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6eb200679b633586c" class="link">
+											<em class="normal">0075254-10.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Bianca Silva Queiroz de Carvalho</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:32:54.486
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6954d8bfb53612c6c" class="link">
+											<em class="attention">0075278-38.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Wendel Gonzaga Soares Lopes da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:44:25.474
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6592a71ee62df4015" class="link">
+											<em class="normal">0075285-30.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Gelci Santos Ferreira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 14:48:41.154
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6026c364e3a9e6be4" class="link">
+											<em class="attention">0075317-35.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Gilca Carla Duarte de Lima</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:05:01.909
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af62837079b9ca2d32f" class="link">
+											<em class="normal">0075325-12.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Felipe Viana de Carvalho</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:20:36.372
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6a76bc9147140c2c8" class="link">
+											<em class="attention">0075346-85.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Aldemi Almeida Barreto</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:32:23.948
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af67bfd27cd91c038c4" class="link">
+											<em class="normal">0075347-70.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Matheus Carvalho Dutra</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:32:33.782
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68b29bd45b0554a4b" class="link">
+											<em class="normal">0075354-62.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Heliulton Mota Ferreira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:33:48.082
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6ee6fd5397c3d6fc1" class="link">
+											<em class="normal">0075390-07.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Patrick Mizael Jose de Oliveira</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:50:39.631
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af639c40d2c1d686a86" class="link">
+											<em class="normal">0075391-89.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>David Leandro da Cunha</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:51:49.522
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6578db291960c794e" class="link">
+											<em class="normal">0075399-66.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Alan de Aguiar Cavalcanti</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 15:54:14.336
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af63c9ef082591c1541" class="link">
+											<em class="normal">0075410-95.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>CLAUDIOVANE GUIDO VENTURA</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 16:00:07.263
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af68968558ed823eb12" class="link">
+											<em class="normal">0075470-68.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Vitor Guedes Francisco de Oliveira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 16:26:13.478
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af698176c856e7371d9" class="link">
+											<em class="normal">0075474-08.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Peter Jacintho Azevedo Ferreira</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 16:26:52.429
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af65b1b92c3dce1b1f5" class="link">
+											<em class="normal">0075535-63.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>ALCINDO LUIZ FERNANDES</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 16:49:08.255
+							</td>
+							
+							
+							<td style="text-align:center">
+								Transferência entre estabelecimentos penais
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6f343934d2cd409ff" class="link">
+											<em class="attention">0075547-77.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Phatrick da Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 16:52:49.308
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af605d9215836d2013d" class="link">
+											<em class="attention">0075550-32.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravante:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>PAULO ELJABEL REZENDE</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Agravado:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 16:53:34.23
+							</td>
+							
+							
+							<td style="text-align:center">
+								Agravo de Execução Penal
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6af50117d6d49e564" class="link">
+											<em class="normal">0075555-54.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Julio Cesar Gomes</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 16:55:28.045
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6ffa5a858468e1844" class="link">
+											<em class="normal">0075584-07.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Jonathan de Souza Alves</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 17:04:33.093
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="even">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6d7b16d50cb016379" class="link">
+											<em class="attention">0075592-81.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Guilherme da Silva Braga</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 17:07:13.945
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+						
+
+						
+
+						<tr class="odd">
+							
+							
+							
+							<td nowrap="nowrap" width="1%">
+
+										<a href="/projudi/processo.do?_tj=6b6ae464227304463feaeedcd37ae4316add4590ed135af6d3141166d59cb099" class="link">
+											<em class="attention">0075625-71.2019.8.19.0001</em>
+
+										</a>
+
+							</td>
+							
+							<td style="text-align:left">
+								<table class="form">
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Ator:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Estado do Rio de Janeiro</li>
+		</ul>
+	</td>
+</tr>
+	<tr>
+<td colspan="2" style="height:1px; color:#C5C5C2; border-bottom:1px dotted #C5C5C2;">
+		</td>
+	</tr>
+<tr>
+<td align="top" style="vertical-align:top; text-align:right; width:89px;">
+<font size="-2" style="font-weight:bold;">
+Réu:
+		</font>
+	</td>
+	<td>
+<ul style="list-style-type:circle">
+		<li>Italo dos Santos Silva</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+							</td>
+
+							
+							<td nowrap="nowrap" style="text-align:center">
+								2019-04-02 17:21:37.949
+							</td>
+							
+							
+							<td style="text-align:center">
+								Execução da Pena
+								
+									<br>
+									(Pena Privativa de Liberdade)
+								
+							</td>
+							
+							
+							
+							
+						</tr>
+					
+				
+			</tbody>
+			
+			
+			
+				
+		</table>
+	
+	<br/>
+	
+	<table class="buttonBar" cellpadding="0" cellspacing="0">
+		<tr>
+    		<td class="buttons" width="1%" nowrap="nowrap">    		
+				    			
+    			    			
+ 			</td>
+ 		</tr>
+	</table>
+</form>
+<script type="text/javascript">
+	
+	
+</script>
+
+					
+				
+      
+				
+			</div>
+			
+				<div id="anotacaoAssessoriaPopup" style="display:none; top: 42px; left:77%;" onmouseover="$('anotacaoAssessoriaPopupTitulo').setStyle({visibility: 'visible'});"
+					 onmouseout="$('anotacaoAssessoriaPopupTitulo').setStyle({visibility: 'hidden'});">
+					 
+
+
+
+
+
+
+<script type="text/javascript">
+AnotacaoAssessoria = function(){
+	this.toggleVisualizarNota = function(view, divNotaId){
+		var divLista = document.getElementById("listaAnotacao");
+		var divNota = document.getElementById(divNotaId);
+		var autor = document.getElementById(divNota.id+"autor");
+		var autorData = document.getElementById(divNota.id+"autorData");
+		var resumo = document.getElementById(divNota.id+"resumo");
+		if (view == true || view == "true"){
+			for (i=0; i<divLista.childNodes.length; i++){
+				if (divLista.childNodes[i].nodeName == "DIV")
+					divLista.childNodes[i].style.display="none";
+			}
+			if (autor != null)
+				autor.style.display="none";
+			if (autorData != null)
+				autorData.style.display="";
+			if (resumo != null)
+				resumo.style.display="none";
+			try {
+				document.getElementById(divNota.id+"texto").style.display="";
+			}catch(e){
+				//se era edição, o elemento acima não existe.
+			}
+			this.configurarBarraBtns("view", divNotaId);
+			if (divNota.className.indexOf("ultimaAnotacao") == -1)
+				divNota.className += " anotacaoSelecionada";
+			Effect.Appear(divNota);
+		}else {
+			if (divNota.className.indexOf("ultimaAnotacao") == -1){
+				divNota.className = divNota.className.replace("anotacaoSelecionada", "");
+				if (autor != null)
+					autor.style.display="";
+				if (autorData != null)
+					autorData.style.display="none";
+				if (resumo != null)
+					resumo.style.display="";
+				document.getElementById(divNota.id+"texto").style.display="none";
+				this.configurarBarraBtns("item", divNotaId);
+			}else {
+				this.configurarBarraBtns("lastItem", divNotaId);
+			}
+			divNota.style.opacity="";
+			divNota.style.display="none";
+			divLista.style.display="none";
+			for (i=0; i<divLista.childNodes.length; i++){
+				if (divLista.childNodes[i].nodeName == "DIV")
+					divLista.childNodes[i].style.display="";
+			}
+			Effect.Appear(divLista);
+		}
+	}
+
+	this.criarNota = function(){
+		this.selecionarNota(null, null, "notaAmarela");
+		var divLista = document.getElementById("listaAnotacao");
+		var divEdicao = document.getElementById("edicao_");
+		divEdicao.className = "anotacao edicaoAnotacao notaAmarela";
+		document.getElementById("tituloEdicao").firstChild.nodeValue = "Novo Comentário";
+		document.getElementById("edicao_conteudoEditor").value = "";
+		divLista.style.display = "none";
+		this.configurarBarraBtns("edit", divEdicao.id);
+		Effect.Appear(divEdicao, {duration: 0.3});
+		new Effect.Morph("anotacaoAssessoriaPopup", {style: 'width: 680px; height: auto; left: 50%;', duration: 0.5});
+		this.loadCKEDITOR('edicao_conteudoEditor',true);
+	}
+
+	this.editar = function(id, divNotaId, color){
+		this.selecionarNota(id, divNotaId, color);
+		var divLista = document.getElementById("listaAnotacao");
+		var divEdicao = document.getElementById("edicao_");
+		divEdicao.className = "anotacao edicaoAnotacao " + color;
+		document.getElementById("tituloEdicao").firstChild.nodeValue = document.getElementById(divNotaId+"autor").firstChild.nodeValue;
+		document.getElementById("edicao_conteudoEditor").value = this.storeText(id);
+		divLista.style.display = "none";
+		this.configurarBarraBtns("edit", divEdicao.id);
+		Effect.Appear(divEdicao, {duration: 0.3});
+		new Effect.Morph("anotacaoAssessoriaPopup", {style: 'width: 680px; height: auto; left: 50%;', duration: 0.5});
+		this.loadCKEDITOR('edicao_conteudoEditor',true);
+	}
+
+	this.desfazer = function(){
+		var divLista = document.getElementById("listaAnotacao");
+		var divNota = document.getElementById(this.getDivNotaSelecionada());
+		var divEdicao = document.getElementById("edicao_");
+		var textarea = document.getElementById("edicao_conteudoEditor");
+	
+		if (this.getNotaSelecionada() == "" || this.getNotaSelecionada() == null){
+			//Cancelando nova nota:
+			divEdicao.style.display="none";
+			divLista.style.display="none";
+			for (i=0; i<divLista.childNodes.length; i++){
+				if (divLista.childNodes[i].nodeName == "DIV")
+					divLista.childNodes[i].style.display="";
+			}
+			Effect.Appear(divLista);
+			this.reposicionar();
+		}else {
+			//Cancelando edição:
+			this.restoreText(textarea);
+			this.destroyCKEDITOR("edicao_conteudoEditor");
+			textarea.disabled=true;
+			textarea.style.background="inherit";
+			divEdicao.style.display="none";
+			this.toggleVisualizarNota(false, divNota.id);
+			this.toggleVisualizarNota(true, divNota.id);
+			this.reposicionar();
+		}
+	
+		if (divLista.children.length == 0)
+			this.fechar();
+	}
+
+	this.salvar = function() {
+		try {
+		CKEDITOR.instances['edicao_conteudoEditor'].updateElement();
+		new Ajax.Updater('anotacaoAssessoriaPopup',
+						 '/projudi/processo/anotacaoAssessoria.do?_tj=6b6ae46422730446bc903bf8cbc0a4cd81a398503874fdc5',
+						 {parameters: {idAnotacao: this.getNotaSelecionada(),
+							 		   conteudoEditor: $F('edicao_conteudoEditor'),
+							 		   isProcesso: $F('processo'),
+							 		   idProcessoRecurso: $F('idProcessoRecurso'),
+							 		   bgColor: $F('bg_color')},
+						  evalScripts: true,
+						  onComplete: this.reposicionar()});
+		}catch(e){
+			alert(e);
+		}
+		return false;
+	}	
+	
+	this.remover = function(idAnotacao) {		
+		if ( confirm('Confirma a exclusão do comentário?') ) {
+			new Ajax.Updater('anotacaoAssessoriaPopup',
+					 		 '/projudi/processo/anotacaoAssessoria.do?_tj=6b6ae4642273044681ba31e67ea98a023c9d05b68d1f10b4',
+					 		 {parameters: {idAnotacao: idAnotacao,
+						 		   		   isProcesso: $F('processo'),
+						 		   		   idProcessoRecurso: $F('idProcessoRecurso')},
+					  		  evalScripts: true});
+		}
+		return false;
+	}
+
+	this.fechar = function() {
+		var divEdicao = document.getElementById("edicao_");
+		if (divEdicao.style.display == "")
+			this.reposicionar();
+		Effect.Fade("anotacaoAssessoriaPopup", {duration:0.3});
+	}
+	
+	this.incluirLink = function(e){
+		try {
+		    var keynum;  
+	          
+	        if(window.event) { //IE  
+	            keynum = event.keyCode  
+	        } else if(e.which) { // Netscape/Firefox/Opera  
+	            keynum = e.which  
+	        }
+	        if(keynum != 13 ) { <!-- 13 é o código do Enter -->  
+	        	return;
+	        } 
+			var idDocumento = document.getElementById("idDocumento").value;
+			var descricaoDocumento = document.getElementById("descricaoDocumento").value;
+			var element = CKEDITOR.dom.element.createFromHtml( '<a id="_docid'+idDocumento+'docid_" onclick="diech9ohTie3();" href="javascript:aa.viewDoc('+idDocumento+');">' + descricaoDocumento + '</a>');
+			CKEDITOR.instances['edicao_conteudoEditor'].insertElement(element);
+			this.clearAutocomplete();
+		}catch(e){
+			
+		}
+		
+	}
+	
+	this.viewDoc = function (idDocumento){
+		window.open('/projudi/arquivo.do?_tj=6b6ae464227304466abbe063abd00b87dd6a22505a98a155' + '&id='+idDocumento);
+	}
+	
+	this.changeColor = function (color){
+		document.getElementById("bg_color").value = color;
+		document.getElementById("edicao_").className = "anotacao edicaoAnotacao " + color;
+	}
+	
+	this.reposicionar = function(){
+		new Effect.Morph("anotacaoAssessoriaPopup", {style: 'width: 344px; height: auto; top: 42px; left: 77%;', duration: 0.5});
+	}
+	
+	this.selecionarNota = function(id, divNotaId, color){
+		document.getElementById("idNotaSelecionada").value = id;
+		document.getElementById("divNotaSelecionada").value = divNotaId;
+		document.getElementById("bg_color").value = color;
+	}
+	
+	this.getNotaSelecionada = function(){
+		return document.getElementById("idNotaSelecionada").value;
+	}
+	
+	this.getDivNotaSelecionada = function(){
+		return document.getElementById("divNotaSelecionada").value;
+	}
+	
+	this.ajaxAutoCompleteClearInput = function(){
+		try {
+			//delega:
+			ajaxAutoCompleteClearInput("idDocumento", "descricaoDocumento");			
+		}catch(e){
+			//campo ainda não está criado por não estar na tela de edição de nota.
+		}
+	}
+	
+	this.clearAutocomplete = function(){
+		Form.Element.clear('idDocumento');
+		Form.Element.clear('descricaoDocumento');
+		void(0);
+	}
+	
+	this.loadCKEDITOR = function(id, hideToolbar){
+		this.destroyCKEDITOR(id);
+		CKEDITOR.replace(id, {toolbarCanCollapse: true, toolbarStartupExpanded: !hideToolbar});
+	}
+	
+	this.destroyCKEDITOR = function(id){
+		try {
+			//Tenta destruir a instância atual:
+			CKEDITOR.instances[id].destroy(true);
+		}catch (e){
+			//não havia instância...
+		}
+	}
+	
+	this.storeText = function(id){
+		var hidden = document.getElementById("conteudoEditorStore");
+		if (id == null){
+			//limpa:
+			hidden.value = "";
+		}else {
+			var input = document.getElementById("nota"+id+"conteudoEditor");
+			hidden.value = input.value;
+		}
+		return hidden.value;
+	}
+	
+	this.restoreText = function(textarea){
+		var hidden = document.getElementById("conteudoEditorStore");
+		textarea.value = hidden.value;
+		hidden.value = "";
+		return textarea.value;
+	}
+	
+	this.toggleBtn = function(id, show){
+		var btn = document.getElementById(id);
+		if (btn != null)
+			btn.style.display = show == true || show == "true" ? "" : "none";
+	}
+	
+	this.configurarBarraBtns = function(type, itemId){
+		if (type == "item"){
+			this.toggleBtn(itemId+"view", true);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", false);
+			this.toggleBtn(itemId+"edit", false);
+			this.toggleBtn(itemId+"cancel", false);
+			this.toggleBtn(itemId+"close", false);
+		}else if (type == "lastItem"){
+			this.toggleBtn(itemId+"view", false);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", false);
+			this.toggleBtn(itemId+"edit", true);
+			this.toggleBtn(itemId+"cancel", false);
+			this.toggleBtn(itemId+"close", false);
+		}else if (type == "view"){
+			this.toggleBtn(itemId+"view", false);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", false);
+			this.toggleBtn(itemId+"edit", true);
+			this.toggleBtn(itemId+"cancel", false);
+			this.toggleBtn(itemId+"close", true);
+		}else if (type == "edit"){
+			this.toggleBtn(itemId+"view", false);
+			this.toggleBtn(itemId+"remove", true);
+			this.toggleBtn(itemId+"save", true);
+			this.toggleBtn(itemId+"edit", false);
+			this.toggleBtn(itemId+"cancel", true);
+			this.toggleBtn(itemId+"close", true);
+		}else {
+			//
+		}
+	}
+	
+	this.drag = function(e){
+		var div = document.getElementById("anotacaoAssessoriaPopup");
+		div.style.top = e.clientY + 'px';
+		div.style.left = e.clientX + 'px';
+	}
+	
+	this.msg = function() {
+		// mensagem para o evento de fechar a janela
+		return 'Qualquer alteração feita no texto e não salva será perdida.';
+	}
+}
+</script>
+<script type="text/javascript">var aa = new AnotacaoAssessoria();</script>
+<div>
+	<script type="text/javascript" src="/projudi/imagens/ckeditor/ckeditor.js?updateIdx="></script>
+	<form name="anotacaoAssessoriaForm" id="anotacaoAssessoriaForm" method="post" action="/projudi/processo/anotacaoAssessoria.do?actionType=listar" onsubmit="disableScreen();">
+		<input type="hidden" name="idNotaSelecionada" value="" id="idNotaSelecionada">
+		<input type="hidden" name="idProcessoRecurso" value="" id="idProcessoRecurso">
+		<input type="hidden" name="processo" value="false" id="processo">
+		<input type="hidden" id="divNotaSelecionada"/>
+		<input type="hidden" id="conteudoEditorStore"/>
+		<input type="hidden" id="bg_color"/>
+		<div id="anotacaoAssessoriaPopupTitulo" style="visibility: hidden;">
+			<table style="width: 100%;">
+				<tr>
+					<td><h3>Comentários</h3></td>
+					<td class="anotacaoBtnBar">
+						<img id="new" class="new" src="/projudi/img/themes/olive/iPlus.gif" alt="Criar" title="Adicionar Comentário" onclick="aa.criarNota();"/>
+						<img id="close" class="close" src="/projudi/img/themes/olive/iClose.gif" alt="Fechar" title="Fechar" onclick="aa.fechar();"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="listaAnotacao">
+			
+		</div>
+		<script type="text/javascript">var list = document.getElementById("listaAnotacao"); if (list){ list.scrollTop = list.scrollHeight;}</script>
+		<br>
+		<!-- Editar/Incluir anotação -->
+		<div id="edicao_" class="anotacao edicaoAnotacao" style="display: none;">
+			<table>
+				<tr>
+					<td style="width: 80%;">
+						<b id="tituloEdicao">Novo Comentário</b>
+						<table class="paletaAnotacao" style="width: auto; vertical-align: super;">
+							<tr>
+								
+									<td class="itemPaletaAnotacao notaAmarela" onclick="aa.changeColor('notaAmarela');"></td>
+								
+									<td class="itemPaletaAnotacao notaAzul" onclick="aa.changeColor('notaAzul');"></td>
+								
+									<td class="itemPaletaAnotacao notaBranca" onclick="aa.changeColor('notaBranca');"></td>
+								
+									<td class="itemPaletaAnotacao notaRoxa" onclick="aa.changeColor('notaRoxa');"></td>
+								
+									<td class="itemPaletaAnotacao notaVerde" onclick="aa.changeColor('notaVerde');"></td>
+								
+							</tr>
+						</table>
+					</td>
+					<td  style="width: 20%;" class="anotacaoBtnBar" colspan="2">
+						<img id="edicao_save"	 class="save"   src="/projudi/img/themes/olive/iSuccess.gif" alt="Salvar"  title="Salvar"   
+							 onclick="aa.salvar();"/>
+						<img id="edicao_cancel"  class="cancel" src="/projudi/img/themes/olive/iUndo.ico"    alt="Cancel"  title="Desfazer alterações"
+							 onclick="aa.desfazer();"/>						 
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table style="display: ;"><!-- Para desabilitar a busca de documentos, altere o valor da propriedade CSS display para none -->
+				<tr>
+					<td>Incluir link para documento do recurso: (Ex.: 1.1 Petição Inicial)</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="hidden" name="idDocumento" value="" id="idDocumento">
+		    			<input type="text" name="descricaoDocumento" value="" onkeyup="aa.incluirLink(event);" onkeypress="return event.keyCode != 13;" onblur="ajaxAutoCompleteOnBlurInput('idDocumento','descricaoDocumento')" id="descricaoDocumento" style="width: 80%;" title="Ao digitar, escolha uma das opções sugeridas ou selecione através da pesquisa ao lado">
+						
+				    	<span id="indicatorClasseOff" style="display:inline;">
+							<img src="/projudi/img/indicatorOff.gif" align="top" class="indicatorOff" title="Campo autocompletar: ao digitar, escolha uma das opções sugeridas">
+				    	</span>
+				    	<span id="indicatorClasse" style="display:none; margin-left:-20px;">
+							<img src="/projudi/img/indicator.gif" align="top" class="indicatorOn">
+				    	</span>
+						<script type="text/javascript">
+new AjaxJspTag.Autocomplete(
+"/projudi/processo/anotacaoAssessoria.do?", {
+indicator: "indicatorClasse",
+source: "descricaoDocumento",
+preFunction: aa.ajaxAutoCompleteClearInput,
+target: "idDocumento",
+minimumCharacters: "3",
+className: "autocomplete",
+parameters: "actionType=ajaxListarDocumentosProcesso,isProcesso=false,idProcessoRecurso=,descricaoPesquisa={descricaoDocumento}"
+});
+</script>
+
+
+
+						<a href="javascript:aa.clearAutocomplete();" class="eraseButton" title="Limpar">
+							<span>Limpar</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<textarea name="conteudoEditor" id="edicao_conteudoEditor" style="background-color: white;"></textarea>
+		</div>
+		<script	type="text/javascript">
+			//Se não houver anotações ainda, exibe div de cadastro ao abrir o popup:
+			var p = document.getElementById("anotacaoAssessoriaPopup");
+			var l = document.getElementById("listaAnotacao");
+			if (p.style.display != "none" && l.children.length == 0) aa.criarNota();
+		</script>
+	</form>
+</div>
+				</div>
+				<script type="text/javascript">new Draggable("anotacaoAssessoriaPopup");</script>
+			
+			<hr/>
+		</div>
+		<a href='/projudi//include_common.html' style="text-decoration:none; cursor:default; position:fixed; bottom:-20px;">&nbsp;&nbsp;</a>
+		<!-- Verifica se exite edição de textos para aumento do timeout -->
+		<script type="text/javascript">
+		if( typeof ControladorSessao != 'undefined'){
+			window._sControler= new ControladorSessao('editor');
+		}
+		</script>
+	</body>
+</html>
