@@ -112,7 +112,13 @@
     <p>Baixa pdfs</p>
     </div>
 
-    <pre class="usage"><span class='fu'>baixar_pdf</span>(<span class='no'>usuario</span>, <span class='no'>senha</span>, <span class='no'>id_proc</span>, <span class='no'>arquivo</span>)</pre>
+    <pre class="usage"><span class='fu'>baixar_pdf</span>(
+  <span class='kw'>usuario</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>senha</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>id_proc</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>processo</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>diretorio</span> <span class='kw'>=</span> <span class='st'>"."</span>
+)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -127,11 +133,15 @@
     </tr>
     <tr>
       <th>id_proc</th>
-      <td><p>id_execucao</p></td>
+      <td><p>Id do processo</p></td>
     </tr>
     <tr>
-      <th>arquivo</th>
-      <td><p>arquivo</p></td>
+      <th>processo</th>
+      <td><p>Número do processo</p></td>
+    </tr>
+    <tr>
+      <th>diretorio</th>
+      <td><p>Onde colocar os pdfs</p></td>
     </tr>
     </table>
 
