@@ -14,7 +14,7 @@ ler_numeros <- function(arquivos = NULL,diretorio="."){
 
   }
 
-  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
+  purrr::map_dfr(arquivos, purrr::possibly(~{
 
 
     x <- xml2::read_html(.x)
@@ -49,7 +49,7 @@ ler_numeros <- function(arquivos = NULL,diretorio="."){
       dplyr::mutate(data_distribuicao = lubridate::dmy(data_distribuicao))
 
 
-  }),NULL))
+  },NULL))
 
 
 

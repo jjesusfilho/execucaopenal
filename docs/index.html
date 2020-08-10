@@ -46,6 +46,9 @@
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="articles/index.html">Articles</a>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right"></ul>
 </div>
@@ -65,9 +68,9 @@
 <!-- badges: start -->
 
 <p>O objetivo deste projeto/pacote é coletar e organizar os dados da execução penal do Rio de Janeiro.</p>
-<div id="instalacao" class="section level2">
+<div id="instalação" class="section level2">
 <h2 class="hasAnchor">
-<a href="#instalacao" class="anchor"></a>Instalação</h2>
+<a href="#instala%C3%A7%C3%A3o" class="anchor"></a>Instalação</h2>
 <p>Para instalar o pacote, rodar o seguinte comando no R:</p>
 <div class="sourceCode" id="cb1"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"jjesusfilho/execucaopenal"</span>)</pre></div>
 </div>
@@ -80,13 +83,13 @@
 <p>Somente com os números dos processos, é possível passar para a etapa seguinte que é baixar os dados da execução penal de cada um dos sentenciados. Para tanto, há um script chamado baixar_processos, que está na pasta Inst. Assim como a função baixar_numeros, ele depende de o conteiner do Selenium estar rodando e do RSelenium carregado.</p>
 <p>Este escript cria quatro diretórios para cada processo com nomes similares a esses: dados_execucao, perfil, andamento, processo_criminal. De tais pastas, iniciamos o processo de leitura e organização.</p>
 </div>
-<div id="leitura-e-organizacao-dos-dados" class="section level2">
+<div id="leitura-e-organização-dos-dados" class="section level2">
 <h2 class="hasAnchor">
-<a href="#leitura-e-organizacao-dos-dados" class="anchor"></a>Leitura e organização dos dados</h2>
+<a href="#leitura-e-organiza%C3%A7%C3%A3o-dos-dados" class="anchor"></a>Leitura e organização dos dados</h2>
 <p>A leitura dos dados é realizada por meio das funções que iniciam com a palavar ler, exceto ler_numeros que já foi utilizada anteriormente.</p>
-<div id="execucao" class="section level3">
+<div id="execução" class="section level3">
 <h3 class="hasAnchor">
-<a href="#execucao" class="anchor"></a>Execução</h3>
+<a href="#execu%C3%A7%C3%A3o" class="anchor"></a>Execução</h3>
 <p>Para ler os dados da execução penal, é recomendável antes criar um vetor dos arquivos. Para tanto, rode o seguinte comando:</p>
 <div class="sourceCode" id="cb2"><pre class="r"><span class="no">diretorio</span> <span class="kw">=</span> <span class="st">"data-raw/processos"</span>
 <span class="no">arquivos</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.files.html">list.files</a></span>(<span class="no">diretorio</span>, <span class="kw">pattern</span> <span class="kw">=</span> <span class="st">"execucao"</span>, <span class="kw">recursive</span> <span class="kw">=</span> <span class="fl">TRUE</span>, <span class="kw">full.names</span> <span class="kw">=</span> <span class="fl">TRUE</span>)</pre></div>
@@ -111,9 +114,9 @@
 <p>Depois disso, basta chamar a função:</p>
 <div class="sourceCode" id="cb7"><pre class="r"><span class="no">processos</span> <span class="kw">&lt;-</span> <span class="fu">ler_processo_criminal</span>(<span class="no">arquivos</span>)</pre></div>
 </div>
-<div id="movimentacao" class="section level3">
+<div id="movimentação" class="section level3">
 <h3 class="hasAnchor">
-<a href="#movimentacao" class="anchor"></a>Movimentação</h3>
+<a href="#movimenta%C3%A7%C3%A3o" class="anchor"></a>Movimentação</h3>
 <div class="sourceCode" id="cb8"><pre class="r"><span class="no">diretorio</span> <span class="kw">=</span> <span class="st">"data-raw/processos"</span>
 <span class="no">arquivos</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.files.html">list.files</a></span>(<span class="no">diretorio</span>, <span class="kw">pattern</span> <span class="kw">=</span> <span class="st">"andamento"</span>, <span class="kw">recursive</span> <span class="kw">=</span> <span class="fl">TRUE</span>, <span class="kw">full.names</span> <span class="kw">=</span> <span class="fl">TRUE</span>)</pre></div>
 <p>Depois disso, basta chamar a função:</p>

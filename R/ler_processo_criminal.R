@@ -15,7 +15,7 @@ ler_processo_criminal <- function(arquivos = NULL, diretorio = "."){
   }
 
 
-  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
+  purrr::map_dfr(arquivos, purrr::possibly(~{
 
     processo <- stringr::str_extract(.x,"\\d{20}")
 
@@ -47,7 +47,7 @@ ler_processo_criminal <- function(arquivos = NULL, diretorio = "."){
 
 
 
-  }),NULL))
+  },NULL))
 
 
 }

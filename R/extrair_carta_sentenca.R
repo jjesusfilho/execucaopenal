@@ -7,7 +7,7 @@
 #'
 extrair_carta_sentenca <- function(strings = NULL){
 
-  purrr::map_dfr(strings, purrr::possibly(purrrogress::with_progress(~{
+  purrr::map_dfr(strings, purrr::possibly(~{
 
     processo <- stringr::str_extract(.x,"(?<=Processo:).+?(?=\\s)") %>%
       stringr::str_remove_all("\\D")
@@ -105,5 +105,5 @@ extrair_carta_sentenca <- function(strings = NULL){
                    data_delito = data_delito,
                    data_condencao = data_condenacao)
 
-  }),NULL))
+  },NULL))
 }

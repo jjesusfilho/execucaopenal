@@ -15,7 +15,7 @@ ler_doc_indice <- function(arquivos = NULL, diretorio = "."){
   }
 
 
-  purrr::map_dfr(arquivos, purrr::possibly(purrrogress::with_progress(~{
+  purrr::map_dfr(arquivos, purrr::possibly(~{
 
 
     numero <- stringr::str_extract(.x,"\\d+(?=\\.pdf)")
@@ -53,7 +53,7 @@ ler_doc_indice <- function(arquivos = NULL, diretorio = "."){
 
 
 
-  }),NULL))
+  },NULL))
 
 
 }

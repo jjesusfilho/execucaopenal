@@ -21,7 +21,7 @@ ler_perfil <- function(arquivos = NULL, diretorio = ".", organizar = TRUE){
   }
 
 
-  df <- purrr::map_dfr(arquivos,purrr::possibly(purrrogress::with_progress(~{
+  df <- purrr::map_dfr(arquivos,purrr::possibly(~{
 
     processo <- stringr::str_extract(.x,"\\d{20}")
     x <- .x %>%
@@ -39,7 +39,7 @@ ler_perfil <- function(arquivos = NULL, diretorio = ".", organizar = TRUE){
       tibble::add_column(processo, .before = 1)
 
 
-  }),NULL))
+  },NULL))
 
   if (organizar == TRUE){
 

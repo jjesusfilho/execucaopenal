@@ -15,7 +15,7 @@ endereco_sentenciado <- function(arquivos = NULL, diretorio = "."){
   }
 
 
-  purrr::map_dfr(arquivos,purrr::possibly(purrrogress::with_progress(~{
+  purrr::map_dfr(arquivos,purrr::possibly(~{
 
     processo <- stringr::str_extract(.x,"\\d{20}")
     x <- .x %>%
@@ -35,7 +35,7 @@ endereco_sentenciado <- function(arquivos = NULL, diretorio = "."){
       tibble::add_column(processo, .before = 1)
 
 
-  }),NULL))
+  },NULL))
 
 
 }
