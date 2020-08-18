@@ -52,7 +52,7 @@ ler_execucao2 <- function(arquivos = NULL, diretorio = "."){
       dplyr::arrange(id) %>%
       dplyr::mutate(id =NULL) %>%
       dplyr::mutate(valor = stringr::str_remove(valor,"(?i)ajax\\X+")) %>%
-      dplyr::filter(str_detect(valor,"function",negate=TRUE)) %>%
+      dplyr::filter(stringr::str_detect(valor,"function",negate=TRUE)) %>%
       dplyr::filter(stringr::str_detect(variavel,"^$",negate=TRUE))
 
   },NULL)) %>%

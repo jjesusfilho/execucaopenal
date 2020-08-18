@@ -14,8 +14,11 @@ ler_movimentacao <- function(arquivos = NULL, diretorio = "."){
 
   }
 
+  pb <- progress::progress_bar$new( total = length(arquivos))
 
   purrr::map_dfr(arquivos,purrr::possibly(~{
+
+    pb$tick()
 
     processo <- stringr::str_extract(.x,"\\d{20}")
 
