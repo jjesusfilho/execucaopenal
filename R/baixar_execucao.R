@@ -82,7 +82,8 @@ baixar_execucao <- function(usuario = NULL, senha  = NULL, processo = NULL, dire
 
    processo_criminal <- conteudo %>%
      xml2::xml_text() %>%
-     stringr::str_extract_all('Processo Criminal\\X+?(?=\")')
+     stringr::str_extract_all('Processo Criminal\\X+?(?=\")') %>%
+     unlist()
 
    p <- stringr::str_extract(processo_criminal,"(?<=Criminal ).+?(?=\\<)") %>%
         stringr::str_remove_all("\\D")
