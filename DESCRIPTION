@@ -33,4 +33,7 @@ Imports:
     httr,
     digest,
     abjutils,
-    progress
+    progress,
+    getPass
+Depends: 
+    R (>= 3.5)
