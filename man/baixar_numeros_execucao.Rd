@@ -9,6 +9,9 @@ baixar_numeros_execucao(
   senha = NULL,
   data_inicial = NULL,
   data_final = NULL,
+  codigo_tribunal = "-1",
+  sexo = "",
+  situacao_rua = FALSE,
   diretorio = "."
 )
 }
@@ -20,6 +23,13 @@ baixar_numeros_execucao(
 \item{data_inicial}{Data inicial no formato dd/mm/yyyy}
 
 \item{data_final}{Data final no formato dd/mm/yyyy}
+
+\item{codigo_tribunal}{Veja dataframe tribunal. Padrão para todos.}
+
+\item{sexo}{Opções "M" para masculino, "F" para feminino e "I" para "intersexo".
+Deixar em branco para todos.}
+
+\item{situacao_rua}{Coloque Default FALSE}
 
 \item{diretorio}{Diretório. Default para atual.}
 }
